@@ -1,0 +1,62 @@
+package attributes.enzyme_estrucuture;
+
+import attributes.Attribute;
+import entities.Enzyme;
+import entities.Literature;
+import entities.Protein;
+import java.util.ArrayList;
+
+public class ECNumber implements Attribute {
+
+  private int digit1;
+  private int digit2;
+  private int digit3;
+  private int digit4;
+  private String ec_code;
+
+  public ECNumber(String ec){
+    ec_code = ec;
+    decodeEC();
+  }
+
+  public ECNumber(int ec1, int ec2, int ec3, int ec4){
+    digit1 = ec1;
+    digit2 = ec2;
+    digit3 = ec3;
+    digit4 = ec4;
+    ec_code = String.valueOf(ec1) + "." + String.valueOf(ec2) + "." + String.valueOf(ec3) + "." + String.valueOf(ec4);
+  }
+
+  private void decodeEC(){
+    String[] ecs = ec_code.split("\\.");
+    digit1 = Integer.valueOf(ecs[0]);
+    digit2 = Integer.valueOf(ecs[1]);
+    digit3 = Integer.valueOf(ecs[2]);
+    digit4 = Integer.valueOf(ecs[3]);
+  }
+
+  @Override
+  public String toString(){
+    return ec_code;
+  }
+
+  @Override
+  public boolean equals(Object anotherOne){
+    if (anotherOne instanceof ECNumber){
+      return ec_code.equals(anotherOne.toString());
+    }
+    else{
+      return false;
+    }
+  }
+
+  @Override
+  public ArrayList<Literature> getReferences() {
+    return null;
+  }
+
+  @Override
+  public String getMethod() {
+    return ",ecNumber*";
+  }
+}
