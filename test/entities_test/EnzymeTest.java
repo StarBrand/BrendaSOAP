@@ -6,21 +6,13 @@ import static junit.framework.TestCase.assertNotSame;
 
 import attributes.enzyme_estrucuture.ECNumber;
 import entities.Enzyme;
-import entities.Literature;
-import entities.Molecule;
-import entities.Organism;
-import entities.Protein;
 import org.junit.Before;
 import org.junit.Test;
 
-public class EntityTest {
+public class EnzymeTest {
   private Enzyme enzyme1;
   private Enzyme enzyme2;
   private Enzyme enzyme3;
-  private Protein protein;
-  private Literature literature;
-  private Molecule molecule;
-  private Organism organism;
 
   @Before
   public void SetUp() throws Exception{

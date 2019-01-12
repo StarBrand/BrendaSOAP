@@ -10,8 +10,8 @@ import java.util.List;
 public abstract class FastQuery implements Query {
 
   private User user;
-  private SoapClient client;
-  private ArrayList<Attribute> theAttributes;
+  protected SoapClient client;
+  protected ArrayList<Attribute> theAttributes;
 
   public FastQuery(User aUser){
     user = aUser;
@@ -41,8 +41,8 @@ public abstract class FastQuery implements Query {
     ArrayList<String> answer = new ArrayList<String>();
     for (Attribute ec:theAttributes){
       String result = client.getResult(",ecNumber*"+((ECNumber) ec).toString(), method);
-      String[] parset_result = result.split("#");
-      String[] clean_result = parset_result[1].split("\\*");
+      String[] parser_result = result.split("#");
+      String[] clean_result = parser_result[1].split("\\*");
       answer.add(clean_result[1]);
     }
     return answer;

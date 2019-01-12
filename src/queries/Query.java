@@ -1,6 +1,7 @@
 package queries;
 
 import attributes.Attribute;
+import entities.Entity;
 import java.util.List;
 
 /**
@@ -10,7 +11,7 @@ public interface Query {
 
   /**
    * Add attributes to a query
-   * @param attributes the atributes to add
+   * @param attributes the attributes to add
    */
   void setAttributes(Attribute... attributes);
 

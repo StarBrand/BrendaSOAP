@@ -9,6 +9,11 @@ public class Protein {
   private String uniprot;
   private ArrayList<Literature> references;
 
+  public Protein(Enzyme aEnzyme, Organism aOrganism){
+    enzyme = aEnzyme;
+    organism = aOrganism;
+  }
+
   public Protein(Enzyme aEnzyme, Organism aOrganism, String aCode, Literature... referencesInput) {
     enzyme = aEnzyme;
     organism = aOrganism;
