@@ -19,8 +19,8 @@ public class LiteratureTest {
   @Before
   public void SetUp() throws Exception{
     apa = new APAcitation("author", "title", "journal", 1, 10, 1994);
-    literature1 = new Literature(apa, 11111, 22222);
-    literature2 = new Literature(apa, 11111, 22222);
+    literature1 = new Literature(11111, 22222, apa);
+    literature2 = new Literature(11111, 22222, apa);
     literature3 = new Literature(285564, "1.1.1.1", "Mus musculus");
   }
 

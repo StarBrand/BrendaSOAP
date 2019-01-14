@@ -11,6 +11,6 @@ public class RecommendedNameQuery extends FastQuery {
 
   @Override
   public List<String> getAnswer() throws Exception{
-    return getAnswer("getRecommendedName");
+    return getAnswer("getRecommendedName", "recommendedName");
   }
 }

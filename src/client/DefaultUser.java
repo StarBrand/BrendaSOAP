@@ -3,7 +3,7 @@ package client;
 public class DefaultUser extends User{
 
   public DefaultUser() {
-    super("jdoe@something.com", "password123");
+    super("jdoe@example.edu", "password123");
   }
 
 }

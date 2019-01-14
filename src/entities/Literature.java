@@ -1,19 +1,23 @@
 package entities;
 
 import attributes.APAcitation;
+import attributes.Attribute;
 import client.DefaultUser;
 import client.SoapClient;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Literature implements Entity {
 
-  private APAcitation apa;
+  private List<Attribute> apa;
   private int pubmed;
   private int brenda;
 
-  public Literature(APAcitation reference, int pubmed_reference, int brenda_reference){
-    apa = reference;
+  public Literature(int pubmed_reference, int brenda_reference, APAcitation reference){
+    apa = new ArrayList<Attribute>();
     pubmed = pubmed_reference;
     brenda = brenda_reference;
+    apa.add(reference);
   }
 
   public Literature(int brenda_reference, String enzyme, String organism) throws Exception{
@@ -37,13 +41,18 @@ public class Literature implements Entity {
     volume = Integer.valueOf(parser_result[5].split("\\*")[1]);
     pages = parser_result[6].split("\\*")[1];
     year = Integer.valueOf(parser_result[7].split("\\*")[1]);
+    apa = new ArrayList<Attribute>();
     if (pages.contains("-")){
       fp = Integer.valueOf(pages.split("-")[0]);
       lp = Integer.valueOf(pages.split("-")[1]);
-      apa = new APAcitation(title, journal, volume, fp, lp, year, authors);
+      apa.add(new APAcitation(title, journal, volume, fp, lp, year, authors));
     }
     else{
-      apa = new APAcitation(title, journal, volume, Integer.valueOf(pages), year, authors);
+      try {
+        apa.add( new APAcitation(title, journal, volume, Integer.valueOf(pages), year, authors) );
+      } catch (NumberFormatException e){
+        apa.add( new APAcitation(title, journal, volume, year, authors) );
+      }
     }
     pubmed = Integer.valueOf(parser_result[10].split("\\*")[1]);
 
@@ -51,7 +60,7 @@ public class Literature implements Entity {
 
   @Override
   public String toString(){
-    return "<" + String.valueOf(brenda) + "> " + apa.toString() + " {Pubmed:" + String.valueOf(pubmed) + "}";
+    return "<" + String.valueOf(brenda) + "> " + apa.get(0).toString() + " {Pubmed:" + String.valueOf(pubmed) + "}";
   }
 
   @Override
@@ -59,7 +68,7 @@ public class Literature implements Entity {
     boolean ans;
     if (anotherOne instanceof Literature){
       ans = true;
-      ans &= apa.equals(((Literature) anotherOne).getAPA());
+      ans &= apa.get(0).equals(((Literature) anotherOne).getAPA());
       ans &= pubmed == ((Literature) anotherOne).getPubmedID();
       ans &= brenda == ((Literature) anotherOne).getBrenda();
     }
@@ -67,10 +76,6 @@ public class Literature implements Entity {
       ans = false;
     }
     return ans;
-  }
-
-  public APAcitation getAPA(){
-    return apa;
   }
 
   public int getPubmedID(){
@@ -81,4 +86,15 @@ public class Literature implements Entity {
     return brenda;
   }
 
+  public List<Attribute> getAttribute() {
+    return apa;
+  }
+
+  public Attribute getAPA(){
+    return apa.get(0);
+  }
+
+  public void addAttribute(Attribute attribute) {
+
+  }
 }

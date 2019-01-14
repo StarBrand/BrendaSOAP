@@ -5,8 +5,6 @@ import static junit.framework.TestCase.assertNotNull;
 import static junit.framework.TestCase.assertNotSame;
 
 import attributes.APAcitation;
-import entities.Organism;
-import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,10 +1,10 @@
 package attributes.enzyme_estrucuture;
 
 import attributes.Attribute;
-import entities.Enzyme;
 import entities.Literature;
-import entities.Protein;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class ECNumber implements Attribute {
 
@@ -50,13 +50,24 @@ public class ECNumber implements Attribute {
     }
   }
 
-  @Override
-  public ArrayList<Literature> getReferences() {
+  public List<Literature> getReferences() {
     return null;
   }
 
-  @Override
+  public void setReferences(List<Literature> references) {  }
+
+  public void addReference(Literature reference) { }
+
   public String getMethod() {
-    return ",ecNumber*";
+    return "getEcNumber";
+  }
+
+  public String getParameter() {
+    return "ecNumber*" + ec_code;
+  }
+
+  public List<String> getColumns() {
+    String[] columns = new String[]{"ecNumber", "commentary"};
+    return Arrays.asList(columns);
   }
 }

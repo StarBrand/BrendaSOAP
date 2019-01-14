@@ -3,8 +3,8 @@ package attributes;
 import static sun.swing.MenuItemLayoutHelper.max;
 
 import entities.Literature;
-import entities.Organism;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class APAcitation implements Attribute{
@@ -65,6 +65,19 @@ public class APAcitation implements Attribute{
     authors.add(theAuthor);
   }
 
+  public APAcitation(String theTitle, String theJournal, int volume, int year, String... theAuthors){
+    authors = new ArrayList<String>();
+    title = theTitle;
+    journal = theJournal;
+    vol = volume;
+    fp = Integer.MAX_VALUE;
+    lp = Integer.MAX_VALUE;
+    yyyy = year;
+    for (String author:theAuthors){
+      authors.add(author);
+    }
+  }
+
   @Override
   public boolean equals(Object anotherOne){
     boolean ans;
@@ -84,14 +97,68 @@ public class APAcitation implements Attribute{
     return ans;
   }
 
-  @Override
-  public ArrayList<Literature> getReferences() {
+  public void setAuthors(String... theAuthors) {
+    authors = new ArrayList<String>();
+    for (String author:theAuthors){
+      authors.add(author);
+    }
+  }
+
+  public void addAuthor(String anAuthor){
+    try{
+      authors.add(anAuthor);
+    } catch (Exception e){
+      authors = new ArrayList<String>();
+      authors.add(anAuthor);
+    }
+  }
+
+  public void setTitle(String title) {
+    this.title = title;
+  }
+
+  public void setVolume(int volume) {
+    vol = volume;
+  }
+
+  public void setJournal(String journal) {
+    this.journal = journal;
+  }
+
+  public void setFirstPage(int firstPage){
+    fp = firstPage;
+  }
+
+  public void setLastPage(int lastPage) {
+    lp = lastPage;
+  }
+
+  public void setYear(int year) {
+    yyyy = year;
+  }
+
+  public List<Literature> getReferences() {
     return null;
   }
 
-  @Override
+  public void setReferences(List<Literature> references) { }
+
+  public void addReference(Literature reference) { }
+
   public String getMethod() {
     return "getReference";
+  }
+
+  public String getParameter() {
+    return "title*" + title;
+  }
+
+  public List<String> getColumns() {
+    String[] columns = new String[]{
+        "ecNumber","reference","authors","title","journal","volume",
+        "pages","year","organism","commentary","pubmedId","textmining"
+    };
+    return Arrays.asList(columns);
   }
 
   public List<String> getAuthors(){

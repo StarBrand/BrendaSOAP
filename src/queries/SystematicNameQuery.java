@@ -11,6 +11,6 @@ public class SystematicNameQuery extends FastQuery {
 
     @Override
   public List<String> getAnswer() throws Exception{
-    return getAnswer("getSystematicName");
+    return getAnswer("getSystematicName", "systematicName");
   }
 }

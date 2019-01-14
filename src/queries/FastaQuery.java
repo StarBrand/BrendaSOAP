@@ -21,15 +21,12 @@ public class FastaQuery implements Query {
     theAttibutes = new ArrayList<Attribute>();
   }
 
-  @Override
   public void setAttributes(Attribute... attributes) {}
 
-  @Override
   public List<String> getAnswer() throws Exception {
     return null;
   }
 
-  @Override
   public int numberOfAttibutes() {
     return 0;
   }

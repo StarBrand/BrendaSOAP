@@ -1,10 +1,14 @@
 package entities;
 
+import attributes.Attribute;
 import attributes.enzyme_estrucuture.ECNumber;
 import client.DefaultUser;
 import client.User;
 import com.sun.xml.internal.ws.api.message.ExceptionHasMessage;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import queries.FastQuery;
 import queries.Query;
 import queries.RecommendedNameQuery;
 import queries.SystematicNameQuery;
@@ -14,21 +18,25 @@ public class Enzyme implements Entity{
   private ECNumber ec;
   private String recommended_name;
   private String systematic_name;
-  private Query query;
+  private FastQuery query;
+  private List<Attribute> attributes;
   private User user = new DefaultUser();
 
   public Enzyme(ECNumber ec_code) throws Exception{
     ec = ec_code;
+    attributes = new ArrayList<Attribute>();
     fill();
   }
 
   public Enzyme(int ec1, int ec2, int ec3, int ec4) throws Exception{
     ec = new ECNumber(ec1, ec2, ec3, ec4);
+    attributes = new ArrayList<Attribute>();
     fill();
   }
 
   public Enzyme(String input) throws Exception{
     ec = new ECNumber(input);
+    attributes = new ArrayList<Attribute>();
     fill();
   }
 
@@ -68,4 +76,11 @@ public class Enzyme implements Entity{
     return ans;
   }
 
+  public List<Attribute> getAttribute() {
+    return attributes;
+  }
+
+  public void addAttribute(Attribute attribute) {
+    attributes.add(attribute);
+  }
 }

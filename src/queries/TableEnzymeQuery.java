@@ -21,17 +21,14 @@ public class TableEnzymeQuery implements Query {
     theAttributes = new ArrayList<Attribute>();
   }
 
-  @Override
   public void setAttributes(Attribute... attributes) {
 
   }
 
-  @Override
   public List<String> getAnswer() {
     return null;
   }
 
-  @Override
   public int numberOfAttibutes() {
     return theAttributes.size();
   }

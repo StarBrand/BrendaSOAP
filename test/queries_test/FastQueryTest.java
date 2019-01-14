@@ -15,8 +15,8 @@ import queries.RecommendedNameQuery;
 import queries.SystematicNameQuery;
 
 public class FastQueryTest {
-  private Query systematic_name;
-  private Query recommended_name;
+  private FastQuery systematic_name;
+  private FastQuery recommended_name;
   private User user;
   private ECNumber ec1;
   private ECNumber ec2;
@@ -55,7 +55,7 @@ public class FastQueryTest {
     systematic_name.setAttributes(ec1);
 
     assertNotNull(systematic_name.getAnswer().get(0));
-    assertEquals(systematic_name.getAnswer(), ( (FastQuery) systematic_name).getAnswer("getSystematicName"));
+    assertEquals(systematic_name.getAnswer(), ( (FastQuery) systematic_name).getAnswer("getSystematicName", "systematicName"));
 
     //needed before every query
     recommended_name = new RecommendedNameQuery(user);
@@ -67,13 +67,13 @@ public class FastQueryTest {
     recommended_name = new RecommendedNameQuery(user);
     recommended_name.setAttributes(ec1);
 
-    assertEquals(recommended_name.getAnswer(), ( (FastQuery) recommended_name).getAnswer("getRecommendedName"));
+    assertEquals(recommended_name.getAnswer(), ( (FastQuery) recommended_name).getAnswer("getRecommendedName", "recommendedName"));
 
     //needed before every query
     recommended_name = new RecommendedNameQuery(user);
     recommended_name.setAttributes(ec1);
 
-    assertNotSame(recommended_name.getAnswer(), ( (FastQuery) recommended_name).getAnswer("getSystematicName"));
+    assertNotSame(recommended_name.getAnswer(), ( (FastQuery) recommended_name).getAnswer("getSystematicName", "systematicName"));
 
     //needed before every query
     recommended_name = new RecommendedNameQuery(user);
