@@ -78,6 +78,6 @@ public class Protein implements Entity{
 
   @Override
   public String toString(){
-    return "ECNumber: "+enzyme.getEC().toString()+"/Organism: "+organism.getName();
+    return "ECNumber: "+enzyme.getEC().toString()+"/Organism: "+organism.getName()+"/Sequence: "+uniprot+" "+sequence_db;
   }
 }

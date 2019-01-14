@@ -15,7 +15,7 @@ public class SoapClient {
 
   public void makeCall() throws Exception {
     Service service = new Service();
-    call = (Call) service.createCall();
+    Call call = (Call) service.createCall();
     String endpoint = "https://www.brenda-enzymes.org/soap/brenda_server.php";
     MessageDigest md = MessageDigest.getInstance("SHA-256");
     md.update(user.getPassword().getBytes());

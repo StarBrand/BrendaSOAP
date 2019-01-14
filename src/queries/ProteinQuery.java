@@ -33,11 +33,9 @@ public class ProteinQuery implements Query {
     organism = new Organism();
     String result = client.getResult(","+ec.getParameter(), organism.getMethod());
     List<HashMap<String, String>> results = parserAnswer.getResult(result);
-    int i = 1;
     for(HashMap<String, String> ans:results){
       protein = new Protein(enzyme, new Organism( ans.get("organism") ), ans.get("sequenceCode"));
       proteins.add(protein);
-      i++;
     }
     return proteins;
   }
