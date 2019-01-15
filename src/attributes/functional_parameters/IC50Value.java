@@ -1,5 +1,6 @@
 package attributes.functional_parameters;
 
+import attributes.MoleculeDependentAttribute;
 import entities.Inhibitor;
 import entities.Literature;
 import entities.Molecule;
@@ -7,30 +8,34 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class IC50Value extends SingleValue {
+public class IC50Value extends SingleValue implements MoleculeDependentAttribute {
+
+  private Molecule inhibitor;
 
   public IC50Value(){
 
   }
 
   public IC50Value(double IC50value, String inhibitor, Literature... references){
-    super(IC50value, new Inhibitor(inhibitor), references);
+    super(IC50value, references);
+    this.inhibitor = new Inhibitor(inhibitor);
   }
 
   public IC50Value(double IC50value, double IC50maximum, String inhibitor, Literature... references){
-    super(IC50value, IC50maximum, new Inhibitor(inhibitor), references);
+    super(IC50value, IC50maximum, references);
+    this.inhibitor = new Inhibitor(inhibitor);
   }
 
-  public void setInhibitor(Inhibitor inhibitor) {
-    setMolecule(inhibitor);
+  public void setMolecule(Molecule inhibitor) {
+    this.inhibitor = inhibitor;
   }
 
-  public void setInhibitor(String inhibitor) {
-    setMolecule(new Inhibitor(inhibitor));
+  public void setMolecule(String inhibitor) {
+    this.inhibitor = new Inhibitor(inhibitor);
   }
 
-  public Inhibitor getInhibitor() {
-    return (Inhibitor) getMolecule();
+  public Molecule getMolecule() {
+    return inhibitor;
   }
 
   public String getMethod() {

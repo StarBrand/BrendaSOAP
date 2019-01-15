@@ -1,7 +1,7 @@
 package attributes.functional_parameters;
 
 import entities.Literature;
-import entities.NoMolecule;
+import entities.NullMolecule;
 import java.util.Arrays;
 import java.util.List;
 
@@ -12,11 +12,11 @@ public class PIValue extends SingleValue{
   }
 
   public PIValue(double piValue, Literature... references){
-    super(piValue, new NoMolecule(), references);
+    super(piValue, references);
   }
 
   public PIValue(double piValue, double piMaxValue, Literature... references){
-    super(piValue, piMaxValue, new NoMolecule(), references);
+    super(piValue, piMaxValue, references);
   }
 
   public String getMethod() {

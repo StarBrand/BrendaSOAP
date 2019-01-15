@@ -1,7 +1,7 @@
 package attributes.functional_parameters;
 
 import entities.Literature;
-import entities.NoMolecule;
+import entities.NullMolecule;
 import java.util.Arrays;
 import java.util.List;
 
@@ -12,11 +12,11 @@ public class TemperatureOptimum extends SingleValue{
   }
 
   public TemperatureOptimum(double temperatureOptimumValue, Literature... references){
-    super(temperatureOptimumValue, new NoMolecule(), references);
+    super(temperatureOptimumValue, references);
   }
 
   public TemperatureOptimum(double temperatureOptimumValue, double temperatureOptimumMaxValue, Literature... references){
-    super(temperatureOptimumValue, temperatureOptimumMaxValue, new NoMolecule(), references);
+    super(temperatureOptimumValue, temperatureOptimumMaxValue, references);
   }
 
   public String getMethod() {

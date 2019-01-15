@@ -8,28 +8,32 @@ import java.util.List;
 
 public class KIValue extends SingleValue{
 
+  private Molecule inhibitor;
+
   public KIValue(){
 
   }
 
   public KIValue(double kiValue, String inhibitor, Literature... references){
-    super(kiValue, new Inhibitor(inhibitor), references);
+    super(kiValue, references);
+    this.inhibitor = new Inhibitor(inhibitor);
   }
 
   public KIValue(double kiValue, double kiMaxValue, String inhibitor, Literature... references){
-    super(kiValue, kiMaxValue, new Inhibitor(inhibitor), references);
+    super(kiValue, kiMaxValue, references);
+    this.inhibitor = new Inhibitor(inhibitor);
   }
 
-  public void setInhibitor(Inhibitor inhibitor) {
-    setMolecule(inhibitor);
+  public void setMolecule(Molecule inhibitor) {
+    this.inhibitor = inhibitor;
   }
 
-  public void setInhibitor(String inhibitor) {
-    setMolecule(new Inhibitor(inhibitor));
+  public void setMolecule(String inhibitor) {
+    this.inhibitor = new Inhibitor(inhibitor);
   }
 
-  public Inhibitor getInhibitor() {
-    return (Inhibitor) getMolecule();
+  public Molecule getMolecule() {
+    return inhibitor;
   }
 
   public String getMethod() {

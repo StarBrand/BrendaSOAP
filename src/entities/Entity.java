@@ -10,6 +10,8 @@ public interface Entity {
 
   List<Attribute> getAttribute();
 
-  void addAttribute(Attribute attribute);
+  void addAttributes(Attribute... attribute);
+
+  String getParameter();
 
 }

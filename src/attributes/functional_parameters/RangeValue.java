@@ -7,24 +7,21 @@ public abstract class RangeValue extends FunctionalParameter{
 
   private double min_value;
   private double max_value;
-  private Molecule molecule;
 
   public RangeValue(){
 
   }
 
-  public RangeValue(double min_value, Molecule molecule, Literature... reference){
+  public RangeValue(double min_value, Literature... reference){
     super(reference);
     this.min_value = min_value;
     max_value = Double.NaN;
-    this.molecule = molecule;
   }
 
-  public RangeValue(double value, double max_value, Molecule molecule, Literature... reference){
+  public RangeValue(double value, double max_value, Literature... reference){
     super(reference);
     this.min_value = min_value;
     this.max_value = max_value;
-    this.molecule = molecule;
   }
 
   public void setMin_Value(double min_value) {
@@ -35,20 +32,12 @@ public abstract class RangeValue extends FunctionalParameter{
     this.max_value = max_value;
   }
 
-  protected void setMolecule(Molecule molecule) {
-    this.molecule = molecule;
-  }
-
   public double getMin_value() {
     return min_value;
   }
 
   public double getMax_value() {
     return max_value;
-  }
-
-  protected Molecule getMolecule() {
-    return molecule;
   }
 
   protected String getParameter(String parameter) {

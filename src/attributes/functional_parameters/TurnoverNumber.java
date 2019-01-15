@@ -1,34 +1,39 @@
 package attributes.functional_parameters;
 
 import entities.Literature;
+import entities.Molecule;
 import entities.Substrate;
 import java.util.Arrays;
 import java.util.List;
 
 public class TurnoverNumber extends SingleValue{
 
+  private Molecule substrate;
+
   public TurnoverNumber(){
 
   }
 
   public TurnoverNumber(double turnoverNumberValue, String substrate, Literature... references){
-    super(turnoverNumberValue, new Substrate(substrate), references);
+    super(turnoverNumberValue, references);
+    this.substrate = new Substrate(substrate);
   }
 
   public TurnoverNumber(double turnoverNumberValue, double turnoverNumberMaxValue, String substrate, Literature... references){
-    super(turnoverNumberValue, turnoverNumberMaxValue, new Substrate(substrate), references);
+    super(turnoverNumberValue, turnoverNumberMaxValue, references);
+    this.substrate = new Substrate(substrate);
   }
 
-  public void setSubstrate(Substrate substrate){
-    setMolecule(substrate);
+  public void setMolecule(Substrate substrate){
+    this.substrate = substrate;
   }
 
-  public void setSubstrate(String substrate){
-    setMolecule(new Substrate(substrate));
+  public void setMolecule(String substrate){
+    this.substrate = new Substrate(substrate);
   }
 
-  public Substrate getSubstrate(){
-    return (Substrate) getMolecule();
+  public Molecule getMolecule(){
+    return substrate;
   }
 
   public String getMethod() {

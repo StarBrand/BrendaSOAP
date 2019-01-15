@@ -1,6 +1,7 @@
 package queries;
 
 import client.User;
+import entities.Entity;
 import java.util.List;
 
 public class SystematicNameQuery extends FastQuery {
@@ -9,8 +10,8 @@ public class SystematicNameQuery extends FastQuery {
     super(aUser);
   }
 
-    @Override
-  public List<String> getAnswer() throws Exception{
-    return getAnswer("getSystematicName", "systematicName");
+  @Override
+  public List<?> getResult() throws Exception{
+    return getResult("getSystematicName", "systematicName");
   }
 }

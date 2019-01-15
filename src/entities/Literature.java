@@ -32,7 +32,7 @@ public class Literature implements Entity {
     SoapClient client = new SoapClient(new DefaultUser());
     client.makeCall();
     String result = client.getResult(
-        ",ecNumber*" + enzyme +"#organism*" + organism + "#reference*" + brenda, "getReference"
+        "ecNumber*" + enzyme +"#organism*" + organism + "#reference*" + brenda, "getReference"
     );
     String[] parser_result = result.split("#");
     authors = parser_result[2].split("\\*")[1].split("; ");
@@ -58,6 +58,28 @@ public class Literature implements Entity {
 
   }
 
+  public int getPubmedID(){
+    return pubmed;
+  }
+
+  public int getBrenda(){
+    return brenda;
+  }
+
+  public List<Attribute> getAttribute() {
+    return apa;
+  }
+
+  public Attribute getAPA(){
+    return apa.get(0);
+  }
+
+  public void addAttributes(Attribute... apa) {  }
+
+  public String getParameter() {
+    return "literature*" + String.valueOf(brenda);
+  }
+
   @Override
   public String toString(){
     return "<" + String.valueOf(brenda) + "> " + apa.get(0).toString() + " {Pubmed:" + String.valueOf(pubmed) + "}";
@@ -76,25 +98,5 @@ public class Literature implements Entity {
       ans = false;
     }
     return ans;
-  }
-
-  public int getPubmedID(){
-    return pubmed;
-  }
-
-  public int getBrenda(){
-    return brenda;
-  }
-
-  public List<Attribute> getAttribute() {
-    return apa;
-  }
-
-  public Attribute getAPA(){
-    return apa.get(0);
-  }
-
-  public void addAttribute(Attribute attribute) {
-
   }
 }

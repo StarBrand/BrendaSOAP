@@ -9,4 +9,12 @@ import java.util.List;
  */
 public interface Query {
 
+  void setEntities(Entity... entity);
+
+  void addAttributes(Attribute... attribute);
+
+  int numberOfAttributes();
+
+  List<?> getResult() throws Exception;
+
 }

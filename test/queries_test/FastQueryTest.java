@@ -34,54 +34,54 @@ public class FastQueryTest {
 
   @Test
   public void setAttributesTest(){
-    assertEquals(0, systematic_name.numberOfAttibutes());
-    assertEquals(0, recommended_name.numberOfAttibutes());
-    systematic_name.setAttributes(ec1);
-    recommended_name.setAttributes(ec1);
-    assertEquals(1, systematic_name.numberOfAttibutes());
-    assertEquals(1, recommended_name.numberOfAttibutes());
-    recommended_name.setAttributes(ec2);
-    systematic_name.setAttributes(ec2);
-    recommended_name.setAttributes(ec3);
-    systematic_name.setAttributes(ec3);
-    assertEquals(3, systematic_name.numberOfAttibutes());
-    assertEquals(3, recommended_name.numberOfAttibutes());
+    assertEquals(0, systematic_name.numberOfAttributes());
+    assertEquals(0, recommended_name.numberOfAttributes());
+    systematic_name.addAttributes(ec1);
+    recommended_name.addAttributes(ec1);
+    assertEquals(1, systematic_name.numberOfAttributes());
+    assertEquals(1, recommended_name.numberOfAttributes());
+    recommended_name.addAttributes(ec2);
+    systematic_name.addAttributes(ec2);
+    recommended_name.addAttributes(ec3);
+    systematic_name.addAttributes(ec3);
+    assertEquals(3, systematic_name.numberOfAttributes());
+    assertEquals(3, recommended_name.numberOfAttributes());
   }
 
   @Test
   public void getAnswerTest() throws Exception{
     //needed before every query
     systematic_name = new SystematicNameQuery(user);
-    systematic_name.setAttributes(ec1);
+    systematic_name.addAttributes(ec1);
 
-    assertNotNull(systematic_name.getAnswer().get(0));
-    assertEquals(systematic_name.getAnswer(), ( (FastQuery) systematic_name).getAnswer("getSystematicName", "systematicName"));
-
-    //needed before every query
-    recommended_name = new RecommendedNameQuery(user);
-    recommended_name.setAttributes(ec1);
-
-    assertNotNull(recommended_name.getAnswer());
+    assertNotNull(systematic_name.getResult().get(0));
+    assertEquals(systematic_name.getResult(), ( (FastQuery) systematic_name).getResult("getSystematicName", "systematicName"));
 
     //needed before every query
     recommended_name = new RecommendedNameQuery(user);
-    recommended_name.setAttributes(ec1);
+    recommended_name.addAttributes(ec1);
 
-    assertEquals(recommended_name.getAnswer(), ( (FastQuery) recommended_name).getAnswer("getRecommendedName", "recommendedName"));
-
-    //needed before every query
-    recommended_name = new RecommendedNameQuery(user);
-    recommended_name.setAttributes(ec1);
-
-    assertNotSame(recommended_name.getAnswer(), ( (FastQuery) recommended_name).getAnswer("getSystematicName", "systematicName"));
+    assertNotNull(recommended_name.getResult());
 
     //needed before every query
     recommended_name = new RecommendedNameQuery(user);
-    recommended_name.setAttributes(ec1);
-    recommended_name.setAttributes(ec2);
-    recommended_name.setAttributes(ec3);
+    recommended_name.addAttributes(ec1);
 
-    assertEquals(3, recommended_name.getAnswer().size());
+    assertEquals(recommended_name.getResult(), ( (FastQuery) recommended_name).getResult("getRecommendedName", "recommendedName"));
+
+    //needed before every query
+    recommended_name = new RecommendedNameQuery(user);
+    recommended_name.addAttributes(ec1);
+
+    assertNotSame(recommended_name.getResult(), ( (FastQuery) recommended_name).getResult("getSystematicName", "systematicName"));
+
+    //needed before every query
+    recommended_name = new RecommendedNameQuery(user);
+    recommended_name.addAttributes(ec1);
+    recommended_name.addAttributes(ec2);
+    recommended_name.addAttributes(ec3);
+
+    assertEquals(3, recommended_name.getResult().size());
   }
 
 }

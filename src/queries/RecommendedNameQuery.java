@@ -10,7 +10,7 @@ public class RecommendedNameQuery extends FastQuery {
   }
 
   @Override
-  public List<String> getAnswer() throws Exception{
-    return getAnswer("getRecommendedName", "recommendedName");
+  public List<?> getResult() throws Exception{
+    return getResult("getRecommendedName", "recommendedName");
   }
 }

@@ -1,4 +1,6 @@
+import attributes.enzyme_estrucuture.ECNumber;
 import client.DefaultUser;
+import client.SoapClient;
 import entities.Enzyme;
 import entities.Protein;
 import java.util.ArrayList;
@@ -12,19 +14,15 @@ public class Main {
 
     long startTime = System.currentTimeMillis();
 
-    Enzyme enzyme_type = new Enzyme(3,2,1,8);
-    Query query = new ProteinQuery(new DefaultUser());
-    List<Protein> proteins = ((ProteinQuery) query).getProteins(enzyme_type);
-    List<Protein> proteins_filter = new ArrayList<Protein>();
-    System.out.print("Número de proteinas: ");
-    System.out.println(proteins.size());
-    for (Protein protein:proteins){
-      if (!protein.getUniprot().equals("")){
-        proteins_filter.add(protein);
-      }
-    }
-    System.out.print("Número de proteinas filtradas: ");
-    System.out.println(proteins_filter.size());
+    /// Whatever
+
+    SoapClient client = new SoapClient(new DefaultUser());
+    client.makeCall();
+    String result = client.getResult(",ecNumber*1.1.1.1#organism*Homo sapiens","getSequence");
+    System.out.println(result);
+
+    /// Until here
+
     long endTime   = System.currentTimeMillis();
     long totalTime = endTime - startTime;
     System.out.print("It takes ");

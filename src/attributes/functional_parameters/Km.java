@@ -9,26 +9,30 @@ import org.apache.commons.math3.analysis.function.Sin;
 
 public class Km extends SingleValue {
 
+  private Molecule substrate;
+
   public Km(){ }
 
   public Km(double km_value, String substrate, Literature... references){
-    super(km_value, new Substrate(substrate), references);
+    super(km_value, references);
+    this.substrate = new Substrate(substrate);
   }
 
   public Km(double km_value, double km_max_value, String substrate, Literature... references){
-    super(km_value, km_max_value, new Substrate(substrate), references);
+    super(km_value, km_max_value, references);
+    this.substrate = new Substrate(substrate);
   }
 
-  public void setSubstrate(Substrate substrate) {
-    setMolecule(substrate);
+  public void setMolecule(Molecule substrate) {
+    this.substrate = substrate;
   }
 
   public void setSubstrate(String substrate) {
-    setMolecule(new Substrate(substrate));
+    this.substrate = new Substrate(substrate);
   }
 
-  public Substrate getSubstrate() {
-    return (Substrate) getMolecule();
+  public Molecule getMolecule() {
+    return substrate;
   }
 
   public String getMethod() {

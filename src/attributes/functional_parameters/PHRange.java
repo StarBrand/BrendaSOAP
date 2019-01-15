@@ -1,7 +1,7 @@
 package attributes.functional_parameters;
 
 import entities.Literature;
-import entities.NoMolecule;
+import entities.NullMolecule;
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,7 +10,7 @@ public class PHRange extends RangeValue{
   public PHRange(){ }
 
   public PHRange(double phMinValue, double phMaxValue, Literature... references){
-    super(phMinValue, phMaxValue, new NoMolecule(), references);
+    super(phMinValue, phMaxValue, references);
   }
 
   public String getMethod() {

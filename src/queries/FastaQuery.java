@@ -3,6 +3,7 @@ package queries;
 import attributes.Attribute;
 import client.SoapClient;
 import client.User;
+import entities.Entity;
 import entities.Enzyme;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,5 +30,25 @@ public class FastaQuery implements Query {
 
   public int numberOfAttibutes() {
     return 0;
+  }
+
+  public void setEntity(Entity entity) {
+
+  }
+
+  public void setEntities(Entity... entity) {
+
+  }
+
+  public void addAttributes(Attribute... attribute) {
+
+  }
+
+  public int numberOfAttributes() {
+    return 0;
+  }
+
+  public List<?> getResult() {
+    return null;
   }
 }

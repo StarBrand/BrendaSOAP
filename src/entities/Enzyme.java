@@ -42,11 +42,11 @@ public class Enzyme implements Entity{
 
   private void fill() throws Exception{
     query = new SystematicNameQuery(user);
-    query.setAttributes(ec);
-    systematic_name = query.getAnswer().get(0);
+    query.addAttributes(ec);
+    systematic_name = (String) query.getResult().get(0);
     query = new RecommendedNameQuery(user);
-    query.setAttributes(ec);
-    recommended_name = query.getAnswer().get(0);
+    query.addAttributes(ec);
+    recommended_name = (String) query.getResult().get(0);
   }
 
   public String getRecommended_name(){
@@ -80,7 +80,18 @@ public class Enzyme implements Entity{
     return attributes;
   }
 
-  public void addAttribute(Attribute attribute) {
-    attributes.add(attribute);
+  public void addAttributes(Attribute... attribute) {
+    for(Attribute a:attribute){
+      attributes.add(a);
+    }
+  }
+
+  public String getParameter() {
+    return "ecNumber*"+ec.toString();
+  }
+
+  @Override
+  public String toString(){
+    return "EC Number: "+ec.toString()+"/Recommended name: "+recommended_name+"/Systematic Name: "+systematic_name;
   }
 }

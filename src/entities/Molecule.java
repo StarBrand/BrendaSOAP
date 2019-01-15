@@ -36,7 +36,13 @@ public abstract class Molecule implements Entity{
     return attributes;
   }
 
-  public void addAttribute(Attribute attribute) {
-    attributes.add(attribute);
+  public void addAttributes(Attribute... attribute) {
+    for(Attribute a:attribute){
+      attributes.add(a);
+    }
+  }
+
+  protected String getParameter(String molecule){
+    return molecule + "*" + name;
   }
 }

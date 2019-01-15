@@ -10,4 +10,8 @@ public class Inhibitor extends Molecule{
   public boolean isInhibitor() {
     return true;
   }
+
+  public String getParameter() {
+    return getParameter("inhibitor");
+  }
 }

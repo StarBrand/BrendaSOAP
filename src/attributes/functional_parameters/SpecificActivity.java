@@ -1,7 +1,7 @@
 package attributes.functional_parameters;
 
 import entities.Literature;
-import entities.NoMolecule;
+import entities.NullMolecule;
 import java.util.Arrays;
 import java.util.List;
 
@@ -12,11 +12,11 @@ public class SpecificActivity extends SingleValue {
   }
 
   public SpecificActivity(double specificActivityValue, Literature... references){
-    super(specificActivityValue, new NoMolecule(), references);
+    super(specificActivityValue, references);
   }
 
   public SpecificActivity(double specificActivityValue, double specificActivityMaxValue, Literature... references){
-    super(specificActivityValue, specificActivityMaxValue, new NoMolecule(), references);
+    super(specificActivityValue, specificActivityMaxValue, references);
   }
 
   public String getMethod() {

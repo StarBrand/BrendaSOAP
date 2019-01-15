@@ -1,7 +1,7 @@
 package attributes.functional_parameters;
 
 import entities.Literature;
-import entities.NoMolecule;
+import entities.NullMolecule;
 import java.util.Arrays;
 import java.util.List;
 
@@ -12,7 +12,7 @@ public class TemperatureRange extends RangeValue{
   }
 
   public TemperatureRange(double temperatureMinValue, double temperatureMaxValue, Literature... references){
-    super(temperatureMinValue, temperatureMaxValue, new NoMolecule(), references);
+    super(temperatureMinValue, temperatureMaxValue, references);
   }
 
   public String getMethod() {

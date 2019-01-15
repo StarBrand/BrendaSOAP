@@ -10,4 +10,8 @@ public class Product extends Molecule {
   public boolean isProduct() {
     return true;
   }
+
+  public String getParameter() {
+    return getParameter("product");
+  }
 }

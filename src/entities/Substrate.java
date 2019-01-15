@@ -10,4 +10,8 @@ public class Substrate extends Molecule {
   public boolean isSubstrate(){
     return true;
   }
+
+  public String getParameter() {
+    return getParameter("substrate");
+  }
 }
