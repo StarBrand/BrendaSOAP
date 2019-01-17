@@ -1,12 +1,13 @@
 package queries;
 
 import attributes.Attribute;
-import attributes.enzyme_estrucuture.ECNumber;
+import attributes.enzyme_structure.ECNumber;
 import attributes.organism_related_information.Organism;
 import client.SoapClient;
 import client.User;
 import entities.Entity;
 import entities.Enzyme;
+import entities.Literature;
 import entities.Protein;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,8 +22,8 @@ public class ProteinQuery implements Query {
   private Organism organism;
   private ParserAnswer parserAnswer;
 
-  public ProteinQuery(User aUser){
-    user = aUser;
+  public ProteinQuery(User user){
+    this.user = user;
     client = new SoapClient(user);
     enzymes = new ArrayList<Enzyme>();
     proteins = new ArrayList<Protein>();
@@ -49,6 +50,7 @@ public class ProteinQuery implements Query {
 
   public List<?> getResult() throws Exception {
     Protein protein;
+    Literature reference;
     client.makeCall();
     String result;
     for (Enzyme e:enzymes){
@@ -57,7 +59,16 @@ public class ProteinQuery implements Query {
       result = client.getResult(ec.getParameter(), organism.getMethod());
       List<HashMap<String, String>> results = parserAnswer.getResult(result);
       for(HashMap<String, String> ans:results){
-        protein = new Protein(e, new Organism( ans.get("organism") ), ans.get("sequenceCode"));
+        organism.setAttribute(ans);
+        protein = new Protein(e, organism, ans.get("sequenceCode"));
+        for (String brenda_reference:ans.get("literature").split(", ")){
+          try {
+            reference = new Literature(Integer.valueOf(brenda_reference));
+            protein.getOrganism().addReference(reference);
+          } catch (Exception ex) {
+
+          }
+        }
         proteins.add(protein);
       }
     }

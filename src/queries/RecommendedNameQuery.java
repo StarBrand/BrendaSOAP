@@ -5,8 +5,8 @@ import java.util.List;
 
 public class RecommendedNameQuery extends FastQuery {
 
-  public RecommendedNameQuery(User aUser){
-    super(aUser);
+  public RecommendedNameQuery(User user){
+    super(user);
   }
 
   @Override

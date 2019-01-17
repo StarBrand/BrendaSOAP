@@ -1,12 +1,14 @@
 package attributes.functional_parameters;
 
+import attributes.MoleculeDependentAttribute;
 import entities.Inhibitor;
 import entities.Literature;
 import entities.Molecule;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
-public class KIValue extends SingleValue{
+public class KIValue extends SingleValue implements MoleculeDependentAttribute {
 
   private Molecule inhibitor;
 
@@ -14,13 +16,13 @@ public class KIValue extends SingleValue{
 
   }
 
-  public KIValue(double kiValue, String inhibitor, Literature... references){
-    super(kiValue, references);
+  public KIValue(double kiValue, String inhibitor, String commentary, Literature... references){
+    super(kiValue, commentary, references);
     this.inhibitor = new Inhibitor(inhibitor);
   }
 
-  public KIValue(double kiValue, double kiMaxValue, String inhibitor, Literature... references){
-    super(kiValue, kiMaxValue, references);
+  public KIValue(double kiValue, double kiMaxValue, String inhibitor, String commentary, Literature... references){
+    super(kiValue, kiMaxValue, commentary, references);
     this.inhibitor = new Inhibitor(inhibitor);
   }
 
@@ -45,7 +47,12 @@ public class KIValue extends SingleValue{
   }
 
   public List<String> getColumns() {
-    String[] columns = new String[]{"ecNumber","kiValue","kiValueMaximum","inhibitor","commentary","organism","ligandStructureId"};
+    String[] columns = new String[]{"kiValue","kiValueMaximum","inhibitor","commentary","literature"};
     return Arrays.asList(columns);
+  }
+
+  public void setAttribute(HashMap<String, String> resultOfQuery) {
+    setMolecule(resultOfQuery.get("inhibitor"));
+    super.setAttribute(resultOfQuery);
   }
 }

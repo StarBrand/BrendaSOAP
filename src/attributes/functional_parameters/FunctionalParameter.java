@@ -1,37 +1,25 @@
 package attributes.functional_parameters;
 
+import attributes.AbstractAttribute;
 import attributes.Attribute;
 import entities.Literature;
 import entities.Molecule;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
-public abstract class FunctionalParameter implements Attribute {
+public abstract class FunctionalParameter extends AbstractAttribute {
 
-  private List<Literature> references;
+  public FunctionalParameter(){
 
-  public FunctionalParameter(Literature... literature){
-    references = new ArrayList<Literature>();
-    for(Literature l:literature){
-      references.add(l);
-    }
   }
 
-  public List<Literature> getReferences() {
-    return references;
+  public FunctionalParameter(String commentary, Literature... literature){
+    super(commentary, literature);
   }
 
-  public void setReferences(List<Literature> references) {
-    this.references = references;
+  @Override
+  public void setAttribute(HashMap<String, String> resultOfQuery) {
+    super.setAttribute(resultOfQuery);
   }
-
-  public void addReference(Literature reference) {
-    try {
-      references.add(reference);
-    } catch (Exception e) {
-      references = new ArrayList<Literature>();
-      references.add(reference);
-    }
-  }
-
 }

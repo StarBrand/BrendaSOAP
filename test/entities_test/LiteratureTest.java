@@ -5,7 +5,7 @@ import static junit.framework.TestCase.assertNotNull;
 import static junit.framework.TestCase.assertNotSame;
 
 
-import attributes.APAcitation;
+import attributes.APACitation;
 import entities.Literature;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,14 +14,17 @@ public class LiteratureTest {
   private Literature literature1;
   private Literature literature2;
   private Literature literature3;
-  private APAcitation apa;
+  private APACitation apa;
+  private APACitation nullApa;
 
   @Before
   public void SetUp() throws Exception{
-    apa = new APAcitation("author", "title", "journal", 1, 10, 1994);
+    apa = new APACitation("author", "title", "journal", 1, 10, 1994);
+    nullApa = new APACitation();
     literature1 = new Literature(11111, 22222, apa);
     literature2 = new Literature(11111, 22222, apa);
-    literature3 = new Literature(285564, "1.1.1.1", "Mus musculus");
+    literature3 = new Literature(285564);
+    literature3.fill("1.1.1.1", "Mus musculus");
   }
 
   @Test
@@ -34,6 +37,19 @@ public class LiteratureTest {
   public void literatureEqualsTest(){
     assertEquals(literature1, literature2);
     assertNotSame(literature1, new Object());
+  }
+
+  @Test
+  public void gettersTest(){
+    assertEquals(22222, literature1.getBrenda());
+    assertEquals(11111, literature1.getPubmedID());
+    assertEquals(apa, literature1.getAttribute().get(0));
+    assertEquals(apa, literature1.getAPA());
+    assertEquals(literature1.getAPA(), literature1.getAttribute().get(0));
+    literature1.addAttributes(nullApa);
+    assertNotSame(nullApa, literature1.getAttribute().get(0));
+    assertEquals(apa, literature1.getAttribute().get(0));
+    assertEquals("literature*22222", literature1.getParameter());
   }
 
   @Test

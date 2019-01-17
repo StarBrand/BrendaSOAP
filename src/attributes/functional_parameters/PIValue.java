@@ -1,8 +1,8 @@
 package attributes.functional_parameters;
 
 import entities.Literature;
-import entities.NullMolecule;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class PIValue extends SingleValue{
@@ -11,12 +11,12 @@ public class PIValue extends SingleValue{
 
   }
 
-  public PIValue(double piValue, Literature... references){
-    super(piValue, references);
+  public PIValue(double piValue, String commentary, Literature... references){
+    super(piValue, commentary, references);
   }
 
-  public PIValue(double piValue, double piMaxValue, Literature... references){
-    super(piValue, piMaxValue, references);
+  public PIValue(double piValue, double piMaxValue, String commentary, Literature... references){
+    super(piValue, piMaxValue, commentary, references);
   }
 
   public String getMethod() {
@@ -28,7 +28,7 @@ public class PIValue extends SingleValue{
   }
 
   public List<String> getColumns() {
-    String[] columns = new String[]{"ecNumber","piValue","piValueMaximum","commentary","organism"};
+    String[] columns = new String[]{"piValue","piValueMaximum","commentary","literature"};
     return Arrays.asList(columns);
   }
 }

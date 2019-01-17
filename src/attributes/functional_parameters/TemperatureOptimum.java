@@ -1,8 +1,8 @@
 package attributes.functional_parameters;
 
 import entities.Literature;
-import entities.NullMolecule;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class TemperatureOptimum extends SingleValue{
@@ -11,12 +11,12 @@ public class TemperatureOptimum extends SingleValue{
 
   }
 
-  public TemperatureOptimum(double temperatureOptimumValue, Literature... references){
-    super(temperatureOptimumValue, references);
+  public TemperatureOptimum(double temperatureOptimumValue, String commentary, Literature... references){
+    super(temperatureOptimumValue, commentary, references);
   }
 
-  public TemperatureOptimum(double temperatureOptimumValue, double temperatureOptimumMaxValue, Literature... references){
-    super(temperatureOptimumValue, temperatureOptimumMaxValue, references);
+  public TemperatureOptimum(double temperatureOptimumValue, double temperatureOptimumMaxValue, String commentary, Literature... references){
+    super(temperatureOptimumValue, temperatureOptimumMaxValue, commentary, references);
   }
 
   public String getMethod() {
@@ -28,7 +28,7 @@ public class TemperatureOptimum extends SingleValue{
   }
 
   public List<String> getColumns() {
-    String[] columns = new String[]{"ecNumber","temperatureOptimum","temperatureOptimumMaximum","commentary","organism"};
+    String[] columns = new String[]{"temperatureOptimum","temperatureOptimumMaximum","commentary","literature"};
     return Arrays.asList(columns);
   }
 }

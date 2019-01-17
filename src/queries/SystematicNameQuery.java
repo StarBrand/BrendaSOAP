@@ -6,8 +6,8 @@ import java.util.List;
 
 public class SystematicNameQuery extends FastQuery {
 
-  public SystematicNameQuery(User aUser){
-    super(aUser);
+  public SystematicNameQuery(User user){
+    super(user);
   }
 
   @Override

@@ -12,32 +12,21 @@ public class FastaQuery implements Query {
 
   private SoapClient client;
   private User user;
-  private Enzyme enzyme;
-  private List<Attribute> theAttibutes;
+  private List<Entity> proteins;
+  private List<Attribute> attributes;
 
-  public FastaQuery(Enzyme aEnzyme, User aUser){
-    enzyme = aEnzyme;
-    user = aUser;
+  public FastaQuery(User user){
+    this.user = user;
     client = new SoapClient(user);
-    theAttibutes = new ArrayList<Attribute>();
+    proteins = new ArrayList<Entity>();
+    attributes = new ArrayList<Attribute>();
   }
 
-  public void setAttributes(Attribute... attributes) {}
-
-  public List<String> getAnswer() throws Exception {
-    return null;
-  }
-
-  public int numberOfAttibutes() {
-    return 0;
-  }
-
-  public void setEntity(Entity entity) {
-
-  }
 
   public void setEntities(Entity... entity) {
-
+    for (Entity e:entity){
+      proteins.add(e);
+    }
   }
 
   public void addAttributes(Attribute... attribute) {

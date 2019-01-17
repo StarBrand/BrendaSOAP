@@ -1,8 +1,8 @@
 package attributes.functional_parameters;
 
 import entities.Literature;
-import entities.NullMolecule;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class SpecificActivity extends SingleValue {
@@ -11,12 +11,12 @@ public class SpecificActivity extends SingleValue {
 
   }
 
-  public SpecificActivity(double specificActivityValue, Literature... references){
-    super(specificActivityValue, references);
+  public SpecificActivity(double specificActivityValue, String commentary, Literature... references){
+    super(specificActivityValue, commentary, references);
   }
 
-  public SpecificActivity(double specificActivityValue, double specificActivityMaxValue, Literature... references){
-    super(specificActivityValue, specificActivityMaxValue, references);
+  public SpecificActivity(double specificActivityValue, double specificActivityMaxValue, String commentary, Literature... references){
+    super(specificActivityValue, specificActivityMaxValue, commentary, references);
   }
 
   public String getMethod() {
@@ -28,7 +28,7 @@ public class SpecificActivity extends SingleValue {
   }
 
   public List<String> getColumns() {
-    String[] columns = new String[]{"ecNumber","specificActivity","specificActivityMaximum","commentary","organism"};
+    String[] columns = new String[]{"specificActivity","specificActivityMaximum","commentary","literature"};
     return Arrays.asList(columns);
   }
 }

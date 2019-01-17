@@ -1,12 +1,14 @@
 package attributes.functional_parameters;
 
+import attributes.MoleculeDependentAttribute;
 import entities.Literature;
 import entities.Molecule;
 import entities.Substrate;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
-public class Kcat extends SingleValue {
+public class Kcat extends SingleValue implements MoleculeDependentAttribute {
 
   private Molecule substrate;
 
@@ -14,13 +16,13 @@ public class Kcat extends SingleValue {
 
   }
 
-  public Kcat(double kcat_value, String substrate, Literature... references){
-    super(kcat_value, references);
+  public Kcat(double kcat_value, String substrate, String commentary, Literature... references){
+    super(kcat_value, commentary, references);
     this.substrate = new Substrate(substrate);
   }
 
-  public Kcat(double kcat_value, double kcat_max_value, String substrate, Literature... references){
-    super(kcat_value, kcat_max_value, references);
+  public Kcat(double kcat_value, double kcat_max_value, String substrate, String commentary, Literature... references){
+    super(kcat_value, kcat_max_value, commentary, references);
     this.substrate = new Substrate(substrate);
   }
 
@@ -45,7 +47,13 @@ public class Kcat extends SingleValue {
   }
 
   public List<String> getColumns() {
-    String[] columns = new String[]{"ecNumber","kcatKmValue","kcatKmValueMaximum","substrate","commentary","organism","ligandStructureId"};
+    String[] columns = new String[]{"kcatKmValue","kcatKmValueMaximum","substrate","commentary","literature"};
     return Arrays.asList(columns);
+  }
+
+  @Override
+  public void setAttribute(HashMap<String, String> resultOfQuery) {
+    setMolecule(resultOfQuery.get("substrate"));
+    super.setAttribute(resultOfQuery);
   }
 }

@@ -1,8 +1,8 @@
 package attributes.functional_parameters;
 
 import entities.Literature;
-import entities.NullMolecule;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class TemperatureRange extends RangeValue{
@@ -11,8 +11,8 @@ public class TemperatureRange extends RangeValue{
 
   }
 
-  public TemperatureRange(double temperatureMinValue, double temperatureMaxValue, Literature... references){
-    super(temperatureMinValue, temperatureMaxValue, references);
+  public TemperatureRange(double temperatureMinValue, double temperatureMaxValue, String commentary, Literature... references){
+    super(temperatureMinValue, temperatureMaxValue, commentary, references);
   }
 
   public String getMethod() {
@@ -24,7 +24,7 @@ public class TemperatureRange extends RangeValue{
   }
 
   public List<String> getColumns() {
-    String[] columns = new String[]{"ecNumber","temperatureRange","temperatureRangeMaximum","commentary","organism"};
+    String[] columns = new String[]{"temperatureRange","temperatureRangeMaximum","commentary","literature"};
     return Arrays.asList(columns);
   }
 }

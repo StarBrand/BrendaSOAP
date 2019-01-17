@@ -1,7 +1,6 @@
 package queries;
 
 import attributes.Attribute;
-import attributes.enzyme_estrucuture.ECNumber;
 import client.SoapClient;
 import client.User;
 import entities.Entity;
@@ -12,12 +11,12 @@ import java.util.List;
 public abstract class FastQuery implements Query {
 
   private User user;
-  protected SoapClient client;
-  protected List<Attribute> attributes;
+  private SoapClient client;
+  private List<Attribute> attributes;
   private ParserAnswer parserAnswer;
 
-  public FastQuery(User aUser){
-    user = aUser;
+  public FastQuery(User user){
+    this.user = user;
     client = new SoapClient(user);
     attributes = new ArrayList<Attribute>();
     parserAnswer = new ParserAnswer();

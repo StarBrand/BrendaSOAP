@@ -4,13 +4,12 @@ import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
 import static junit.framework.TestCase.assertNotSame;
 
-import attributes.enzyme_estrucuture.ECNumber;
+import attributes.enzyme_structure.ECNumber;
 import client.DefaultUser;
 import client.User;
 import org.junit.Before;
 import org.junit.Test;
 import queries.FastQuery;
-import queries.Query;
 import queries.RecommendedNameQuery;
 import queries.SystematicNameQuery;
 

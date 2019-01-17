@@ -1,11 +1,18 @@
-package attributes.enzyme_estrucuture;
+package attributes.enzyme_structure;
 
 import attributes.Attribute;
 import entities.Literature;
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
+/**
+ * ECNumber class defined as the EC number format
+ * of types of enzymes with many formats and constructor
+ * for easy implementation
+ *
+ * @author Juan Saez
+ */
 public class ECNumber implements Attribute {
 
   private int digit1;
@@ -14,11 +21,24 @@ public class ECNumber implements Attribute {
   private int digit4;
   private String ec_code;
 
+  /**
+   * A constructor given a String with EC Number format: X.X.X.X
+   *
+   * @param ec the string with the EC number
+   */
   public ECNumber(String ec){
     ec_code = ec;
     decodeEC();
   }
 
+  /**
+   * A constructor given four digits in the EC number order
+   *
+   * @param ec1 the first digit
+   * @param ec2 the second digit
+   * @param ec3 the third digit
+   * @param ec4 the four digit
+   */
   public ECNumber(int ec1, int ec2, int ec3, int ec4){
     digit1 = ec1;
     digit2 = ec2;
@@ -50,13 +70,31 @@ public class ECNumber implements Attribute {
     }
   }
 
+  /**
+   * EC NUmber doesn't have reference
+   *
+   * @return null
+   */
   public List<Literature> getReferences() {
+    return null;
+  }
+
+  /**
+   * the EC Number doesn't have commentaries
+   *
+   * @param commentary the commentary of an Attribute
+   */
+  public void setCommentary(String commentary) {
+
+  }
+
+  public String getCommentary() {
     return null;
   }
 
   public void setReferences(List<Literature> references) {  }
 
-  public void addReference(Literature reference) { }
+  public void addReference(Literature... reference) { }
 
   public String getMethod() {
     return "getEcNumber";
@@ -69,5 +107,9 @@ public class ECNumber implements Attribute {
   public List<String> getColumns() {
     String[] columns = new String[]{"ecNumber", "commentary"};
     return Arrays.asList(columns);
+  }
+
+  public void setAttribute(HashMap<String, String> resultOfQuery) {
+
   }
 }

@@ -3,6 +3,7 @@ package attributes.functional_parameters;
 import entities.Inhibitor;
 import entities.Literature;
 import entities.Molecule;
+import java.util.HashMap;
 
 public abstract class SingleValue extends FunctionalParameter{
 
@@ -13,14 +14,14 @@ public abstract class SingleValue extends FunctionalParameter{
 
   }
 
-  public SingleValue(double value, Literature... reference){
-    super(reference);
+  public SingleValue(double value, String commentary, Literature... reference){
+    super(commentary, reference);
     this.value = value;
     max_value = Double.NaN;
   }
 
-  public SingleValue(double value, double max_value, Literature... reference){
-    super(reference);
+  public SingleValue(double value, double max_value, String commentary, Literature... reference){
+    super(commentary, reference);
     this.value = value;
     this.max_value = max_value;
   }
@@ -49,4 +50,18 @@ public abstract class SingleValue extends FunctionalParameter{
     return out;
   }
 
+  @Override
+  public void setAttribute(HashMap<String, String> resultOfQuery) {
+    try {
+      setValue(Integer.valueOf(resultOfQuery.get(this.getColumns().get(0))));
+    } catch (Exception e){
+
+    }
+    try {
+      setMax_value(Integer.valueOf(resultOfQuery.get(this.getColumns().get(1))));
+    } catch (Exception e){
+
+    }
+    super.setAttribute(resultOfQuery);
+  }
 }
