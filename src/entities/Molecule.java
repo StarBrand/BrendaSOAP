@@ -8,7 +8,7 @@ import java.util.List;
  * Molecule class defined as a molecule
  * which determines some attribute ({@Link attributes.MoleculeDependentAttribute})
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  * @see attributes.MoleculeDependentAttribute
  */
 public abstract class Molecule implements Entity{

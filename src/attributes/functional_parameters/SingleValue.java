@@ -1,67 +1,87 @@
 package attributes.functional_parameters;
 
+import attributes.NumericalAttribute;
 import entities.Inhibitor;
 import entities.Literature;
 import entities.Molecule;
 import java.util.HashMap;
 
-public abstract class SingleValue extends FunctionalParameter{
+/**
+ * RangeValue abstract class defined as the superclass
+ * of the range values functional parameters attribute
+ *
+ * @author Juan Saez Hidalgo
+ */
+public abstract class SingleValue extends NumericalAttribute {
 
-  private double value;
-  private double max_value;
-
+  /**
+   * An empty constructor
+   * letting the parameters for default (empty lists, empty string,
+   * Nan numbers) to be filled with a query
+   */
   public SingleValue(){
 
   }
 
+  /**
+   * The constructor given all parameters
+   *
+   * @param value       The value of the attribute
+   * @param commentary  The commentary of the observation
+   * @param reference   The literature {@Link entities.Literature}of the observation
+   * @see entities.Literature
+   */
   public SingleValue(double value, String commentary, Literature... reference){
-    super(commentary, reference);
-    this.value = value;
-    max_value = Double.NaN;
+    super(value, commentary, reference);
   }
 
+  /**
+   * The constructor given all parameters
+   * And the maximum value when Brenda defines a range for a single value
+   * (exceptionally)
+   *
+   * @param value       The minimum value of the attribute
+   * @param max_value   The maximum value of the attribute
+   * @param commentary  The commentary of the observation
+   * @param reference   The literature {@Link entities.Literature}of the observation
+   * @see entities.Literature
+   */
   public SingleValue(double value, double max_value, String commentary, Literature... reference){
-    super(commentary, reference);
-    this.value = value;
-    this.max_value = max_value;
+    super(value, max_value, commentary, reference);
   }
 
+  /**
+   * Sest the value
+   *
+   * @param value Value
+   */
   public void setValue(double value) {
-    this.value = value;
+    setMin_Value(value);
   }
 
-  public void setMax_value(double max_value) {
-    this.max_value = max_value;
-  }
-
+  /**
+   * Gets the value (or minimum value)
+   *
+   * @return Value
+   */
   public double getValue() {
-    return value;
+    return getMin_value();
   }
 
-  public double getMax_value() {
-    return max_value;
-  }
-
-  protected String getParameter(String parameter) {
-    String out =  parameter + "*" + value;
-    if (! Double.isNaN(max_value)){
-      out += "#" + parameter + "Maximum*" + max_value;
-    }
-    return out;
+  /**
+   * Gets the parameter for the SOAP query given the parameter who
+   * extends (subclass) this class, to be used for the subclasses
+   *
+   * @param parameter The name of the Subclass parameter
+   * @param extra     Any extra information
+   * @return          The parameter for the SOAP query
+   */
+  protected String getParameter(String parameter, String... extra) {
+    return super.getParameter(parameter, extra);
   }
 
   @Override
   public void setAttribute(HashMap<String, String> resultOfQuery) {
-    try {
-      setValue(Integer.valueOf(resultOfQuery.get(this.getColumns().get(0))));
-    } catch (Exception e){
-
-    }
-    try {
-      setMax_value(Integer.valueOf(resultOfQuery.get(this.getColumns().get(1))));
-    } catch (Exception e){
-
-    }
     super.setAttribute(resultOfQuery);
   }
 }

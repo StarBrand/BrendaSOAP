@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * The type Attribute for every parameter in the Brenda database
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  */
 public interface Attribute {
 

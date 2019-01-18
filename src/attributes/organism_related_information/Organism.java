@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Organism class, in which the protein is
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  */
 public class Organism extends AbstractAttribute {
 

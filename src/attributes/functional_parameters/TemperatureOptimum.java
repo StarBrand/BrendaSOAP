@@ -5,16 +5,47 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * TemperaturOptimum class, temperature optimum value [ °C ]
+ *
+ * @author Juan Saez Hidalgo
+ */
 public class TemperatureOptimum extends SingleValue{
 
+  /**
+   * An empty constructor
+   * letting the parameters for default (empty lists, empty string,
+   * Nan numbers) to be filled with a query
+   */
   public TemperatureOptimum(){
 
   }
 
+
+  /**
+   * The constructor given all parameters
+   *
+   * @param temperatureOptimumValue The value of the attribute
+   * @param commentary              The commentary of the observation
+   * @param references              The literature {@Link entities.Literature}of the observation
+   * @see entities.Literature
+   */
   public TemperatureOptimum(double temperatureOptimumValue, String commentary, Literature... references){
     super(temperatureOptimumValue, commentary, references);
   }
 
+
+  /**
+   * The constructor given all parameters
+   * And the maximum value when Brenda defines a range for a single value
+   * (exceptionally)
+   *
+   * @param temperatureOptimumValue     The minimum value of the attribute
+   * @param temperatureOptimumMaxValue  The maximum value of the attribute
+   * @param commentary                  The commentary of the observation
+   * @param references                  The literature {@Link entities.Literature}of the observation
+   * @see entities.Literature
+   */
   public TemperatureOptimum(double temperatureOptimumValue, double temperatureOptimumMaxValue, String commentary, Literature... references){
     super(temperatureOptimumValue, temperatureOptimumMaxValue, commentary, references);
   }

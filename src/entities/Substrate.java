@@ -4,7 +4,7 @@ package entities;
  * Product class, a {@Link Molecule}
  * in the rol of substrate in a catalytic reaction
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  */
 public class Substrate extends Molecule {
 

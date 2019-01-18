@@ -69,7 +69,7 @@ public class EnzymeStructureTest {
 
     // AASequence
     assertEquals("something", aaSequence.getCommentary());
-    //assertEquals(new Literature(11111), aaSequence.getReferences().get(0));
+    assertEquals(new Literature(11111), aaSequence.getReferences().get(0));
     assertEquals("ALWTA", aaSequence.getSequence());
     assertEquals(5, aaSequence.getNumberOfAminoacids());
     assertEquals("getSequence", aaSequence.getMethod());
@@ -77,16 +77,16 @@ public class EnzymeStructureTest {
 
     // MolecularWeight
     assertEquals("range value", molecularWeight2.getCommentary());
-    assertEquals(1000, molecularWeight1.getValue());
-    assertEquals(2000, molecularWeight2.getMax_value());
-    //assertEquals(new Literature(11111), molecularWeight1.getReferences().get(0));
+    assertEquals(Double.valueOf(1000), molecularWeight1.getValue());
+    assertEquals(Double.valueOf(2000), molecularWeight2.getMax_value());
+    assertEquals(new Literature(11111), molecularWeight1.getReferences().get(0));
     assertEquals("getMolecularWeight", molecularWeight1.getMethod());
-    assertEquals("molecularWeight*1000", molecularWeight1.getParameter());
-    assertEquals("molecularWeight*1000#molecularWeightMaximum*2000", molecularWeight2.getParameter());
+    assertEquals("molecularWeight*1000.0#molecularWeightMaximum*#commentary*unique value", molecularWeight1.getParameter());
+    assertEquals("molecularWeight*1000.0#molecularWeightMaximum*2000.0#commentary*range value", molecularWeight2.getParameter());
   }
 
   @Test
-  public void setterTest(){
+  public void settersTest(){
     // EC Number
     ec1.setCommentary("something");
     assertNotSame("something", ec1.getCommentary());
@@ -104,11 +104,11 @@ public class EnzymeStructureTest {
 
     // MolecularWeight
     assertEquals("", nullMW.getCommentary());
-    assertEquals(-1, nullMW.getValue());
-    assertEquals(-1, nullMW.getMax_value());
-    assertEquals(-1, molecularWeight1.getMax_value());
+    assertEquals(Double.NaN, nullMW.getValue());
+    assertEquals(Double.NaN, nullMW.getMax_value());
+    assertEquals(Double.NaN, molecularWeight1.getMax_value());
     assertEquals("getMolecularWeight", nullMW.getMethod());
-    assertEquals("molecularWeight*", nullMW.getParameter());
+    assertEquals("molecularWeight*#molecularWeightMaximum*#commentary*", nullMW.getParameter());
   }
 
   @Test
@@ -119,7 +119,7 @@ public class EnzymeStructureTest {
         parserAnswer.getResult(results).get(0)
     );
     assertEquals("nothing", nullSequence.getCommentary());
-    //assertEquals(new Literature(11111), nullSequence.getReferences().get(0));
+    assertEquals(new Literature(11111), nullSequence.getReferences().get(0));
     assertEquals("LLLLLL", nullSequence.getSequence());
     assertEquals(6, nullSequence.getNumberOfAminoacids());
     assertEquals("sequence*LLLLLL#noOfAminoAcids*6", nullSequence.getParameter());
@@ -130,10 +130,10 @@ public class EnzymeStructureTest {
         parserAnswer.getResult(results).get(0)
     );
     assertEquals("unique value for test", nullMW.getCommentary());
-    assertEquals(10000, nullMW.getValue());
-    assertEquals(-1, nullMW.getMax_value());
+    assertEquals(Double.valueOf(10000), nullMW.getValue());
+    assertEquals(Double.NaN, nullMW.getMax_value());
     assertEquals("getMolecularWeight", nullMW.getMethod());
-    assertEquals("molecularWeight*10000", nullMW.getParameter());
+    assertEquals("molecularWeight*10000.0#molecularWeightMaximum*#commentary*unique value for test", nullMW.getParameter());
   }
 
 }

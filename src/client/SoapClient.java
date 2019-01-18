@@ -4,15 +4,32 @@ import org.apache.axis.client.Service;
 import javax.xml.namespace.QName;
 import java.security.MessageDigest;
 
+/**
+ * SoapClient class, this generates the client
+ * user, and service of the SOAP to make the queries
+ * on Brenda
+ *
+ * @author Juan Saez Hidalgo
+ */
 public class SoapClient {
   private User user;
   private Call call;
   private StringBuffer hexString;
 
-  public SoapClient(User aUser){
-    user = aUser;
+  /**
+   * The constructor given the user
+   *
+   * @param user the user in User Class format
+   */
+  public SoapClient(User user){
+    this.user = user;
   }
 
+  /**
+   * Do the previous protocol for a query
+   *
+   * @throws Exception Call SOAP Exception
+   */
   public void makeCall() throws Exception {
     Service service = new Service();
     call = (Call) service.createCall();
@@ -31,6 +48,14 @@ public class SoapClient {
     call.setTargetEndpointAddress( new java.net.URL(endpoint) );
   }
 
+  /**
+   * Gets the result of the query
+   *
+   * @param parameter The parameter of the query
+   * @param method    The method of the query
+   * @return The result in the Brenda format
+   * @throws Exception Call Exception
+   */
   public String getResult(String parameter, String method) throws Exception{
     String parameters = user.getMail()+","+hexString+","+parameter;
     call.setOperationName(new QName("http://soapinterop.org/", method));

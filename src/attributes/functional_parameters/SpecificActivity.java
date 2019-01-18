@@ -5,16 +5,45 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * SpecificActivity class, specific activity valur [ µmol/min/mg ]
+ *
+ * @author Juan Saez Hidalgo
+ */
 public class SpecificActivity extends SingleValue {
 
+  /**
+   * An empty constructor
+   * letting the parameters for default (empty lists, empty string,
+   * Nan numbers) to be filled with a query
+   */
   public SpecificActivity(){
 
   }
 
+  /**
+   * The constructor given all parameters
+   *
+   * @param specificActivityValue The value of the attribute
+   * @param commentary            The commentary of the observation
+   * @param references            The literature {@Link entities.Literature}of the observation
+   * @see entities.Literature
+   */
   public SpecificActivity(double specificActivityValue, String commentary, Literature... references){
     super(specificActivityValue, commentary, references);
   }
 
+  /**
+   * The constructor given all parameters
+   * And the maximum value when Brenda defines a range for a single value
+   * (exceptionally)
+   *
+   * @param specificActivityValue     The minimum value of the attribute
+   * @param specificActivityMaxValue  The maximum value of the attribute
+   * @param commentary                The commentary of the observation
+   * @param references                The literature {@Link entities.Literature}of the observation
+   * @see entities.Literature
+   */
   public SpecificActivity(double specificActivityValue, double specificActivityMaxValue, String commentary, Literature... references){
     super(specificActivityValue, specificActivityMaxValue, commentary, references);
   }

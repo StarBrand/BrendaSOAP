@@ -4,7 +4,7 @@ package entities;
  * Product class, a {@Link Molecule}
  * in the rol of inhibitor to an enzyme in a catalytic reaction
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  */
 public class Inhibitor extends Molecule{
 

@@ -1,6 +1,6 @@
 package attributes.enzyme_structure;
 
-import attributes.AbstractAttribute;
+import attributes.NumericalAttribute;
 import entities.Literature;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -10,12 +10,9 @@ import java.util.List;
  * MolecularWeight class, this attribute defines a number (with
  * few exceptions, a range) of molecular weight of a protein
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  */
-public class MolecularWeight extends AbstractAttribute{
-
-  private int value = -1;
-  private int max_value = -1;
+public class MolecularWeight extends NumericalAttribute {
 
   /**
    * An empty constructor
@@ -35,9 +32,8 @@ public class MolecularWeight extends AbstractAttribute{
    * @param reference       (A list of) reference of the Attribute
    * @see entities.Literature
    */
-  public MolecularWeight(int molecular_weight, String commentary, Literature... reference){
-    super(commentary, reference);
-    value = molecular_weight;
+  public MolecularWeight(double molecular_weight, String commentary, Literature... reference){
+    super(molecular_weight, commentary, reference);
   }
 
   /**
@@ -45,16 +41,14 @@ public class MolecularWeight extends AbstractAttribute{
    * value of the range) and the maximum weight (as the maximum value) the commentary an (a
    * list of) reference({@Link entities.Literature})
    *
-   * @param molecular_weight the value minimum value of molecular weight
-   * @param molecular_weight the value maximum value of molecular weight
-   * @param commentary       A commentary of the Attribute
-   * @param reference       (A list of) reference of the Attribute
+   * @param molecular_weight     the value minimum value of molecular weight
+   * @param molecular_weight_max the value maximum value of molecular weight
+   * @param commentary           A commentary of the Attribute
+   * @param reference            (A list of) reference of the Attribute
    * @see entities.Literature
    */
-  public MolecularWeight(int molecular_weight, int molecular_weight_max, String commentary, Literature... reference){
-    super(commentary, reference);
-    value = molecular_weight;
-    max_value = molecular_weight_max;
+  public MolecularWeight(double molecular_weight, double molecular_weight_max, String commentary, Literature... reference){
+    super(molecular_weight, molecular_weight_max, commentary, reference);
   }
 
   /**
@@ -62,17 +56,8 @@ public class MolecularWeight extends AbstractAttribute{
    *
    * @param value the molecular weight
    */
-  public void setValue(int value) {
-    this.value = value;
-  }
-
-  /**
-   * Sets the maximum molecular weigh
-   *
-   * @param max_value the maximum wieght
-   */
-  public void setMax_value(int max_value) {
-    this.max_value = max_value;
+  public void setValue(double value) {
+    super.setMin_Value(value);
   }
 
   /**
@@ -80,17 +65,8 @@ public class MolecularWeight extends AbstractAttribute{
    *
    * @return the molecular weight
    */
-  public int getValue() {
-    return value;
-  }
-
-  /**
-   * Gets the maximum molecular weight
-   *
-   * @return the maximum molecular weight
-   */
-  public int getMax_value() {
-    return max_value;
+  public double getValue() {
+    return getMin_value();
   }
 
   public String getMethod(){
@@ -98,14 +74,7 @@ public class MolecularWeight extends AbstractAttribute{
   }
 
   public String getParameter(){
-    String out = "molecularWeight*";
-    if (value != -1) {
-      out += String.valueOf(value);
-    }
-    if (max_value != -1){
-      out += "#molecularWeightMaximum*" + String.valueOf(max_value);
-    }
-    return out;
+    return super.getParameter("molecularWeight");
   }
 
   public List<String> getColumns() {
@@ -114,20 +83,7 @@ public class MolecularWeight extends AbstractAttribute{
   }
 
   public void setAttribute(HashMap<String, String> resultOfQuery) {
-    try {
-      setValue(Integer.valueOf(resultOfQuery.get("molecularWeight")));
-    }
-    catch (Exception e){
-
-    }
-    try {
-      setMax_value(Integer.valueOf(resultOfQuery.get("molecularWeightMaximum")));
-    }
-    catch (Exception e){
-
-    }
-    setCommentary(resultOfQuery.get("commentary"));
-    setReference(resultOfQuery.get("literature"));
+    super.setAttribute(resultOfQuery);
   }
 
 }

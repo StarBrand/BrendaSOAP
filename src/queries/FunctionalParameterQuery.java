@@ -1,7 +1,7 @@
 package queries;
 
 import attributes.Attribute;
-import attributes.functional_parameters.FunctionalParameter;
+import attributes.NumericalAttribute;
 import client.SoapClient;
 import client.User;
 import entities.Entity;
@@ -50,7 +50,7 @@ public class FunctionalParameterQuery implements Query{
       for(Attribute attribute:attributes){
         result = client.getResult(entity.getParameter(), attribute.getMethod());
         results = parserAnswer.getResult(result);
-        attribute = (FunctionalParameter) attribute;
+        attribute = (NumericalAttribute) attribute;
         // the attribute should do something with that
         entity.addAttributes(attribute);
       }

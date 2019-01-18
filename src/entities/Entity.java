@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * The type entity
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  */
 public interface Entity {
 

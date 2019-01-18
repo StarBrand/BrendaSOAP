@@ -1,7 +1,6 @@
 package attributes_test;
 
 import static junit.framework.TestCase.assertEquals;
-import static junit.framework.TestCase.assertFalse;
 
 import attributes.organism_related_information.Organism;
 import entities.Literature;
@@ -30,7 +29,7 @@ public class OrganismRelatedInformationTest {
     assertEquals("sapiens", organism.getSpecies());
     assertEquals("", organism.getSpecies_commentary());
     assertEquals("", organism.getCommentary());
-    //assertEquals(new Literature(11111), organism.getReferences().get(0));
+    assertEquals(new Literature(11111), organism.getReferences().get(0));
     assertEquals("organism*Homo sapiens", organism.getParameter());
     assertEquals("getOrganism", organism.getMethod());
   }
@@ -58,7 +57,7 @@ public class OrganismRelatedInformationTest {
     assertEquals("musculus", nullOrganism.getSpecies());
     assertEquals("L45", nullOrganism.getSpecies_commentary());
     assertEquals("something", nullOrganism.getCommentary());
-    //assertEquals(new Literature(11111), nullOrganism.getReferences().get(0));
+    assertEquals(new Literature(11111), nullOrganism.getReferences().get(0));
     assertEquals("organism*Mus musculus L45", nullOrganism.getParameter());
     assertEquals("getOrganism", nullOrganism.getMethod());
   }

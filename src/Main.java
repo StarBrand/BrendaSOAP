@@ -1,4 +1,5 @@
 import client.DefaultUser;
+import client.SoapClient;
 import entities.Entity;
 import entities.Enzyme;
 import entities.Protein;
@@ -15,21 +16,16 @@ public class Main {
     long startTime = System.currentTimeMillis();
 
     /// Whatever
-    Enzyme enzyme = new Enzyme(1,1,1,1);
-    Query query = new ProteinQuery(new DefaultUser());
-    query.setEntities(enzyme);
-    List<Entity> proteins = (List<Entity>) query.getResult();
-    System.out.print("Number of proteins: ");
-    System.out.println(proteins.size());
-
-    Filter filter = new SequenceFilter();
-    filter.addEntities(proteins.toArray(new Protein[proteins.size()]));
-    List<Entity> proteins_filtered = filter.getFiltered();
-    System.out.print("Number of proteins with sequence: ");
-    System.out.println(proteins_filtered.size());
-    for(Entity entity:proteins_filtered){
-      System.out.println(entity);
+    SoapClient client = new SoapClient(new DefaultUser());
+    client.makeCall();
+    String result = client.getResult(
+        "ecNumber*1.1.1.1#organism*Sulfolobus solfataricus#commentary*mutant enzyme N249Y",
+        "getIc50Value"
+        );
+    for (String ans:result.split("!")){
+      System.out.println(ans);
     }
+
     /// Until here
 
     long endTime   = System.currentTimeMillis();

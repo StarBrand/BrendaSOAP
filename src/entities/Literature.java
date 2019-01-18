@@ -12,7 +12,7 @@ import queries.Query;
  * Literatur class with an {@Link attributes.APACitation} the
  * brenda reference code and the pubmed reference code
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  * @see APACitation
  */
 public class Literature implements Entity {
@@ -129,7 +129,11 @@ public class Literature implements Entity {
     boolean ans;
     if (anotherOne instanceof Literature){
       ans = true;
-      ans &= apa.get(0).equals(((Literature) anotherOne).getAPA());
+      try {
+        ans &= apa.get(0).equals(((Literature) anotherOne).getAPA());
+      } catch (IndexOutOfBoundsException e){
+        ans &= apa.size() == ((Literature) anotherOne).getAttribute().size();
+      }
       ans &= pubmed == ((Literature) anotherOne).getPubmedID();
       ans &= brenda == ((Literature) anotherOne).getBrenda();
     }

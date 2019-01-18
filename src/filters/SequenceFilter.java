@@ -31,15 +31,15 @@ public class SequenceFilter implements Filter {
     proteins.clear();
   }
 
-  public void setCriterions(Attribute... attribute) {
+  public void setCriteria(Attribute... attribute) {
 
   }
 
-  public void addCriterions(Attribute... attribute) {
+  public void addCriteria(Attribute... attribute) {
 
   }
 
-  public void clearCriterions() {
+  public void clearCriteria() {
 
   }
 

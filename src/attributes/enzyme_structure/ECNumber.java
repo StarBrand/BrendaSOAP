@@ -11,7 +11,7 @@ import java.util.List;
  * of types of enzymes with many formats and constructor
  * for easy implementation
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  */
 public class ECNumber implements Attribute {
 

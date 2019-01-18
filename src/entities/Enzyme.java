@@ -13,7 +13,7 @@ import queries.SystematicNameQuery;
 /**
  * The Enzyme class, define as the type of enzyme according to the {@Link attributes.enzyme_structure.ECNumber} systematic name
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  * @see ECNumber
  */
 public class Enzyme implements Entity{

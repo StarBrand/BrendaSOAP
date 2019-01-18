@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * AASequence class, which has the sequence (primary structure) of a protein
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  */
 public class AASequence extends AbstractAttribute {
 
@@ -33,10 +33,7 @@ public class AASequence extends AbstractAttribute {
    * @param reference The list of reference
    */
   public AASequence(String sequence, String commentary, Literature... reference){
-    super(commentary);
-    for(Literature l:reference){
-      super.addReference(l);
-    }
+    super(commentary, reference);
     this.sequence = sequence;
     this.numberOfAminoacids = sequence.length();
   }

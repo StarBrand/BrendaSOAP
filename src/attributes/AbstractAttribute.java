@@ -9,7 +9,7 @@ import java.util.List;
  * The AbstractAttribute abstract class
  * in which is defined the standard of an Attribute
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  */
 public abstract class AbstractAttribute implements Attribute{
 

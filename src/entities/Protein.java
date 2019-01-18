@@ -11,7 +11,7 @@ import java.util.List;
  * The protein class define as the principal entity as this query
  * differentiated by the {@Link entities.Enzyme} type (Ec Number) an the {@link attributes.organism_related_information.Organism} presented
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  */
 public class Protein implements Entity{
 

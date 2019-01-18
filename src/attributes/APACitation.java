@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * APACitation class defined as an APA reference
  *
- * @author Juan Saez
+ * @author Juan Saez Hidalgo
  */
 public class APACitation implements Attribute{
 
