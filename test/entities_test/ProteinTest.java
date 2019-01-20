@@ -6,6 +6,7 @@ import attributes.Attribute;
 import attributes.functional_parameters.Km;
 import attributes.functional_parameters.PHRange;
 import attributes.organism_related_information.Organism;
+import client.DefaultUser;
 import entities.Enzyme;
 import entities.Literature;
 import entities.Protein;
@@ -21,10 +22,10 @@ public class ProteinTest {
 
   @Before
   public void SetUp() throws Exception {
-    protein1 = new Protein(new Enzyme(1,1,1,1), new Organism("Mus musculus",
+    protein1 = new Protein(new Enzyme(1,1,1,1, new DefaultUser()), new Organism("Mus musculus",
         "low-activity isozyme ADH2", new Literature(654730)), "Q9QYY9"
     );
-    protein2 = new Protein(new Enzyme("1.1.1.1"), new Organism("Homo sapiens",
+    protein2 = new Protein(new Enzyme("1.1.1.1", new DefaultUser()), new Organism("Homo sapiens",
         "", new Literature(726769)), "D4GSN2"
     );
     example1 = new Km(10.0, "substrate", "", new Literature(11111));
@@ -33,8 +34,8 @@ public class ProteinTest {
 
   @Test
   public void gettersTest() throws Exception {
-    assertEquals(new Enzyme(1,1,1,1), protein1.getEnzyme());
-    assertEquals(new Enzyme(1,1,1,1), protein2.getEnzyme());
+    assertEquals(new Enzyme(1,1,1,1, new DefaultUser()), protein1.getEnzyme());
+    assertEquals(new Enzyme(1,1,1,1, new DefaultUser()), protein2.getEnzyme());
     assertEquals("Mus musculus", protein1.getOrganism().getName());
     assertEquals("", protein2.getOrganism().getCommentary());
     assertEquals("Q9QYY9", protein1.getUniprot());

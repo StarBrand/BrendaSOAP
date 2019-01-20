@@ -9,6 +9,19 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * APAQuery class, made a query to fill the apa
+ * ({@link attributes.Attribute, attributes.APACitation})
+ * in a {@Link entities.Literature} object when the
+ * brenda code references, the ec Number of the enzyme and
+ * the organism in which the reference is, is given
+ *
+ * @author Juan Saez Hidalgo
+ *
+ * @see attributes.Attribute
+ * @see attributes.APACitation
+ * @see entities.Literature
+ */
 public class APAQuery implements Query {
 
   private String enzyme;
@@ -19,6 +32,16 @@ public class APAQuery implements Query {
   private ParserAnswer parserAnswer;
 
 
+  /**
+   * The constructor given a Brenda user, the ecNumber of the enzyme,
+   * and the organism in which the reference to look for is, and the
+   * Brenda reference code
+   *
+   * @param user              Brenda user
+   * @param enzyme            the ecNumber of the enzyme
+   * @param organism          the organism
+   * @param brenda_reference  the brenda reference code
+   */
   public APAQuery(User user, String enzyme, String organism, int brenda_reference) {
     this.enzyme = enzyme;
     this.organism = organism;

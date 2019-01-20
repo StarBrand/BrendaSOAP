@@ -23,34 +23,38 @@ public class Enzyme implements Entity{
   private String systematic_name;
   private FastQuery query;
   private List<Attribute> attributes;
-  private User user = new DefaultUser();
+  private User user;
 
   /**
    * An Enzyme constructor given the {@Link attributes.ECNumber}
    *
-   * @param ec_code
+   * @param ec_code ECNumber
+   * @param user    Brenda user
    * @throws Exception the SOAPquery exceptsion
    * @see ECNumber
    */
-  public Enzyme(ECNumber ec_code) throws Exception{
+  public Enzyme(ECNumber ec_code, User user) throws Exception{
     ec = ec_code;
     attributes = new ArrayList<Attribute>();
+    this.user = user;
     fill();
   }
 
   /**
    * An Enzyme constructor given the separate digits of the {@Link attributes.enzyme_structure.EC Number}
    *
-   * @param ec1 first digit of the EC Number
-   * @param ec2 second digit of the EC Number
-   * @param ec3 third digit of the EC Number
-   * @param ec4 fourth digit of the EC Number
+   * @param ec1   first digit of the EC Number
+   * @param ec2   second digit of the EC Number
+   * @param ec3   third digit of the EC Number
+   * @param ec4   fourth digit of the EC Number
+   * @param user  Brenda user
    * @throws Exception the SOAPquery exception
    * @see ECNumber
    */
-  public Enzyme(int ec1, int ec2, int ec3, int ec4) throws Exception{
+  public Enzyme(int ec1, int ec2, int ec3, int ec4, User user) throws Exception{
     ec = new ECNumber(ec1, ec2, ec3, ec4);
     attributes = new ArrayList<Attribute>();
+    this.user = user;
     fill();
   }
 
@@ -58,12 +62,14 @@ public class Enzyme implements Entity{
    * An Enzyme contsructor given a String in {@Link attributes.enzyme_structure.EC Number} format
    *
    * @param input the EC Number format string
+   * @param user  Brenda user
    * @throws Exception the SOAPQuery exception
    * @see ECNumber
    */
-  public Enzyme(String input) throws Exception{
+  public Enzyme(String input, User user) throws Exception{
     ec = new ECNumber(input);
     attributes = new ArrayList<Attribute>();
+    this.user = user;
     fill();
   }
 

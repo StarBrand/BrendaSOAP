@@ -4,6 +4,7 @@ import attributes.MoleculeDependentAttribute;
 import entities.Inhibitor;
 import entities.Literature;
 import entities.Molecule;
+import entities.NullMolecule;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
  */
 public class KIValue extends SingleValue implements MoleculeDependentAttribute {
 
-  private Molecule inhibitor;
+  private Molecule inhibitor = new NullMolecule();
 
   /**
    * An empty constructor

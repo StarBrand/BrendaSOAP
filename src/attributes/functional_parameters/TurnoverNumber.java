@@ -3,6 +3,7 @@ package attributes.functional_parameters;
 import attributes.MoleculeDependentAttribute;
 import entities.Literature;
 import entities.Molecule;
+import entities.NullMolecule;
 import entities.Substrate;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -14,7 +15,7 @@ import java.util.List;
  */
 public class TurnoverNumber extends SingleValue implements MoleculeDependentAttribute {
 
-  private Molecule substrate;
+  private Molecule substrate = new NullMolecule();
 
   /**
    * An empty constructor

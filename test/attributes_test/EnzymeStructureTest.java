@@ -114,12 +114,10 @@ public class EnzymeStructureTest {
   @Test
   public void setAttributeTest(){
     // AASequence
-    results = "sequence*LLLLLL#noAminoAcids*6#commentary*nothing#literature*11111";
+    results = "sequence*LLLLLL#noAminoAcids*6";
     nullSequence.setAttribute(
         parserAnswer.getResult(results).get(0)
     );
-    assertEquals("nothing", nullSequence.getCommentary());
-    assertEquals(new Literature(11111), nullSequence.getReferences().get(0));
     assertEquals("LLLLLL", nullSequence.getSequence());
     assertEquals(6, nullSequence.getNumberOfAminoacids());
     assertEquals("sequence*LLLLLL#noOfAminoAcids*6", nullSequence.getParameter());

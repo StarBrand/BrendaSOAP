@@ -82,7 +82,5 @@ public class AASequence extends AbstractAttribute {
 
   public void setAttribute(HashMap<String, String> resultOfQuery) {
     setSequence(resultOfQuery.get("sequence"));
-    setCommentary(resultOfQuery.get("commentary"));
-    setReference(resultOfQuery.get("literature"));
   }
 }

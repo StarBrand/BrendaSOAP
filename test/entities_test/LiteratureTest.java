@@ -6,6 +6,7 @@ import static junit.framework.TestCase.assertNotSame;
 
 
 import attributes.APACitation;
+import client.DefaultUser;
 import entities.Literature;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,7 +25,7 @@ public class LiteratureTest {
     literature1 = new Literature(11111, 22222, apa);
     literature2 = new Literature(11111, 22222, apa);
     literature3 = new Literature(285564);
-    literature3.fill("1.1.1.1", "Mus musculus");
+    literature3.fill("1.1.1.1", "Mus musculus", new DefaultUser());
   }
 
   @Test

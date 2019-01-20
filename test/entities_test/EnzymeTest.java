@@ -8,6 +8,7 @@ import attributes.Attribute;
 import attributes.enzyme_structure.ECNumber;
 import attributes.functional_parameters.Km;
 import attributes.functional_parameters.PHRange;
+import client.DefaultUser;
 import entities.Enzyme;
 import entities.Literature;
 import org.junit.Before;
@@ -22,9 +23,9 @@ public class EnzymeTest {
 
   @Before
   public void SetUp() throws Exception{
-    enzyme1 = new Enzyme(1,1,1,1);
-    enzyme2 = new Enzyme("1.1.1.1");
-    enzyme3 = new Enzyme(new ECNumber("1.1.1.1"));
+    enzyme1 = new Enzyme(1,1,1,1, new DefaultUser());
+    enzyme2 = new Enzyme("1.1.1.1", new DefaultUser());
+    enzyme3 = new Enzyme(new ECNumber("1.1.1.1"), new DefaultUser());
     example1 = new Km(10.0, "substrate", "", new Literature(11111));
     example2 = new PHRange(7.0, 7.2, "", new Literature(11111));
   }

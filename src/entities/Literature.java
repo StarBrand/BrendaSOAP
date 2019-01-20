@@ -3,6 +3,7 @@ package entities;
 import attributes.APACitation;
 import attributes.Attribute;
 import client.DefaultUser;
+import client.User;
 import java.util.ArrayList;
 import java.util.List;
 import queries.APAQuery;
@@ -17,7 +18,7 @@ import queries.Query;
  */
 public class Literature implements Entity {
 
-  private List<Attribute> apa = null;
+  private List<Attribute> apa;
   private int pubmed = Integer.MIN_VALUE;
   private int brenda;
   private Query apaQuery;
@@ -57,8 +58,8 @@ public class Literature implements Entity {
    * @throws Exception the SOAP query exception
    * @see queries.APAQuery
    */
-  public void fill(String enzyme, String organism) throws Exception {
-    apaQuery = new APAQuery(new DefaultUser(), enzyme, organism, this.brenda);
+  public void fill(String enzyme, String organism, User user) throws Exception {
+    apaQuery = new APAQuery(user, enzyme, organism, this.brenda);
     List<Object> result = (List<Object>) apaQuery.getResult();
     pubmed = (Integer) result.get(0);
     apa.add((APACitation) result.get(1));

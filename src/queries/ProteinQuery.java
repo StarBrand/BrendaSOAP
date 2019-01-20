@@ -13,6 +13,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * ProteinQuery class,
+ * generates a list of {@Link entities.Protein} given a
+ * list of {@Link entities.Enzyme}
+ *
+ * @author Juan Saez Hidalgo
+ * @see entities.Protein
+ * @see entities.Enzyme
+ */
 public class ProteinQuery implements Query {
 
   private User user;
@@ -22,6 +31,11 @@ public class ProteinQuery implements Query {
   private Organism organism;
   private ParserAnswer parserAnswer;
 
+  /**
+   * Constructor given a Brenda User
+   *
+   * @param user Brenda User
+   */
   public ProteinQuery(User user){
     this.user = user;
     client = new SoapClient(user);
@@ -49,7 +63,6 @@ public class ProteinQuery implements Query {
   }
 
   public List<?> getResult() throws Exception {
-    Protein protein;
     Literature reference;
     client.makeCall();
     String result;
@@ -60,7 +73,7 @@ public class ProteinQuery implements Query {
       List<HashMap<String, String>> results = parserAnswer.getResult(result);
       for(HashMap<String, String> ans:results){
         organism.setAttribute(ans);
-        protein = new Protein(e, organism, ans.get("sequenceCode"));
+        Protein protein = new Protein(e, organism, ans.get("sequenceCode"));
         for (String brenda_reference:ans.get("literature").split(", ")){
           try {
             reference = new Literature(Integer.valueOf(brenda_reference));
