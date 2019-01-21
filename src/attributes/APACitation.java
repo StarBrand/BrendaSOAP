@@ -340,13 +340,17 @@ public class APACitation implements Attribute{
     } catch (Exception e) {
     }
     if (pages.contains("-")) {
-      fp = Integer.valueOf(pages.split("-")[0]);
-      lp = Integer.valueOf(pages.split("-")[1]);
-      if (lp < fp) {
-        lp = (fp / 10) * 10 + lp;
+      try {
+        fp = Integer.valueOf(pages.split("-")[0]);
+        lp = Integer.valueOf(pages.split("-")[1]);
+        if (lp < fp) {
+          lp = (fp / 10) * 10 + lp;
+        }
+        setFirstPage(fp);
+        setLastPage(lp);
+      } catch (NumberFormatException e){
+        setSpecial_page(pages);
       }
-      setFirstPage(fp);
-      setLastPage(lp);
     } else {
       try {
         setFirstPage(Integer.valueOf(pages));
