@@ -28,7 +28,6 @@ public class ProteinQuery implements Query {
   private SoapClient client;
   private List<Enzyme> enzymes;
   private List<Protein> proteins;
-  private Organism organism;
   private ParserAnswer parserAnswer;
 
   /**
@@ -66,19 +65,20 @@ public class ProteinQuery implements Query {
     Literature reference;
     client.makeCall();
     String result;
-    for (Enzyme e:enzymes){
-      ECNumber ec = e.getEC();
-      organism = new Organism();
+    for (Enzyme enzyme:enzymes){
+      ECNumber ec = enzyme.getEC();
+      Organism organism = new Organism();
       result = client.getResult(ec.getParameter(), organism.getMethod());
       List<HashMap<String, String>> results = parserAnswer.getResult(result);
       for(HashMap<String, String> ans:results){
-        organism.setAttribute(ans);
-        Protein protein = new Protein(e, organism, ans.get("sequenceCode"));
+        Organism organism_found = new Organism();
+        organism_found.setAttribute(ans);
+        Protein protein = new Protein(enzyme, organism_found, ans.get("sequenceCode"));
         for (String brenda_reference:ans.get("literature").split(", ")){
           try {
             reference = new Literature(Integer.valueOf(brenda_reference));
             protein.getOrganism().addReference(reference);
-          } catch (Exception ex) {
+          } catch (Exception e) {
 
           }
         }

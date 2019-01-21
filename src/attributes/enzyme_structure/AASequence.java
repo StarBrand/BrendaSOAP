@@ -29,11 +29,8 @@ public class AASequence extends AbstractAttribute {
    * The constructor given every parameter
    *
    * @param sequence The aa sequence
-   * @param commentary The commentary or observation
-   * @param reference The list of reference
    */
-  public AASequence(String sequence, String commentary, Literature... reference){
-    super(commentary, reference);
+  public AASequence(String sequence){
     this.sequence = sequence;
     this.numberOfAminoacids = sequence.length();
   }
@@ -82,5 +79,12 @@ public class AASequence extends AbstractAttribute {
 
   public void setAttribute(HashMap<String, String> resultOfQuery) {
     setSequence(resultOfQuery.get("sequence"));
+  }
+
+  public HashMap<String, String> getColumnsForTable() {
+    HashMap<String, String> out = new HashMap<String, String>();
+    out.put("First Accession Code", "");
+    out.put("No Of AminoAcids", String.valueOf( this.numberOfAminoacids ));
+    return out;
   }
 }

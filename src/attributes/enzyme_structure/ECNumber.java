@@ -112,4 +112,10 @@ public class ECNumber implements Attribute {
   public void setAttribute(HashMap<String, String> resultOfQuery) {
 
   }
+
+  public HashMap<String, String> getColumnsForTable() {
+    HashMap<String, String> out = new HashMap<String, String>();
+    out.put("EC Number", ec_code);
+    return out;
+  }
 }

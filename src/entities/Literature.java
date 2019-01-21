@@ -5,6 +5,7 @@ import attributes.Attribute;
 import client.DefaultUser;
 import client.User;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import queries.APAQuery;
 import queries.Query;

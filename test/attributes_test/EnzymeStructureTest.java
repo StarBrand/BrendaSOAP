@@ -29,8 +29,7 @@ public class EnzymeStructureTest {
     ec2 = new ECNumber("1.1.1.1");
     //A simple one
     aaSequence = new AASequence(
-        "ALWTA", "something",
-        new Literature(11111)
+        "ALWTA"
     );
     nullSequence = new AASequence();
     molecularWeight1 = new MolecularWeight(
@@ -68,8 +67,6 @@ public class EnzymeStructureTest {
     assertEquals("getEcNumber", ec1.getMethod());
 
     // AASequence
-    assertEquals("something", aaSequence.getCommentary());
-    assertEquals(new Literature(11111), aaSequence.getReferences().get(0));
     assertEquals("ALWTA", aaSequence.getSequence());
     assertEquals(5, aaSequence.getNumberOfAminoacids());
     assertEquals("getSequence", aaSequence.getMethod());

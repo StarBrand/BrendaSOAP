@@ -6,29 +6,21 @@ import entities.Protein;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SequenceFilter implements Filter {
+/**
+ * SequenceFilter class, filter a list of {@Link entities.Protein}
+ * leaving the proteins that have sequence
+ *
+ * @author Juan Saez Hidalgo
+ * @see entities.Protein
+ */
+public class SequenceFilter extends AbstractFilter {
 
-  private List<Entity> proteins;
-
+  /**
+   * Constructor
+   *
+   */
   public SequenceFilter(){
-    proteins = new ArrayList<Entity>();
-  }
-
-  public void setEntities(Entity... entiy) {
-    proteins = new ArrayList<Entity>();
-    for(Entity e:entiy){
-        proteins.add(e);
-    }
-  }
-
-  public void addEntities(Entity... entities) {
-    for(Entity entity:entities){
-      proteins.add(entity);
-    }
-  }
-
-  public void clearEntities() {
-    proteins.clear();
+    super();
   }
 
   public void setCriteria(Attribute... attribute) {
@@ -45,7 +37,7 @@ public class SequenceFilter implements Filter {
 
   public List<Entity> getFiltered() {
     List<Entity> out = new ArrayList<Entity>();
-    for(Entity entity:proteins){
+    for(Entity entity:entities){
       if(!( (Protein) entity ).getUniprot().equals("")){
         out.add(entity);
       }

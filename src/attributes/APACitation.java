@@ -357,6 +357,14 @@ public class APACitation implements Attribute{
     }
   }
 
+  public HashMap<String, HashMap<String, ?>> getColumnsForTable() {
+    HashMap<String, HashMap<String, ?>> out = new HashMap<String, HashMap<String, ?>>();
+    HashMap<String, String> apa_out = new HashMap<String, String>();
+    apa_out.put("Literature", this.toString());
+    out.put("Reference", apa_out);
+    return out;
+  }
+
   /**
    * Gets the list of authors
    *

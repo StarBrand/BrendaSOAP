@@ -54,6 +54,10 @@ public class MoleculeTest {
       }
       public void setAttribute(HashMap<String, String> resultOfQuery) {
       }
+
+      public HashMap<String, String> getColumnsForTable() {
+        return null;
+      }
     };
   }
 
