@@ -1,0 +1,951 @@
+Buscando proteínas... Proteinas encontradas: 1854
+Tomó: 0 hr, 0 m, 15 s, 609 ms
+Filtrando proteínas... Proteinas filtradas: 188
+Tomó: 0 hr, 0 m, 0 s, 47 ms
+Buscando secuencias...Generando archivo... Archivo generado!! Tomó: 0 hr, 4 m, 12 s, 118 ms
+Buscando atributos... Atributos encontrados!!
+Tomó: 0 hr, 16 m, 39 s, 373 ms
+Rellenando bibliografía...... Bibliografía completa
+Tomó: 0 hr, 26 m, 15 s, 41 ms
+Mostrar resultados:
+ECNumber: 3.2.1.8/Organism: Alicyclobacillus sp./Commentary: cf. EC 3.2.1.55/Sequence: A0A0P0ISK8/References: 737905, 737905.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Alicyclobacillus sp./Commentary: isolated from a hot spring in Baoshan City, Yunnan Province, China, gene xynA4/Sequence: D3VWB5/References: 717947, 717947.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Alicyclobacillus sp. A4/Commentary: cf. EC 3.2.1.55/Sequence: A0A0P0ISK8/References: 737905, 737905.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Alicyclobacillus sp. A4/Commentary: isolated from a hot spring in Baoshan City, Yunnan Province, China, gene xynA4/Sequence: D3VWB5/References: 717947, 717947.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ampullaria crossean/Commentary: /Sequence: Q7Z1V6/References: 695295, 695295.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Arthrobacter sp./Commentary: isolated from the feces of Grus nigricollis/Sequence: A0A0F6MV31/References: 737475, 737475.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Arthrobacter sp. GN16/Commentary: isolated from the feces of Grus nigricollis/Sequence: A0A0F6MV31/References: 737475, 737475.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ascochyta pisi/Commentary: precursor/Sequence: Q00263/References: 682027, 682027.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Aspergillus cf. niger BCC14405/Commentary: strain BCC14405/Sequence: Q6QA21/References: 665441, 665441.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Aspergillus fumigatus/Commentary: /Sequence: E0X4B3/References: 738888, 738888.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Aspergillus kawachii/Commentary: /Sequence: P33557/References: 739002, 739002.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Aspergillus kawachii NBRC 4308/Commentary: /Sequence: P33557/References: 739002, 739002.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Aspergillus nidulans/Commentary: precursor; formerly Aspergillus nidulans/Sequence: Q00177/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Aspergillus niger/Commentary: /Sequence: F5CI28/References: 729014, 729014.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Aspergillus niger/Commentary: precursor/Sequence: P55329/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Aspergillus niger IA-0010/Commentary: /Sequence: F5CI28/References: 729014, 729014.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Aspergillus phoenicis/Commentary: strain RP-02/Sequence: Q2PQU3/References: 699358, 699358.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Aspergillus phoenicis RP-02/Commentary: strain RP-02/Sequence: Q2PQU3/References: 699358, 699358.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Aspergillus sulphureus/Commentary: gene xynB/Sequence: Q3S401/References: 707197, 707197.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Aspergillus usamii/Commentary: /Sequence: Q2PU02/References: 737808, 737808.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus circulans/Commentary: /Sequence: P09850/References: 700545, 707522, 709203, 700545, 707522, 709203.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus halodurans/Commentary: /Sequence: M4QNR9/References: 737851, 737851.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus halodurans/Commentary: strain S7/Sequence: P07528/References: 707585, 707585.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus halodurans S7/Commentary: strain S7/Sequence: P07528/References: 707585, 707585.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus halodurans TSEV1/Commentary: /Sequence: M4QNR9/References: 737851, 737851.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus licheniformis/Commentary: strain MS5-14/Sequence: B5SYI8/References: 697502, 697502.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus licheniformis MS5-14/Commentary: strain MS5-14/Sequence: B5SYI8/References: 697502, 697502.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus pumilus/Commentary: gene xynA/Sequence: Q5EFR9/References: 717410, 717410.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus pumilus ARA/Commentary: gene xynA/Sequence: Q5EFR9/References: 717410, 717410.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus sp./Commentary: strain BP-7/Sequence: Q84F19/References: 664690, 664690.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus sp. 41M-1/Commentary: /Sequence: Q9RC94/References: 696858, 696858.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus sp. BP-7/Commentary: strain BP-7/Sequence: Q84F19/References: 664690, 664690.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus subtilis/Commentary: strain R5/Sequence: B9ZZN9/References: 699055, 699055.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus subtilis/Commentary: /Sequence: P18429/References: 680288, 680326, 680984, 709202, 710466, 738131, 738803, 680288, 680326, 680984, 709202, 710466, 738131, 738803.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus subtilis/Commentary: /Sequence: Q45VU2/References: 696821, 696821.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus subtilis/Commentary: xynB; gene xynB/Sequence: Q45VU2/References: 707810, 707810.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus subtilis 168/Commentary: /Sequence: P18429/References: 738131, 738803, 738131, 738803.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus subtilis 168/Commentary: /Sequence: P18429/References: 738131, 738803, 738131, 738803.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus subtilis KT12/Commentary: /Sequence: Q45VU2/References: 696821, 696821.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bacillus subtilis R5/Commentary: strain R5/Sequence: B9ZZN9/References: 699055, 699055.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: bacterium enrichment culture clone Xyl8B8/Commentary: bacterium enrichment culture clone Xyl8B8/Sequence: H9ZGD1/References: 730872, 730872.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bipolaris sorokiniana/Commentary: /Sequence: O13447/References: 682027, 682027.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bipolaris zeicola/Commentary: precursor/Sequence: Q06562/References: 682027, 682027.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bispora sp. MEY-1/Commentary: CGMCC 2500, gene xyl10C/Sequence: D0QF43/References: 708455, 708455.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Bispora sp. MEY-1/Commentary: isolated from acidic wastewater of a uranium mine in Jiangxi, China, gene xylD/Sequence: D6MYS9/References: 707258, 707258.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Botrytis cinerea/Commentary: precursor/Sequence: Q2LMP0/References: 682027, 682027.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Botrytis cinerea/Commentary: strain SAS56/Sequence: Q2LMP0/References: 682028, 682028.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Botrytis cinerea SAS56/Commentary: strain SAS56/Sequence: Q2LMP0/References: 682028, 682028.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Caldibacillus cellulovorans/Commentary: gene xynA/Sequence: Q9L8L8/References: 656718, 656718.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Carica papaya/Commentary: enzyme CpaEXY1/Sequence: Q8GTJ2/References: 655665, 655665.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Cellulomonas fimi/Commentary: bifunctional xylanase/deacetylase precursor/Sequence: P54865/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Cellulomonas flavigena/Commentary: fragment of 387 bp, part of the gene cxo; CDBB-531; strain CDBB-531/Sequence: A1XM14/References: 697503, 697503.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Cellulomonas flavigena CDBB-531/Commentary: fragment of 387 bp, part of the gene cxo; CDBB-531; strain CDBB-531/Sequence: A1XM14/References: 697503, 697503.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Cellulosimicrobium cellulans/Commentary: /Sequence: T2M1V1/References: 731029, 731029.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Cellulosimicrobium cellulans CKMX1/Commentary: /Sequence: T2M1V1/References: 731029, 731029.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Cellulosimicrobium sp./Commentary: /Sequence: B2BZ80/References: 737466, 737466.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Cellulosimicrobium sp. HY-12/Commentary: /Sequence: B2BZ80/References: 737466, 737466.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Cellvibrio japonicus/Commentary: /Sequence: Q59675/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Chaetomium thermophilum/Commentary: /Sequence: Q6UN40/References: 701091, 701091.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Chaetomium thermophilum/Commentary: strain NIBGE 1, gene xyn11A/Sequence: Q8J1V6/References: 709894, 709894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Chaetomium thermophilum NIBGE 1/Commentary: /Sequence: Q6UN40/References: 701091, 701091.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Chaetomium thermophilum NIBGE 1/Commentary: strain NIBGE 1, gene xyn11A/Sequence: Q8J1V6/References: 709894, 709894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Claviceps purpurea/Commentary: precursor/Sequence: O74716/References: 682027, 682027.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Clostridium stercorarium/Commentary: endo-1,4-beta-xylanase A precursor/Sequence: Q8GJ44/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Demequina sp. JK4/Commentary: gene Mxyn10/Sequence: B9VSZ3/References: 709491, 709491.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Dickeya chrysanthemi/Commentary: /Sequence: Q46961/References: 682027, 682027.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Fusarium commune/Commentary: /Sequence: A0A0F7MX47/References: 738135, 738135.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Fusarium commune/Commentary: /Sequence: A0A0F7MYK0/References: 738135, 738135.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Fusarium commune/Commentary: /Sequence: A0A0F7N1T1/References: 738135, 738135.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Fusarium graminearum/Commentary: isoform XylA, expression in Escherichia coli/Sequence: Q7ZA57/References: 663859, 663859.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Fusarium graminearum/Commentary: formerly Fusarium graminearum/Sequence: Q7ZA57/References: 682027, 682027.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Fusarium oxysporum/Commentary: Fusarium oxysporum f. sp. lycopersici/Sequence: O59938/References: 682027, 682027.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Fusarium oxysporum f. sp. vasinfectum/Commentary: /Sequence: X0M5X0/References: 737910, 737910.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Fusarium oxysporum f. sp. vasinfectum 25433/Commentary: /Sequence: X0M5X0/References: 737910, 737910.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Geobacillus sp. WBI/Commentary: /Sequence: B5M201/References: 738547, 738547.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Hordeum vulgare/Commentary: /Sequence: Q94G06/References: 677960, 677960.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Kocuria sp. Mn22/Commentary: gene Kxyn/Sequence: B8XY24/References: 709503, 709503.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Magnaporthe grisea/Commentary: precursor/Sequence: Q01176/References: 682027, 682027.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Magnaporthe grisea/Commentary: /Sequence: Q8NJ73/References: 663722, 663722.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Massilia sp. RBM26/Commentary: isolated from the feces of Rhinopithecus bieti/Sequence: A0A0S2I9J6/References: 738866, 738866.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Melioribacter roseus/Commentary: cf. EC 3.2.1.136/Sequence: I6Z823/References: 738862, 738862.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Melioribacter roseus/Commentary: /Sequence: I6Z9A7/References: 738862, 738862.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Melioribacter roseus/Commentary: /Sequence: I7A603/References: 738862, 738862.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Melioribacter roseus JCM 17771/Commentary: cf. EC 3.2.1.136/Sequence: I6Z823/References: 738862, 738862.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Melioribacter roseus JCM 17771/Commentary: /Sequence: I6Z9A7/References: 738862, 738862.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Melioribacter roseus JCM 17771/Commentary: /Sequence: I7A603/References: 738862, 738862.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Microbacterium trichothecenolyticum/Commentary: /Sequence: A0A067XRW0/References: 730191, 730191.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Microbacterium trichothecenolyticum HY-17/Commentary: /Sequence: A0A067XRW0/References: 730191, 730191.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Microcella alkaliphila/Commentary: /Sequence: A0A0U5B5Z4/References: 738192, 738192.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Microcella alkaliphila JAM-AC0309/Commentary: /Sequence: A0A0U5B5Z4/References: 738192, 738192.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Neocallimastix patriciarum/Commentary: /Sequence: A8TGA1/References: 695791, 695791.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Neocallimastix patriciarum/Commentary: precursor/Sequence: P29127/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Neocallimastix patriciarum/Commentary: bifunctional endo-1,4-beta-xylanase A precursor/Sequence: P29127/References: 681466, 681466.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Nesterenkonia xinjiangensis/Commentary: strain CCTCC AA001025, gene xyn11NX/Sequence: D1KJJ7/References: 707216, 707216.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Nesterenkonia xinjiangensis CCTCC AA001025/Commentary: strain CCTCC AA001025, gene xyn11NX/Sequence: D1KJJ7/References: 707216, 707216.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paecilomyces sp. J18/Commentary: strain J18, gene xynA/Sequence: D1G4K3/References: 707603, 707603.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paenibacillus campinasensis/Commentary: gene xylX/Sequence: Q2I6W5/References: 718337, 718337.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paenibacillus campinasensis BL11/Commentary: gene xylX/Sequence: Q2I6W5/References: 718337, 718337.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paenibacillus curdlanolyticus/Commentary: /Sequence: A0A0A0R2Z1/References: 737855, 737855.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paenibacillus curdlanolyticus/Commentary: /Sequence: B1A3N2/References: 699498, 699498.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paenibacillus curdlanolyticus/Commentary: gene xyn10B/Sequence: E3WF08/References: 717395, 717395.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paenibacillus curdlanolyticus B-6/Commentary: /Sequence: B1A3N2/References: 699498, 699498.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paenibacillus curdlanolyticus B-60/Commentary: /Sequence: A0A0A0R2Z1/References: 737855, 737855.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paenibacillus polymyxa/Commentary: endo-1,4-beta-xylanase D precursor/Sequence: P45796/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paenibacillus sp./Commentary: /Sequence: A0A075EEX4/References: 730187, 730187.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paenibacillus sp./Commentary: /Sequence: B6VF01/References: 717404, 717404.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paenibacillus sp. DG-22/Commentary: /Sequence: A0A075EEX4/References: 730187, 730187.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Paenibacillus sp. HPL-001/Commentary: /Sequence: B6VF01/References: 717404, 717404.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Penicillium canescens/Commentary: /Sequence: C3VEV9/References: 729182, 729182.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Penicillium citrinum/Commentary: strain FERM P-15944/Sequence: B1B533/References: 699042, 699042.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Penicillium citrinum/Commentary: strain FERM P-1594, growth on birchwood xylan/Sequence: Q2PGY1/References: 665763, 665763.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Penicillium citrinum FERM P-1594/Commentary: strain FERM P-1594, growth on birchwood xylan/Sequence: Q2PGY1/References: 665763, 665763.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Penicillium citrinum FERM P-15944/Commentary: strain FERM P-15944/Sequence: B1B533/References: 699042, 699042.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Penicillium oxalicum/Commentary: /Sequence: E7EF85/References: 730138, 730138.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Penicillium oxalicum GZ-2/Commentary: /Sequence: E7EF85/References: 730138, 730138.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Penicillium purpurogenum/Commentary: /Sequence: Q9P8J1/References: 680288, 680326, 680288, 680326.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Penicillium sp. CGMCC 1669/Commentary: gene xyn11F63; gene xyn11F63/Sequence: D1GFE6/References: 707207, 707207.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Phialophora sp. CGMCC 3328/Commentary: gene xyn10G5/Sequence: F2VRY7/References: 717131, 717131.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Pseudoalteromonas haloplanktis/Commentary: gene xyl; psychrophilic enzyme, antarctic bacterium/Sequence: Q8RJN8/References: 656075, 656075.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Pseudoalteromonas haloplanktis/Commentary: strain TAH3a/Sequence: Q8RJN8/References: 664135, 664135.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Pseudoalteromonas haloplanktis TAH3a/Commentary: strain TAH3a/Sequence: Q8RJN8/References: 664135, 664135.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Pseudothermotoga thermarum/Commentary: /Sequence: F7YXD6/References: 729475, 729475.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Pseudothermotoga thermarum DSM 5069/Commentary: /Sequence: F7YXD6/References: 729475, 729475.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Radopholus similis/Commentary: gene XYL1/Sequence: B3TJG3/References: 710012, 710012.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Rhodothermus marinus/Commentary: fragment; formerly Rhodothermus obamensis/Sequence: P96988/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ruminiclostridium thermocellum/Commentary: /Sequence: A3DJS9/References: 737360, 737360.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ruminiclostridium thermocellum/Commentary: xynC; strain ATCC 27405D, gene xynC/Sequence: O32374/References: 709200, 709200.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ruminiclostridium thermocellum/Commentary: /Sequence: O52780/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ruminiclostridium thermocellum/Commentary: xynZ; strain ATCC 27405D, gene xynZ/Sequence: P10478/References: 709200, 709200.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ruminiclostridium thermocellum/Commentary: /Sequence: P10478/References: 737852, 737852.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ruminiclostridium thermocellum/Commentary: /Sequence: P51584/References: 695352, 695352.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ruminiclostridium thermocellum DSM 1237/Commentary: /Sequence: A3DJS9/References: 737360, 737360.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ruminiclostridium thermocellum DSM 1237/Commentary: /Sequence: A3DJS9/References: 737360, 737360.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ruminiclostridium thermocellum DSM 1237/Commentary: /Sequence: P10478/References: 737852, 737852.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ruminiclostridium thermocellum DSM 1237/Commentary: /Sequence: P10478/References: 737852, 737852.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Saccharopolyspora pathumthaniensis/Commentary: isolated from the gut of a grass-feeding termite/Sequence: E1APH5/References: 717401, 717401.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Saccharopolyspora pathumthaniensis S582/Commentary: isolated from the gut of a grass-feeding termite/Sequence: E1APH5/References: 717401, 717401.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Schizophyllum commune/Commentary: /Sequence: P35809/References: 729654, 729654.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Scytalidium acidophilum/Commentary: gene XYL1/Sequence: Q6VAY1/References: 717288, 717288.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Sphingobacterium sp. TN19/Commentary: a symbiotic bacterium isolated from the gut of Batocera horsfieldi larvae, gene xynA19/Sequence: D8L2Y2/References: 707250, 707250.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces avermitilis/Commentary: strain CECT 3339/Sequence: Q9X584/References: 698373, 698373.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces avermitilis CECT/Commentary: strain CECT 3339/Sequence: Q9X584/References: 698373, 698373.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces coelicolor/Commentary: /Sequence: Q8CJQ1/References: 737481, 737481.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces coelicolor A3(2)/Commentary: /Sequence: Q8CJQ1/References: 737481, 737481.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces fradiae/Commentary:  var. K11/Sequence: A7TVD4/References: 699489, 699489.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces lividans/Commentary: /Sequence: P26514/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces olivaceoviridis/Commentary: /Sequence: Q7SI98/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces sp./Commentary: /Sequence: F7J663/References: 730370, 730370.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces sp./Commentary: /Sequence: F8WSY7/References: 729010, 729010.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces sp. S27/Commentary: /Sequence: C3RYK8/References: 695838, 695838.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces sp. S9/Commentary: /Sequence: B4XVN1/References: 695801, 695801.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces sp. SWU10/Commentary: /Sequence: F7J663/References: 730370, 730370.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces sp. SWU10/Commentary: /Sequence: F8WSY7/References: 729010, 729010.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces sp. TN119/Commentary: isolated from the gut of Batocera horsfieldi larvae collected from oak trees, gene xynA119/Sequence: C6FX34/References: 707196, 707196.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces thermocarboxydus/Commentary: strain HY-15 isolated from the gut of Eisenia fetida, genen xylG/Sequence: C6ZHB0/References: 709555, 709555.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces thermocarboxydus HY-15/Commentary: strain HY-15 isolated from the gut of Eisenia fetida, genen xylG/Sequence: C6ZHB0/References: 709555, 709555.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces thermocyaneoviolaceus/Commentary: strain M049, gene xynB/Sequence: Q9RMM4/References: 707809, 707809.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Streptomyces thermocyaneoviolaceus M049/Commentary: strain M049, gene xynB/Sequence: Q9RMM4/References: 707809, 707809.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Sulfolobus solfataricus/Commentary: /Sequence: Q97YG7/References: 692258, 692258.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Sulfolobus solfataricus Oalpha/Commentary: /Sequence: Q97YG7/References: 692258, 692258.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Talaromyces cellulolyticus/Commentary: /Sequence: T2HRP0/References: 730881, 730881.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Talaromyces cellulolyticus/Commentary: /Sequence: W8VR85/References: 737727, 737727.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Talaromyces cellulolyticus CF-2612/Commentary: /Sequence: W8VR85/References: 737727, 737727.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Talaromyces funiculosus/Commentary: gene xynD/Sequence: Q5ZNB1/References: 718080, 718080.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Talaromyces funiculosus/Commentary: recombinant enzyme, expressed in Pichia pastoris/Sequence: Q8J0K5/References: 664181, 664181.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Talaromyces funiculosus/Commentary: /Sequence: Q9HFH0/References: 677745, 677745.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Talaromyces funiculosus/Commentary: precursor/Sequence: Q9HFH0/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Thermobifida fusca/Commentary: /Sequence: Q47QL8/References: 737629, 737852, 737932, 737629, 737852, 737932.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Thermobifida fusca/Commentary: hybrid gene from Thermomonospora fusca with N-terminal region of Bacillus subtilis/Sequence: Q56265/References: 664701, 664701.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Thermomyces lanuginosus/Commentary: strain IOC-4145, gene XynA/Sequence: O43097/References: 654274, 654274.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Thermomyces lanuginosus/Commentary: /Sequence: O43097/References: 731025, 731025.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Thermomyces lanuginosus IOC-4145/Commentary: strain IOC-4145, gene XynA/Sequence: O43097/References: 654274, 654274.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Thermomyces lanuginosus SS-8/Commentary: /Sequence: O43097/References: 731025, 731025.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Thermotoga maritima/Commentary: endo-1,4-beta-xylanase A precursor/Sequence: Q60037/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Trichoderma longibrachiatum/Commentary: /Sequence: F8W669/References: 737474, 737474.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Trichoderma reesei/Commentary: strain Rut C-30, gene Xyn2/Sequence: B2CNY5/References: 707864, 707864.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Trichoderma reesei/Commentary: Xyn2 or Rut C-30; gene xyn2/Sequence: B2CNY5/References: 709576, 709576.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Trichoderma reesei/Commentary: /Sequence: P36217/References: 680958, 730662, 680958, 730662.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Trichoderma reesei/Commentary: xylanase II/Sequence: P36218/References: 657221, 657221.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Trichoderma reesei RUT C-30/Commentary: strain Rut C-30, gene Xyn2/Sequence: B2CNY5/References: 707864, 707864.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Trichoderma viride/Commentary: precursor/Sequence: Q9UVF9/References: 678894, 678894.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: uncultured bacterium/Commentary: /Sequence: B2LWN3/References: 698785, 698785.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: uncultured microorganism/Commentary: from Bos mutus rumen; RuCelA, a bifunctional xylanase/endoglucanase, EC 3.2.1.8 and EC 3.2.1.73; isolated from rumen from a yak rumen metagenomic library, chinese yak, Bos grunniens/Sequence: E2DQY5/References: 717134, 717134.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: uncultured microorganism/Commentary: /Sequence: E2FJN9/References: 738934, 738934.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: uncultured microorganism/Commentary: isolated from alkaline wastewater sludge of a paper mill/Sequence: I6M1A2/References: 731026, 731026.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ustilago maydis/Commentary: /Sequence: Q4P0L3/References: 729494, 729494.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Ustilago maydis 521/Commentary: /Sequence: Q4P0L3/References: 729494, 729494.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+ECNumber: 3.2.1.8/Organism: Xanthomonas oryzae/Commentary: precursor/Sequence: Q9AM28/References: 682027, 682027.
+phRange*10.0#phRangeMaximum*10.0#commentary*40% of maximum activity<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+phOptimum*7.0#phOptimumMaximum*8.0#commentary*<731026> : . . (0) 0, 2147483647. {Pubmed:0}
+kmValue*-999.0#kmValueMaximum*#commentary*0.58 g/l at 65&deg;C, pH 7.0#substrate*xylan<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+temperatureRange*35.0#temperatureRangeMaximum*75.0#commentary*activity range<717134> : . . (0) 0, 2147483647. {Pubmed:0}
+Finalmente, tomó: 0 hr, 47 m, 22 s, 357 ms
