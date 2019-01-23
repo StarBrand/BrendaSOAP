@@ -1,6 +1,5 @@
 package queries;
 
-import attributes.APACitation;
 import attributes.Attribute;
 import client.SoapClient;
 import client.User;
@@ -10,19 +9,13 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * APAQuery class, makes a query to fill the apa
- * ({@link attributes.Attribute, attributes.APACitation})
- * in a {@Link entities.Literature} object when the
- * brenda code references, the ec Number of the enzyme and
- * the organism in which the reference is, is given
+ * PubmedQuery class, makes a query to fill
+ * the parameter pubmed in {@link entities.Literature}
  *
  * @author Juan Saez Hidalgo
- *
- * @see attributes.Attribute
- * @see attributes.APACitation
  * @see entities.Literature
  */
-public class APAQuery implements Query {
+public class PubmedQuery implements Query {
 
   private String enzyme;
   private String organism;
@@ -42,7 +35,7 @@ public class APAQuery implements Query {
    * @param organism          the organism
    * @param brenda_reference  the brenda reference code
    */
-  public APAQuery(User user, String enzyme, String organism, int brenda_reference) {
+  public PubmedQuery(User user, String enzyme, String organism, int brenda_reference) {
     this.enzyme = enzyme;
     this.organism = organism;
     this.brenda = brenda_reference;
@@ -50,6 +43,7 @@ public class APAQuery implements Query {
     client = new SoapClient(user);
     parserAnswer = new ParserAnswer();
   }
+
 
   public void setEntities(Entity... entity) {
 
@@ -64,22 +58,22 @@ public class APAQuery implements Query {
   }
 
   public List<?> getResult() throws Exception {
-    List<Object> out = new ArrayList<Object>();
-    String pages;
-    int volume, fp, lp, year;
+    List<Integer> out = new ArrayList<Integer>();
     client.makeCall();
     String result = client.getResult(
         "ecNumber*" + enzyme + "#organism*" + organism + "#reference*" + brenda, "getReference"
     );
-    APACitation apa = new APACitation();
-    if (result.equals("")) {
+    if (result.equals("")){
       out.add(0);
-    } else {
-      HashMap<String, String> results = parserAnswer.getResult(result).get(0);
-      apa.setAttribute(results);
-      out.add(Integer.valueOf(results.get("pubmedId")));
     }
-    out.add(apa);
+    else{
+      HashMap<String, String> results = parserAnswer.getResult(result).get(0);
+      try{
+        out.add(Integer.valueOf(Integer.valueOf(results.get("pubmedId"))));
+      } catch (Exception exception){
+        out.add(0);
+      }
+    }
     return out;
   }
 }

@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import queries.APAQuery;
+import queries.PubmedQuery;
 import queries.Query;
 
 /**
@@ -22,7 +23,7 @@ public class Literature implements Entity {
   private List<Attribute> apa;
   private int pubmed = Integer.MIN_VALUE;
   private int brenda;
-  private Query apaQuery;
+  private Query query;
 
   /**
    * The constructor given both reference codes and the {@Link attributes.APAcitaciton}
@@ -52,18 +53,48 @@ public class Literature implements Entity {
   }
 
   /**
+   * The constructor given the brenda reference and the
+   * pubmed reference the apa citation
+   * is missing
+   *
+   * @param brenda_reference
+   * @param pubmed_reference
+   */
+  public Literature(int brenda_reference, int pubmed_reference){
+    brenda = brenda_reference;
+    apa = new ArrayList<Attribute>();
+    pubmed = pubmed_reference;
+  }
+
+  /**
    * Fill the rest of the parameter doing a {@Link queries.APAQuery}
    *
-   * @param enzyme the enzyme of the reference in EC Number formar
-   * @param organism the scientific name of the organism
-   * @throws Exception the SOAP query exception
+   * @param enzyme      the enzyme of the reference in EC Number format
+   * @param organism    the scientific name of the organism
+   * @param user        the Brenda user
+   * @throws Exception  the SOAP query exception
    * @see queries.APAQuery
    */
   public void fill(String enzyme, String organism, User user) throws Exception {
-    apaQuery = new APAQuery(user, enzyme, organism, this.brenda);
-    List<Object> result = (List<Object>) apaQuery.getResult();
+    query = new APAQuery(user, enzyme, organism, this.brenda);
+    List<Object> result = (List<Object>) query.getResult();
     pubmed = (Integer) result.get(0);
     apa.add((APACitation) result.get(1));
+  }
+
+  /**
+   * Fill the Pubmed ID code with a {@Link queries.PubmedQuery}
+   *
+   * @param enzyme    the name of the enzyme in EC Number
+   * @param organism  the scientific name of the organism
+   * @param user      the Brenda user
+   * @throws Exception the SOAP query exception
+   */
+  public void pubmedFiller(String enzyme, String organism, User user) throws Exception{
+    query = new PubmedQuery(user, enzyme, organism, this.brenda);
+    List<Object> result = (List<Object>) query.getResult();
+    pubmed = (Integer) result.get(0);
+    apa.clear();
   }
 
   /**
@@ -118,6 +149,9 @@ public class Literature implements Entity {
 
   @Override
   public String toString(){
+    if (apa.size() == 0){
+      return "Pubmed ID: " + String.valueOf(pubmed);
+    }
     try {
       return "<" + String.valueOf(brenda) + "> " + apa.get(0).toString() + " {Pubmed:" + String
           .valueOf(pubmed) + "}";

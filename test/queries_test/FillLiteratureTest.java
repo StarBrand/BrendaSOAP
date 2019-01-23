@@ -20,6 +20,7 @@ import queries.FillLiterature;
 public class FillLiteratureTest {
 
   private FillLiterature fillLiterature;
+  private FillLiterature pubmedFillerLiterature;
   private Protein protein1;
   private Protein protein2;
   private Km km;
@@ -31,6 +32,7 @@ public class FillLiteratureTest {
   @Before
   public void SetUp() throws Exception {
     fillLiterature = new FillLiterature(new DefaultUser());
+    pubmedFillerLiterature = new FillLiterature(new DefaultUser(), false);
     protein1 = new Protein(
         new Enzyme(1,1,1,1,new DefaultUser()),
         new Organism(
@@ -78,6 +80,7 @@ public class FillLiteratureTest {
   @Test
   public void oneProteinTest() throws Exception {
     fillLiterature.setProteins(protein1);
+    pubmedFillerLiterature.setProteins(protein1);
     List<Protein> proteins = fillLiterature.fill();
     assertEquals(1, proteins.size());
     literature = new Literature(
@@ -96,11 +99,17 @@ public class FillLiteratureTest {
     assertEquals(literature, proteins.get(0).getOrganism().getReferences().get(0));
     assertEquals(literature, proteins.get(0).getAttribute().get(0).getReferences().get(0));
     assertEquals(0, proteins.get(0).getAttribute().get(1).getReferences().size());
+    proteins = pubmedFillerLiterature.fill();
+    literature = new Literature(678779, 16926497);
+    assertEquals(literature, proteins.get(0).getOrganism().getReferences().get(0));
+    assertEquals(literature, proteins.get(0).getAttribute().get(0).getReferences().get(0));
+    assertEquals(0, proteins.get(0).getAttribute().get(1).getReferences().size());
   }
 
   @Test
   public void twoProteinTest() throws Exception {
     fillLiterature.setProteins(protein1, protein2);
+    pubmedFillerLiterature.setProteins(protein1, protein2);
     List<Protein> proteins = fillLiterature.fill();
     assertEquals(2, proteins.size());
 
@@ -135,6 +144,16 @@ public class FillLiteratureTest {
     assertEquals(literature, proteins.get(1).getAttribute().get(0).getReferences().get(0));
     assertEquals(literature, proteins.get(1).getAttribute().get(1).getReferences().get(0));
     assertEquals(0, proteins.get(1).getAttribute().get(2).getReferences().size());
+
+    proteins = pubmedFillerLiterature.fill();
+    assertEquals(2, proteins.size());
+    literature = new Literature(684583, 18456852);
+    assertEquals(literature, proteins.get(1).getOrganism().getReferences().get(0));
+    assertEquals(literature, proteins.get(1).getAttribute().get(0).getReferences().get(0));
+    assertEquals(literature, proteins.get(1).getAttribute().get(1).getReferences().get(0));
+    assertEquals(0, proteins.get(1).getAttribute().get(2).getReferences().size());
+    literature = new Literature(737200, 19807673);
+    assertEquals(literature, proteins.get(1).getOrganism().getReferences().get(1));
   }
 
 

@@ -70,11 +70,16 @@ public class FastaQuery implements Query {
     this.result = new ArrayList<AASequence>();
     for (Entity protein:proteins){
       AASequence aaSequence = new AASequence();
-      result = client.getResult(
-          protein.getParameter() +
-              "#firstAccessionCode*" +
-              ((Protein) protein).getUniprot()
-          ,aaSequence.getMethod());
+      if(((Protein) protein).getUniprot().equals("")){
+        result = "";
+      }
+      else {
+        result = client.getResult(
+            ((Protein) protein).getEnzyme().getParameter() +
+                "#firstAccessionCode*" +
+                ((Protein) protein).getUniprot()
+            , aaSequence.getMethod());
+      }
       if (result.equals("")){
         this.result.add(aaSequence);
       }

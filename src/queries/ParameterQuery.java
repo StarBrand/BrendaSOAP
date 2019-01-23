@@ -66,17 +66,18 @@ public class ParameterQuery implements Query{
     List<HashMap<String, String>> results;
     client.makeCall();
     for(Entity entity:entities){
-      for(Attribute attribute:attributes){
-        result = client.getResult(entity.getParameter(), attribute.getMethod());
+      for(int i = 0; i < attributes.size(); i++){
+        Attribute new_attribute = attributes.get(i);
+        result = client.getResult(entity.getParameter(), new_attribute.getMethod());
         if (!result.equals("")) {
           results = parserAnswer.getResult(result);
           for (HashMap<String, String> observation : results) {
-            attribute.setAttribute(observation);
+            new_attribute.setAttribute(observation);
           }
-          entity.addAttributes(attribute);
+          entity.addAttributes(new_attribute);
         }
         else{
-          entity.addAttributes(attribute);
+          entity.addAttributes(new_attribute);
         }
       }
       out.add(entity);

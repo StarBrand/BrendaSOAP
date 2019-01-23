@@ -3,6 +3,7 @@ package entities_test;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
 import static junit.framework.TestCase.assertNotSame;
+import static junit.framework.TestCase.assertNull;
 
 
 import attributes.APACitation;
@@ -15,6 +16,8 @@ public class LiteratureTest {
   private Literature literature1;
   private Literature literature2;
   private Literature literature3;
+  private Literature literature4;
+  private Literature literature5;
   private APACitation apa;
   private APACitation nullApa;
 
@@ -25,19 +28,24 @@ public class LiteratureTest {
     literature1 = new Literature(11111, 22222, apa);
     literature2 = new Literature(11111, 22222, apa);
     literature3 = new Literature(285564);
+    literature4 = new Literature(285564);
+    literature5 = new Literature(285564, 2053480);
     literature3.fill("1.1.1.1", "Mus musculus", new DefaultUser());
+    literature4.pubmedFiller("1.1.1.1", "Mus musculus", new DefaultUser());
   }
 
   @Test
   public void literatureConstructorTest() {
     assertNotNull(literature3.getAPA());
     assertNotNull(literature3.getPubmedID());
+    assertEquals(0, literature4.getAttribute().size());
   }
 
   @Test
   public void literatureEqualsTest(){
     assertEquals(literature1, literature2);
     assertNotSame(literature1, new Object());
+    assertEquals(literature5, literature4);
   }
 
   @Test
@@ -57,6 +65,8 @@ public class LiteratureTest {
   public void toStringTest(){
     String reference = "<22222> author: title. journal. (1994) 1, 10. {Pubmed:11111}";
     assertEquals(reference, literature1.toString());
+    reference = "Pubmed ID: 2053480";
+    assertEquals(reference, literature4.toString());
   }
 
 }

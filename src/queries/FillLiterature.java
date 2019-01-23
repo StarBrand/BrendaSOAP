@@ -19,6 +19,7 @@ import java.util.List;
 public class FillLiterature {
 
   private User user;
+  private boolean complete = true;
   private List<Protein> proteins;
 
   /**
@@ -26,9 +27,12 @@ public class FillLiterature {
    *
    * @param user Brenda User
    */
-  public FillLiterature(User user){
+  public FillLiterature(User user, boolean... complete){
     this.user = user;
     proteins = new ArrayList<Protein>();
+    for (boolean c:complete){
+      this.complete = c;
+    }
   }
 
   /**
@@ -70,7 +74,12 @@ public class FillLiterature {
     List<Protein> out = new ArrayList<Protein>();
     for(Protein p:proteins){
       for (Literature reference:p.getOrganism().getReferences()){
-        reference.fill(p.getEnzyme().getEC().toString(), p.getOrganism().getName(), this.user);
+        if (this.complete) {
+          reference.fill(p.getEnzyme().getEC().toString(), p.getOrganism().getName(), this.user);
+        }
+        else{
+          reference.pubmedFiller(p.getEnzyme().getEC().toString(), p.getOrganism().getName(), this.user);
+        }
       }
       Protein new_protein = new Protein(
           p.getEnzyme(),
@@ -80,7 +89,14 @@ public class FillLiterature {
       for (int i=0; i < p.getAttribute().size(); i++){
         Attribute new_attribute = p.getAttribute().get(i);
         for (int j=0; j < p.getAttribute().get(i).getReferences().size(); j++){
-          new_attribute.getReferences().get(j).fill(p.getEnzyme().getEC().toString(), p.getOrganism().getName(), this.user);
+          if (this.complete) {
+            new_attribute.getReferences().get(j)
+                .fill(p.getEnzyme().getEC().toString(), p.getOrganism().getName(), this.user);
+          }
+          else{
+            new_attribute.getReferences().get(j)
+                .pubmedFiller(p.getEnzyme().getEC().toString(), p.getOrganism().getName(), this.user);
+          }
         }
         new_protein.addAttributes(new_attribute);
       }
