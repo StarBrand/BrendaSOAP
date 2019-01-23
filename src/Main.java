@@ -1,8 +1,5 @@
 import attributes.Attribute;
 import attributes.functional_parameters.Km;
-import attributes.functional_parameters.PHOptimum;
-import attributes.functional_parameters.PHRange;
-import attributes.functional_parameters.TemperatureRange;
 import client.DefaultUser;
 import entities.Entity;
 import entities.Enzyme;
@@ -10,7 +7,6 @@ import entities.Literature;
 import entities.Protein;
 import filters.Filter;
 import filters.SequenceFilter;
-import java.lang.ref.Reference;
 import java.util.List;
 import queries.FastaQuery;
 import queries.FillLiterature;
@@ -77,7 +73,7 @@ public class Main {
     for(Entity protein:proteins_filtered) {
       query.setEntities(protein);
     }
-    query.addAttributes(new PHRange(), new PHOptimum(), new Km(), new TemperatureRange());
+    query.addAttributes(new Km());
     System.out.print("Buscando atributos...");
     proteins = (List<Protein>) query.getResult();
     System.out.println(" Atributos encontrados!!");
@@ -88,7 +84,7 @@ public class Main {
     System.out.print("Tomó: ");
     System.out.println(showTime(totalTime));
 
-    FillLiterature fillLiterature = new FillLiterature(new DefaultUser());
+    FillLiterature fillLiterature = new FillLiterature(new DefaultUser(), false);
     for(Protein protein:proteins) {
       fillLiterature.addProteins(protein);
     }
