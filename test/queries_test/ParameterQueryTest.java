@@ -144,4 +144,36 @@ public class ParameterTest {
     return out;
   }
 
+  @Test
+  public void notEqualTest() throws Exception {
+    parameterQuery.setEntities(protein1, protein2);
+    parameterQuery.addAttributes(kcat, kiValue, temperatureRange);
+
+    List<Protein> proteins = (List<Protein>) parameterQuery.getResult();
+    System.out.println(proteins.get(0).getAttribute().get(0).getParameter());
+    System.out.println(proteins.get(1).getAttribute().get(0).getParameter());
+    assertFalse(
+        proteins.get(0).getAttribute().get(0).getParameter().equals
+            (
+                proteins.get(1).getAttribute().get(0).getParameter()
+            )
+    );
+    System.out.println(proteins.get(0).getAttribute().get(1).getParameter());
+    System.out.println(proteins.get(1).getAttribute().get(1).getParameter());
+    assertFalse(
+        proteins.get(0).getAttribute().get(1).getParameter().equals
+            (
+                proteins.get(1).getAttribute().get(1).getParameter()
+            )
+    );
+    System.out.println(proteins.get(0).getAttribute().get(2).getParameter());
+    System.out.println(proteins.get(1).getAttribute().get(2).getParameter());
+    assertFalse(
+        proteins.get(0).getAttribute().get(2).getParameter().equals
+            (
+                proteins.get(1).getAttribute().get(2).getParameter()
+            )
+    );
+  }
+
 }

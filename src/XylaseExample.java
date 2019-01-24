@@ -1,5 +1,15 @@
 import attributes.Attribute;
+import attributes.enzyme_structure.MolecularWeight;
+import attributes.functional_parameters.IC50Value;
+import attributes.functional_parameters.Kcat;
 import attributes.functional_parameters.Km;
+import attributes.functional_parameters.PHOptimum;
+import attributes.functional_parameters.PHRange;
+import attributes.functional_parameters.PIValue;
+import attributes.functional_parameters.SpecificActivity;
+import attributes.functional_parameters.TemperatureOptimum;
+import attributes.functional_parameters.TemperatureRange;
+import attributes.functional_parameters.TurnoverNumber;
 import client.DefaultUser;
 import entities.Entity;
 import entities.Enzyme;
@@ -14,7 +24,7 @@ import queries.ParameterQuery;
 import queries.ProteinQuery;
 import queries.Query;
 
-public class Main {
+public class XylaseExample {
 
   public static void main (String... args) throws Exception{
 
@@ -26,15 +36,16 @@ public class Main {
     Query query;
     query = new ProteinQuery(new DefaultUser());
     query.setEntities(enzyme);
-    System.out.print("Buscando proteínas...");
+    System.out.print("Searching for proteins...");
     List<Protein> proteins = (List<Protein>) query.getResult();
-    System.out.print(" Proteinas encontradas: ");
-    System.out.println(proteins.size());
+    System.out.print(" It has been found ");
+    System.out.print(proteins.size());
+    System.out.println(" proteins");
 
     long endTime = System.currentTimeMillis();
     long totalTime = endTime - startTime;
     long flagTime = System.currentTimeMillis();
-    System.out.print("Tomó: ");
+    System.out.print("It took: ");
     System.out.println(showTime(totalTime));
 
     Filter filter;
@@ -42,79 +53,98 @@ public class Main {
     for(Protein protein:proteins){
       filter.addEntities(protein);
     }
-    System.out.print("Filtrando proteínas...");
+    System.out.print("Filtering proteins...");
     List<Entity> proteins_filtered = filter.getFiltered();
-    System.out.print(" Proteinas filtradas: ");
+    System.out.print(" Filtered Proteins: ");
     System.out.println(proteins_filtered.size());
 
     endTime = System.currentTimeMillis();
     totalTime = endTime - flagTime;
     flagTime = System.currentTimeMillis();
-    System.out.print("Tomó: ");
+    System.out.print("It took: ");
     System.out.println(showTime(totalTime));
 
     FastaQuery fastaQuery = new FastaQuery(new DefaultUser());
     for(Entity protein:proteins_filtered) {
       fastaQuery.setEntities(protein);
     }
-    System.out.print("Buscando secuencias...");
+    System.out.print("Searching for sequences...");
     fastaQuery.getResult();
-    System.out.print("Generando archivo...");
+    System.out.print("Generating file...");
     fastaQuery.generateFile();
-    System.out.print(" Archivo generado!! ");
+    System.out.print(" File has been generated!! ");
 
     endTime = System.currentTimeMillis();
     totalTime = endTime - flagTime;
     flagTime = System.currentTimeMillis();
-    System.out.print("Tomó: ");
+    System.out.print("It took: ");
     System.out.println(showTime(totalTime));
 
     query = new ParameterQuery(new DefaultUser());
-    for(Entity protein:proteins_filtered) {
-      query.setEntities(protein);
+    for(Entity entity:proteins_filtered){
+      query.setEntities(entity);
     }
-    query.addAttributes(new Km());
-    System.out.print("Buscando atributos...");
+    query.addAttributes(
+        new MolecularWeight(),
+        new IC50Value(),
+        new Kcat(),
+        new Km(),
+        new PHOptimum(),
+        new PHRange(),
+        new PIValue(),
+        new SpecificActivity(),
+        new TemperatureOptimum(),
+        new TemperatureRange(),
+        new TurnoverNumber()
+        );
+    System.out.print("Searching for attributes...");
     proteins = (List<Protein>) query.getResult();
-    System.out.println(" Atributos encontrados!!");
+    System.out.println(" Attributes have been found!!");
 
     endTime = System.currentTimeMillis();
     totalTime = endTime - flagTime;
     flagTime = System.currentTimeMillis();
-    System.out.print("Tomó: ");
+    System.out.print("It took: ");
     System.out.println(showTime(totalTime));
 
     FillLiterature fillLiterature = new FillLiterature(new DefaultUser(), false);
     for(Protein protein:proteins) {
       fillLiterature.addProteins(protein);
     }
-    System.out.print("Rellenando bibliografía...");
+    System.out.print("Filling reference...");
     proteins = fillLiterature.fill();
-    System.out.println("... Bibliografía completa");
+    System.out.println("... Reference has completed");
 
     endTime = System.currentTimeMillis();
     totalTime = endTime - flagTime;
-    flagTime = System.currentTimeMillis();
-    System.out.print("Tomó: ");
+    System.out.print("It took: ");
     System.out.println(showTime(totalTime));
 
-    System.out.println("Mostrar resultados:");
+    System.out.println("Showing results...");
 
-    for(Protein protein:proteins){
-      System.out.println(protein);
-      for(Attribute attribute:protein.getAttribute()){
-        System.out.print(attribute.getParameter());
-        for(Literature reference:attribute.getReferences()){
-          System.out.println(reference);
-        }
-      }
-    }
+    OutputTable table = new OutputTable();
+    table.setProteins(proteins);
+    table.defineColumns(
+        new MolecularWeight(),
+        new IC50Value(),
+        new Kcat(),
+        new Km(),
+        new PHOptimum(),
+        new PHRange(),
+        new PIValue(),
+        new SpecificActivity(),
+        new TemperatureOptimum(),
+        new TemperatureRange(),
+        new TurnoverNumber()
+    );
+    table.generateRows();
+    table.out();
 
     /// Until here
 
     endTime   = System.currentTimeMillis();
     totalTime = endTime - startTime;
-    System.out.print("Finalmente, tomó: ");
+    System.out.print("Finally, it took: ");
     System.out.print(showTime(totalTime));
   }
 
