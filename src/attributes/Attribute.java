@@ -9,7 +9,7 @@ import java.util.List;
  *
  * @author Juan Saez Hidalgo
  */
-public interface Attribute {
+public interface Attribute extends Cloneable{
 
   /**
    * Return the references ({@Link entities.Literature}) of the parameter
@@ -77,4 +77,25 @@ public interface Attribute {
    */
   void setAttribute(HashMap<String, String> resultOfQuery);
 
+  /**
+   * Generates the rows for the output table
+   *
+   * @return A HashMap with the name in the keys and the
+   *         observation in the value
+   */
+  HashMap<String, String> rowsToTable();
+
+  /**
+   * Gets the name of the attribute
+   *
+   * @return the name of the attribute
+   */
+  public String getAttributeName();
+
+  /**
+   * Make public the Object method clone
+   *
+   * @return A new instance of Attribute
+   */
+  public Object clone();
 }

@@ -12,6 +12,8 @@ import java.util.List;
  */
 public class SpecificActivity extends SingleValue {
 
+  private String attributeName = "Specific Activity";
+
   /**
    * An empty constructor
    * letting the parameters for default (empty lists, empty string,
@@ -59,5 +61,25 @@ public class SpecificActivity extends SingleValue {
   public List<String> getColumns() {
     String[] columns = new String[]{"specificActivity","specificActivityMaximum","commentary","literature"};
     return Arrays.asList(columns);
+  }
+
+  @Override
+  public Object clone(){
+    SpecificActivity cloned;
+    try{
+      cloned = (SpecificActivity) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  public HashMap<String, String> rowsToTable() {
+    HashMap<String, String> out = super.rowsToTable(attributeName);
+    return out;
+  }
+
+  public String getAttributeName() {
+    return attributeName;
   }
 }

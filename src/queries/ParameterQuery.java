@@ -4,6 +4,7 @@ import attributes.Attribute;
 import client.SoapClient;
 import client.User;
 import entities.Entity;
+import entities.Protein;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -23,7 +24,7 @@ public class ParameterQuery implements Query{
   private SoapClient client;
   private User user;
   private ParserAnswer parserAnswer;
-  private List<Entity> entities;
+  private List<Protein> proteins;
   private List<Attribute> attributes;
 
   /**
@@ -35,7 +36,7 @@ public class ParameterQuery implements Query{
     this.user = user;
     client = new SoapClient(user);
     parserAnswer = new ParserAnswer();
-    entities = new ArrayList<Entity>();
+    proteins = new ArrayList<Protein>();
     attributes = new ArrayList<Attribute>();
   }
 
@@ -46,7 +47,7 @@ public class ParameterQuery implements Query{
    */
   public void setEntities(Entity... entity) {
     for (Entity e:entity){
-      entities.add(e);
+      proteins.add((Protein) e);
     }
   }
 
@@ -61,28 +62,33 @@ public class ParameterQuery implements Query{
   }
 
   public List<?> getResult() throws Exception {
-    List<Entity> out = new ArrayList<Entity>();
+    List<Protein> out = new ArrayList<Protein>();
     String result;
     List<HashMap<String, String>> results;
     client.makeCall();
-    for(Entity entity:entities){
-      for(int i = 0; i < attributes.size(); i++){
-        Attribute new_attribute = attributes.get(i);
-        result = client.getResult(entity.getParameter(), new_attribute.getMethod());
+    for(Protein protein:proteins){
+      Protein new_protein = new Protein(
+          protein.getEnzyme(),
+          protein.getOrganism(),
+          protein.getUniprot()
+      );
+      for(Attribute attribute:attributes){
+        Attribute new_attribute = (Attribute) attribute.clone();
+        result = client.getResult(new_protein.getParameter(), new_attribute.getMethod());
         if (!result.equals("")) {
           results = parserAnswer.getResult(result);
           for (HashMap<String, String> observation : results) {
             new_attribute.setAttribute(observation);
           }
-          entity.addAttributes(new_attribute);
+          new_protein.addAttributes(new_attribute);
         }
         else{
-          entity.addAttributes(new_attribute);
+          new_protein.addAttributes(new_attribute);
         }
       }
-      out.add(entity);
+      out.add(new_protein);
     }
-    this.entities = out;
-    return entities;
+    this.proteins = out;
+    return proteins;
   }
 }

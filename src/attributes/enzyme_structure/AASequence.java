@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class AASequence extends AbstractAttribute {
 
+  private String attributeName = "AA Sequence";
   private String sequence = "";
   private int numberOfAminoacids = 0;
 
@@ -43,6 +44,10 @@ public class AASequence extends AbstractAttribute {
   public void setSequence(String sequence) {
     this.sequence = sequence;
     this.numberOfAminoacids = sequence.length();
+  }
+
+  public String getAttributeName() {
+    return attributeName;
   }
 
   /**
@@ -81,10 +86,20 @@ public class AASequence extends AbstractAttribute {
     setSequence(resultOfQuery.get("sequence"));
   }
 
-  public HashMap<String, String> getColumnsForTable() {
-    HashMap<String, String> out = new HashMap<String, String>();
-    out.put("First Accession Code", "");
-    out.put("No Of AminoAcids", String.valueOf( this.numberOfAminoacids ));
+  @Override
+  public Object clone(){
+    AASequence cloned;
+    try{
+      cloned = (AASequence) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  public HashMap<String, String> rowsToTable() {
+    HashMap<String, String> out = super.rowsToTable(attributeName);
+    out.put("Number of Aminoacids", String.valueOf(numberOfAminoacids));
     return out;
   }
 }

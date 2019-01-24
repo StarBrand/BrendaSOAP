@@ -14,6 +14,8 @@ import java.util.List;
  */
 public class MolecularWeight extends NumericalAttribute {
 
+  private String attributeName = "Molecular Weight";
+
   /**
    * An empty constructor
    * letting the parameters for default (empty lists, empty string,
@@ -60,6 +62,10 @@ public class MolecularWeight extends NumericalAttribute {
     super.setMin_Value(value);
   }
 
+  public String getAttributeName() {
+    return attributeName;
+  }
+
   /**
    * Gets the molecular weight (or minimum value)
    *
@@ -86,4 +92,19 @@ public class MolecularWeight extends NumericalAttribute {
     super.setAttribute(resultOfQuery);
   }
 
+  @Override
+  public Object clone(){
+    MolecularWeight cloned;
+    try{
+      cloned = (MolecularWeight) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  public HashMap<String, String> rowsToTable() {
+    HashMap<String, String> out = super.rowsToTable(attributeName);
+    return out;
+  }
 }

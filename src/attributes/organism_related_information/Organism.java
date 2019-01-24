@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class Organism extends AbstractAttribute {
 
+  private String attributeName = "Organism";
   private String name = "";
   private String genre = "";
   private String species = "";
@@ -129,5 +130,26 @@ public class Organism extends AbstractAttribute {
   public void setAttribute(HashMap<String, String> resultOfQuery) {
     setName(resultOfQuery.get("organism"));
     super.setAttribute(resultOfQuery);
+  }
+
+  @Override
+  public Object clone(){
+    Organism cloned;
+    try{
+      cloned = (Organism) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  public HashMap<String, String> rowsToTable() {
+    HashMap<String, String> out = super.rowsToTable(attributeName);
+    out.put(attributeName, name);
+    return out;
+  }
+
+  public String getAttributeName() {
+    return attributeName;
   }
 }

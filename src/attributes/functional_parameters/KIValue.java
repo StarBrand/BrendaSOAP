@@ -16,6 +16,7 @@ import java.util.List;
  */
 public class KIValue extends SingleValue implements MoleculeDependentAttribute {
 
+  private String attributeName = "Ki";
   private Molecule inhibitor = new NullMolecule();
 
   /**
@@ -86,5 +87,26 @@ public class KIValue extends SingleValue implements MoleculeDependentAttribute {
   public void setAttribute(HashMap<String, String> resultOfQuery) {
     setMolecule(resultOfQuery.get("inhibitor"));
     super.setAttribute(resultOfQuery);
+  }
+
+  @Override
+  public Object clone(){
+    KIValue cloned;
+    try{
+      cloned = (KIValue) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  public HashMap<String, String> rowsToTable() {
+    HashMap<String, String> out = super.rowsToTable(attributeName);
+    out.put(attributeName + " Inhibitor", inhibitor.getName());
+    return out;
+  }
+
+  public String getAttributeName() {
+    return attributeName;
   }
 }

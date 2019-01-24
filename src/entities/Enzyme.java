@@ -5,6 +5,7 @@ import attributes.enzyme_structure.ECNumber;
 import client.DefaultUser;
 import client.User;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import queries.FastQuery;
 import queries.RecommendedNameQuery;
@@ -125,7 +126,7 @@ public class Enzyme implements Entity{
     return ans;
   }
 
-  public List<Attribute> getAttribute() {
+  public List <Attribute>getAttribute() {
     return attributes;
   }
 
@@ -142,5 +143,15 @@ public class Enzyme implements Entity{
   @Override
   public String toString(){
     return "EC Number: "+ec.toString()+"/Recommended name: "+recommended_name+"/Systematic Name: "+systematic_name;
+  }
+
+  @Override
+  public Object clone(){
+    try{
+      Enzyme clone = (Enzyme) super.clone();
+      return clone;
+    } catch (Exception e){
+      return null;
+    }
   }
 }

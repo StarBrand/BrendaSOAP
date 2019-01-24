@@ -70,13 +70,12 @@ public class Literature implements Entity {
    * Fill the rest of the parameter doing a {@Link queries.APAQuery}
    *
    * @param enzyme      the enzyme of the reference in EC Number format
-   * @param organism    the scientific name of the organism
    * @param user        the Brenda user
    * @throws Exception  the SOAP query exception
    * @see queries.APAQuery
    */
-  public void fill(String enzyme, String organism, User user) throws Exception {
-    query = new APAQuery(user, enzyme, organism, this.brenda);
+  public void fill(String enzyme, User user) throws Exception {
+    query = new APAQuery(user, enzyme, this.brenda);
     List<Object> result = (List<Object>) query.getResult();
     pubmed = (Integer) result.get(0);
     apa.add((APACitation) result.get(1));
@@ -86,12 +85,11 @@ public class Literature implements Entity {
    * Fill the Pubmed ID code with a {@Link queries.PubmedQuery}
    *
    * @param enzyme    the name of the enzyme in EC Number
-   * @param organism  the scientific name of the organism
    * @param user      the Brenda user
    * @throws Exception the SOAP query exception
    */
-  public void pubmedFiller(String enzyme, String organism, User user) throws Exception{
-    query = new PubmedQuery(user, enzyme, organism, this.brenda);
+  public void pubmedFiller(String enzyme, User user) throws Exception{
+    query = new PubmedQuery(user, enzyme, this.brenda);
     List<Object> result = (List<Object>) query.getResult();
     pubmed = (Integer) result.get(0);
     apa.clear();

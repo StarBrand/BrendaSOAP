@@ -12,6 +12,8 @@ import java.util.List;
  */
 public class TemperatureRange extends RangeValue{
 
+  private String attributeName = "Temperature Range";
+
   /**
    * An empty constructor
    * letting the parameters for default (empty lists, empty string,
@@ -59,5 +61,25 @@ public class TemperatureRange extends RangeValue{
   public List<String> getColumns() {
     String[] columns = new String[]{"temperatureRange","temperatureRangeMaximum","commentary","literature"};
     return Arrays.asList(columns);
+  }
+
+  @Override
+  public Object clone(){
+    TemperatureRange cloned;
+    try{
+      cloned = (TemperatureRange) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  public HashMap<String, String> rowsToTable() {
+    HashMap<String, String> out = super.rowsToTable(attributeName);
+    return out;
+  }
+
+  public String getAttributeName() {
+    return attributeName;
   }
 }

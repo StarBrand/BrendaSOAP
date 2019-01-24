@@ -75,10 +75,10 @@ public class FillLiterature {
     for(Protein p:proteins){
       for (Literature reference:p.getOrganism().getReferences()){
         if (this.complete) {
-          reference.fill(p.getEnzyme().getEC().toString(), p.getOrganism().getName(), this.user);
+          reference.fill(p.getEnzyme().getEC().toString(), this.user);
         }
         else{
-          reference.pubmedFiller(p.getEnzyme().getEC().toString(), p.getOrganism().getName(), this.user);
+          reference.pubmedFiller(p.getEnzyme().getEC().toString(), this.user);
         }
       }
       Protein new_protein = new Protein(
@@ -91,11 +91,11 @@ public class FillLiterature {
         for (int j=0; j < p.getAttribute().get(i).getReferences().size(); j++){
           if (this.complete) {
             new_attribute.getReferences().get(j)
-                .fill(p.getEnzyme().getEC().toString(), p.getOrganism().getName(), this.user);
+                .fill(p.getEnzyme().getEC().toString(), this.user);
           }
           else{
             new_attribute.getReferences().get(j)
-                .pubmedFiller(p.getEnzyme().getEC().toString(), p.getOrganism().getName(), this.user);
+                .pubmedFiller(p.getEnzyme().getEC().toString(), this.user);
           }
         }
         new_protein.addAttributes(new_attribute);

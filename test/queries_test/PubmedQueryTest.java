@@ -23,12 +23,12 @@ public class PubmedQueryTest {
   public void SetUp() throws Exception {
     pubmedQuery1 = new PubmedQuery(
         new DefaultUser(), "1.1.1.1",
-        "Mus musculus", 285564
+        285564
     );
     // this must fail
     pubmedQuery2 = new PubmedQuery(
         new DefaultUser(), "1.1.1.1",
-        "Mus musculus", 111111
+        111111
     );
     literature = new Literature(
         285564,

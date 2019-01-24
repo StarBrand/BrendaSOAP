@@ -25,7 +25,6 @@ import java.util.List;
 public class APAQuery implements Query {
 
   private String enzyme;
-  private String organism;
   private int brenda;
   private SoapClient client;
   private User user;
@@ -33,18 +32,16 @@ public class APAQuery implements Query {
 
 
   /**
-   * The constructor given a Brenda user, the ecNumber of the enzyme,
-   * and the organism in which the reference to look for is, and the
+   * The constructor given a Brenda user, the ecNumber of the enzyme
+   * in which the reference to look for is, and the
    * Brenda reference code
    *
    * @param user              Brenda user
    * @param enzyme            the ecNumber of the enzyme
-   * @param organism          the organism
    * @param brenda_reference  the brenda reference code
    */
-  public APAQuery(User user, String enzyme, String organism, int brenda_reference) {
+  public APAQuery(User user, String enzyme, int brenda_reference) {
     this.enzyme = enzyme;
-    this.organism = organism;
     this.brenda = brenda_reference;
     this.user = user;
     client = new SoapClient(user);
@@ -69,7 +66,7 @@ public class APAQuery implements Query {
     int volume, fp, lp, year;
     client.makeCall();
     String result = client.getResult(
-        "ecNumber*" + enzyme + "#organism*" + organism + "#reference*" + brenda, "getReference"
+        "ecNumber*" + enzyme + "#reference*" + brenda, "getReference"
     );
     APACitation apa = new APACitation();
     if (result.equals("")) {

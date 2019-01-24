@@ -15,6 +15,7 @@ import java.util.List;
  */
 public class TurnoverNumber extends SingleValue implements MoleculeDependentAttribute {
 
+  private String attributeName = "Turnover Number";
   private Molecule substrate = new NullMolecule();
 
   /**
@@ -86,5 +87,26 @@ public class TurnoverNumber extends SingleValue implements MoleculeDependentAttr
   public void setAttribute(HashMap<String, String> resultOfQuery) {
     setMolecule(resultOfQuery.get("substrate"));
     super.setAttribute(resultOfQuery);
+  }
+
+  @Override
+  public Object clone(){
+    TurnoverNumber cloned;
+    try{
+      cloned = (TurnoverNumber) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  public HashMap<String, String> rowsToTable() {
+    HashMap<String, String> out = super.rowsToTable(attributeName);
+    out.put(attributeName + " Substrate", substrate.getName());
+    return out;
+  }
+
+  public String getAttributeName() {
+    return attributeName;
   }
 }

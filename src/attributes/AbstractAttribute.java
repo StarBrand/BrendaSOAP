@@ -1,5 +1,7 @@
 package attributes;
 
+import static java.lang.Math.max;
+
 import entities.Literature;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -91,5 +93,35 @@ public abstract class AbstractAttribute implements Attribute{
   public void setAttribute(HashMap<String, String> resultOfQuery) {
     setCommentary(resultOfQuery.get( this.getColumns().get(this.getColumns().size() - 2)) );
     setReference(resultOfQuery.get( this.getColumns().get(this.getColumns().size() - 1)) );
+  }
+
+  @Override
+  public Object clone(){
+    AbstractAttribute cloned;
+    try{
+      cloned = (AbstractAttribute) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  /**
+   * rowsToTable for NumericalAttribute for default
+   * to be used for the subclasses
+   *
+   * @param name The name of the Attribute
+   * @return The row of the table
+   */
+  protected HashMap<String, String> rowsToTable(String name) {
+    HashMap<String, String> out = new HashMap<String, String>();
+    String reference = "";
+    for(Literature literature:references){
+      reference += String.valueOf(literature.getPubmedID()) + "; ";
+    }
+    reference.substring(0, max(reference.length() - 2, 0));
+    out.put(name + " Literature (Pubmed ID)", reference);
+    out.put(name + " Commentary", commentary);
+    return out;
   }
 }

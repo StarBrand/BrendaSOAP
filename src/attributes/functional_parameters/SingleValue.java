@@ -1,10 +1,9 @@
 package attributes.functional_parameters;
 
 import attributes.NumericalAttribute;
-import entities.Inhibitor;
 import entities.Literature;
-import entities.Molecule;
 import java.util.HashMap;
+import org.apache.commons.math3.analysis.function.Sin;
 
 /**
  * RangeValue abstract class defined as the superclass
@@ -83,5 +82,16 @@ public abstract class SingleValue extends NumericalAttribute {
   @Override
   public void setAttribute(HashMap<String, String> resultOfQuery) {
     super.setAttribute(resultOfQuery);
+  }
+
+  @Override
+  public Object clone(){
+    SingleValue cloned;
+    try{
+      cloned = (SingleValue) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
   }
 }

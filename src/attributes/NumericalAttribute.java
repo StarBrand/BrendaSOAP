@@ -1,7 +1,6 @@
 package attributes;
 
 import entities.Literature;
-import entities.Molecule;
 import java.util.HashMap;
 
 /**
@@ -128,5 +127,37 @@ public abstract class NumericalAttribute extends AbstractAttribute{
 
     }
     super.setAttribute(resultOfQuery);
+  }
+
+  @Override
+  public Object clone(){
+    NumericalAttribute cloned;
+    try{
+      cloned = (NumericalAttribute) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  /**
+   * rowsToTable for NumericalAttribute for default
+   * to be used for the subclasses
+   *
+   * @param name The name of the Attribute
+   * @return The row of the table
+   */
+  protected HashMap<String, String> rowsToTable(String name) {
+    HashMap<String, String> out = super.rowsToTable(name);
+    if (Double.isNaN(max_value) && !Double.isNaN(min_value)){
+      out.put(name + " value", String.valueOf(min_value));
+    }
+    else if(Double.isNaN(min_value)){
+      return null;
+    }
+    else{
+      out.put(name + " value", String.valueOf(min_value) + "-" + String.valueOf(max_value));
+    }
+    return out;
   }
 }

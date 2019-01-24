@@ -23,7 +23,7 @@ import org.junit.Test;
 import queries.ParameterQuery;
 import queries.Query;
 
-public class ParameterTest {
+public class ParameterQueryTest {
 
   private Query parameterQuery;
   private Protein protein1;
@@ -102,7 +102,7 @@ public class ParameterTest {
 
     protein2 = (Protein) parameterQuery.getResult().get(1);
     assertEquals(3, protein2.getAttribute().size());
-    List<Attribute> attributes = getAttributes(protein1);
+    List<Attribute> attributes = getAttributes(protein2);
 
     kcat = (MoleculeDependentAttribute) attributes.get(0);
     kiValue = (MoleculeDependentAttribute) attributes.get(1);
@@ -150,24 +150,17 @@ public class ParameterTest {
     parameterQuery.addAttributes(kcat, kiValue, temperatureRange);
 
     List<Protein> proteins = (List<Protein>) parameterQuery.getResult();
-    System.out.println(proteins.get(0).getAttribute().get(0).getParameter());
-    System.out.println(proteins.get(1).getAttribute().get(0).getParameter());
+    assertFalse(
+        proteins.get(0).getParameter().equals(
+            proteins.get(1).getParameter()
+        )
+    );
     assertFalse(
         proteins.get(0).getAttribute().get(0).getParameter().equals
             (
                 proteins.get(1).getAttribute().get(0).getParameter()
             )
     );
-    System.out.println(proteins.get(0).getAttribute().get(1).getParameter());
-    System.out.println(proteins.get(1).getAttribute().get(1).getParameter());
-    assertFalse(
-        proteins.get(0).getAttribute().get(1).getParameter().equals
-            (
-                proteins.get(1).getAttribute().get(1).getParameter()
-            )
-    );
-    System.out.println(proteins.get(0).getAttribute().get(2).getParameter());
-    System.out.println(proteins.get(1).getAttribute().get(2).getParameter());
     assertFalse(
         proteins.get(0).getAttribute().get(2).getParameter().equals
             (

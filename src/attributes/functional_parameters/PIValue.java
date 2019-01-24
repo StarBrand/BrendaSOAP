@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class PIValue extends SingleValue{
 
+  private String attributeName = "pI";
 
   /**
    * An empty constructor
@@ -61,5 +62,25 @@ public class PIValue extends SingleValue{
   public List<String> getColumns() {
     String[] columns = new String[]{"piValue","piValueMaximum","commentary","literature"};
     return Arrays.asList(columns);
+  }
+
+  @Override
+  public Object clone(){
+    PIValue cloned;
+    try{
+      cloned = (PIValue) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  public HashMap<String, String> rowsToTable() {
+    HashMap<String, String> out = super.rowsToTable(attributeName);
+    return out;
+  }
+
+  public String getAttributeName() {
+    return attributeName;
   }
 }

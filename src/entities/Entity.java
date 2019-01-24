@@ -1,6 +1,7 @@
 package entities;
 
 import attributes.Attribute;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -8,12 +9,12 @@ import java.util.List;
  *
  * @author Juan Saez Hidalgo
  */
-public interface Entity {
+public interface Entity{
 
   /**
    * Return the {@Link attributes.Attribute} of an entity, for default is an empty list
    *
-   * @return a list of the attributes
+   * @return a List of the attributes
    * @see Attribute
    */
   List<Attribute> getAttribute();

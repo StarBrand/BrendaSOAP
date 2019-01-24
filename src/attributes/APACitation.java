@@ -15,6 +15,7 @@ import java.util.List;
  */
 public class APACitation implements Attribute{
 
+  private String attributeName = "APA Citation";
   private List<String> authors = new ArrayList<String>();
   private String title = "";
   private String journal = "";
@@ -361,6 +362,12 @@ public class APACitation implements Attribute{
     }
   }
 
+  public HashMap<String, String> rowsToTable() {
+    HashMap<String, String> out = new HashMap<String, String>();
+    out.put("APA Citation", this.toString());
+    return out;
+  }
+
   public HashMap<String, HashMap<String, ?>> getColumnsForTable() {
     HashMap<String, HashMap<String, ?>> out = new HashMap<String, HashMap<String, ?>>();
     HashMap<String, String> apa_out = new HashMap<String, String>();
@@ -457,5 +464,20 @@ public class APACitation implements Attribute{
       pages = special_page;
     }
     return author + title + ". " + journal + ". (" + String.valueOf(year) + ") " + String.valueOf(vol) + ", " + pages + ".";
+  }
+
+  @Override
+  public Object clone(){
+    APACitation cloned;
+    try{
+      cloned = (APACitation) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  public String getAttributeName() {
+    return attributeName;
   }
 }

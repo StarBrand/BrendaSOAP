@@ -26,12 +26,12 @@ public class APAQueryTest {
   public void SetUp() throws Exception {
     apaQuery1 = new APAQuery(
         new DefaultUser(), "1.1.1.1",
-        "Mus musculus", 285564
+        285564
     );
     // this must fail
     apaQuery2 = new APAQuery(
         new DefaultUser(), "1.1.1.1",
-        "Mus musculus", 111111
+        111111
     );
     apaCitation = new APACitation(
         "Alcohol dehydrogenase gene expression and cloning of the mouse chi-like ADH",

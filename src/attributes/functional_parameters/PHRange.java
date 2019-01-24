@@ -12,6 +12,8 @@ import java.util.List;
  */
 public class PHRange extends RangeValue{
 
+  private String attributeName = "pH Range";
+
   /**
    * An empty constructor
    * letting the parameters for default (empty lists, empty string,
@@ -57,5 +59,25 @@ public class PHRange extends RangeValue{
   public List<String> getColumns() {
     String[] columns = new String[]{"phRange","phRangeMaximum","commentary","literature"};
     return Arrays.asList(columns);
+  }
+
+  @Override
+  public Object clone(){
+    PHRange cloned;
+    try{
+      cloned = (PHRange) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  public HashMap<String, String> rowsToTable() {
+    HashMap<String, String> out = super.rowsToTable(attributeName);
+    return out;
+  }
+
+  public String getAttributeName() {
+    return attributeName;
   }
 }

@@ -57,4 +57,15 @@ protected String getParameter(String parameter, String... extra) {
     super.setAttribute(resultOfQuery);
   }
 
+  @Override
+  public Object clone(){
+    RangeValue cloned;
+    try{
+      cloned = (RangeValue) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
 }

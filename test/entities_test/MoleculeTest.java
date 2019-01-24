@@ -31,33 +31,18 @@ public class MoleculeTest {
     product = new Product("(rac)-3-methylcyclohexanone + NADH + H+");
     nullMolecule = new NullMolecule();
     example = new Attribute() {
-      public List<Literature> getReferences() {
-        return null;
-      }
-      public void setCommentary(String commentary) {
-      }
-      public String getCommentary() {
-        return null;
-      }
-      public void setReferences(List<Literature> references) {
-      }
-      public void addReference(Literature... reference) {
-      }
-      public String getMethod() {
-        return null;
-      }
-      public String getParameter() {
-        return null;
-      }
-      public List<String> getColumns() {
-        return null;
-      }
-      public void setAttribute(HashMap<String, String> resultOfQuery) {
-      }
-
-      public HashMap<String, String> getColumnsForTable() {
-        return null;
-      }
+      public List<Literature> getReferences() {return null;}
+      public void setCommentary(String commentary) {}
+      public String getCommentary() {return null;}
+      public void setReferences(List<Literature> references) {}
+      public void addReference(Literature... reference) {}
+      public String getMethod() {return null;}
+      public String getParameter() {return null;}
+      public List<String> getColumns() {return null;}
+      public void setAttribute(HashMap<String, String> resultOfQuery) {}
+      public HashMap<String, String> rowsToTable() {return null;}
+      public String getAttributeName() {return null;}
+      public Object clone() {return null;}
     };
   }
 

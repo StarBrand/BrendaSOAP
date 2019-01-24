@@ -12,6 +12,8 @@ import java.util.List;
  */
 public class TemperatureOptimum extends SingleValue{
 
+  private String attributeName = "Temperature Optimum";
+
   /**
    * An empty constructor
    * letting the parameters for default (empty lists, empty string,
@@ -61,5 +63,25 @@ public class TemperatureOptimum extends SingleValue{
   public List<String> getColumns() {
     String[] columns = new String[]{"temperatureOptimum","temperatureOptimumMaximum","commentary","literature"};
     return Arrays.asList(columns);
+  }
+
+  @Override
+  public Object clone(){
+    TemperatureOptimum cloned;
+    try{
+      cloned = (TemperatureOptimum) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
+  }
+
+  public HashMap<String, String> rowsToTable() {
+    HashMap<String, String> out = super.rowsToTable(attributeName);
+    return out;
+  }
+
+  public String getAttributeName() {
+    return attributeName;
   }
 }

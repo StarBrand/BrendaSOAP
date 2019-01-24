@@ -15,6 +15,7 @@ import java.util.List;
  */
 public class ECNumber implements Attribute {
 
+  private String attributeName = "EC Number";
   private int digit1;
   private int digit2;
   private int digit3;
@@ -88,6 +89,10 @@ public class ECNumber implements Attribute {
 
   }
 
+  public String getAttributeName() {
+    return attributeName;
+  }
+
   public String getCommentary() {
     return null;
   }
@@ -113,9 +118,24 @@ public class ECNumber implements Attribute {
 
   }
 
+  public HashMap<String, String> rowsToTable() {
+    return null;
+  }
+
   public HashMap<String, String> getColumnsForTable() {
     HashMap<String, String> out = new HashMap<String, String>();
     out.put("EC Number", ec_code);
     return out;
+  }
+
+  @Override
+  public Object clone(){
+    ECNumber cloned;
+    try{
+      cloned = (ECNumber) super.clone();
+    } catch (Exception e) {
+      cloned = null;
+    }
+    return cloned;
   }
 }
