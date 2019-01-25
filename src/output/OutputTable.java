@@ -1,3 +1,5 @@
+package output;
+
 import static java.lang.StrictMath.max;
 
 import attributes.Attribute;
@@ -10,7 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * OutputTable class, generates the table in csv format
+ * output.OutputTable class, generates the table in csv format
  * of a list of {@Link entities.Protein} and his
  * {@Link attributes.Attribute}
  *
@@ -101,7 +103,7 @@ public class OutputTable {
         try {
           HashMap<String, String> new_rows = attribute.rowsToTable();
           if (data.contains(attribute.getAttributeName())) {
-            if (columns.contains(attribute.getAttributeName() + " value")) {
+            if (row.keySet().contains(attribute.getAttributeName() + " value")) {
               for (String column : new_rows.keySet()) {
                 try {
                   String value = row.get(column);
@@ -113,8 +115,10 @@ public class OutputTable {
               }
             } else {
               for (String column : new_rows.keySet()) {
-                columns.add(column);
                 row.put(column, new_rows.get(column));
+                if(!columns.contains(column)){
+                  columns.add(column);
+                }
               }
             }
           }
@@ -150,4 +154,11 @@ public class OutputTable {
     bf.close();
   }
 
+  public List<HashMap<String, String>> getRows() {
+    return rows;
+  }
+
+  public List<String> getColumns() {
+    return columns;
+  }
 }

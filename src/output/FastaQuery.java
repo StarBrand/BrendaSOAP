@@ -1,4 +1,4 @@
-package queries;
+package output;
 
 import attributes.Attribute;
 import attributes.enzyme_structure.AASequence;
@@ -11,6 +11,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import queries.ParserAnswer;
+import queries.Query;
 
 /**
  * FastaQuery class, generate a .txt file
@@ -105,34 +107,35 @@ public class FastaQuery implements Query {
     int lines, rest;
     FileWriter file = new FileWriter("fasta_output.txt");
     BufferedWriter bf = new BufferedWriter(file);
-    for (int i = 0; i < result.size(); i++){
-      lines = result.get(i).getNumberOfAminoacids() / 80;
-      rest = result.get(i).getNumberOfAminoacids() % 80;
-      line = ">";
-      line += ((Protein) proteins.get(i)).getUniprot() + " ";
-      line += ((Protein) proteins.get(i)).getEnzyme().getRecommended_name() + " ";
-      line += ((Protein) proteins.get(i)).getOrganism().getName();
-      bf.write(line);
-      bf.newLine();
-      line = "";
-      for (int j = 0; j < lines; j++){
-        line += result.get(i).getSequence().substring(j*80, (j * 80) + 79);
+    for (int i = 0; i < result.size(); i++) {
+      if (((Protein) proteins.get(i)).getUniprot() == "") {
+
+      } else {
+        lines = result.get(i).getNumberOfAminoacids() / 80;
+        rest = result.get(i).getNumberOfAminoacids() % 80;
+        line = ">";
+        line += ((Protein) proteins.get(i)).getUniprot() + " ";
+        line += ((Protein) proteins.get(i)).getEnzyme().getRecommended_name() + " ";
+        line += ((Protein) proteins.get(i)).getOrganism().getName();
         bf.write(line);
         bf.newLine();
         line = "";
-      }
-      if (rest != 0){
-        line += result.get(i).getSequence().substring(lines*80, lines*80 + rest - 1);
-        bf.write(line);
+        for (int j = 0; j < lines; j++) {
+          line += result.get(i).getSequence().substring(j * 80, (j * 80) + 79);
+          bf.write(line);
+          bf.newLine();
+          line = "";
+        }
+        if (rest != 0) {
+          line += result.get(i).getSequence().substring(lines * 80, lines * 80 + rest - 1);
+          bf.write(line);
+          bf.newLine();
+          line = "";
+        }
         bf.newLine();
-        line = "";
+        bf.newLine();
       }
-      bf.newLine();
-      bf.newLine();
     }
-    line += ">";
-    bf.write(line);
-    bf.newLine();
     bf.close();
   }
 }

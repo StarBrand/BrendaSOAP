@@ -1,4 +1,4 @@
-package queries_test;
+package output_test;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertFalse;
@@ -12,7 +12,7 @@ import entities.Protein;
 import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
-import queries.FastaQuery;
+import output.FastaQuery;
 import queries.Query;
 
 public class FastaQueryTest {

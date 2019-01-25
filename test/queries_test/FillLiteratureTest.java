@@ -14,7 +14,7 @@ import entities.Protein;
 import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
-import queries.FastaQuery;
+import output.FastaQuery;
 import queries.FillLiterature;
 
 public class FillLiteratureTest {
