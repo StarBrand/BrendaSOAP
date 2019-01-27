@@ -2,10 +2,8 @@ package entities;
 
 import attributes.Attribute;
 import attributes.enzyme_structure.ECNumber;
-import client.DefaultUser;
 import client.User;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import queries.FastQuery;
 import queries.RecommendedNameQuery;

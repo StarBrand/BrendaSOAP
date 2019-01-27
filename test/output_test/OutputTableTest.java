@@ -8,7 +8,7 @@ import attributes.functional_parameters.Km;
 import attributes.functional_parameters.PHRange;
 import attributes.functional_parameters.SpecificActivity;
 import attributes.organism_related_information.Organism;
-import client.DefaultUser;
+import DefaultUser;
 import entities.Enzyme;
 import entities.Literature;
 import java.io.IOException;

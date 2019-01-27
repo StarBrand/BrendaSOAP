@@ -4,14 +4,13 @@ import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
 import attributes.organism_related_information.Organism;
-import client.DefaultUser;
+import DefaultUser;
 import entities.Entity;
 import entities.Enzyme;
 import entities.Literature;
 import entities.Protein;
 import filters.Filter;
 import filters.SequenceFilter;
-import java.util.ArrayList;
 import java.util.List;
 import org.junit.Before;
 import org.junit.Test;

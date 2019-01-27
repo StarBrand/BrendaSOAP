@@ -5,7 +5,7 @@ import static junit.framework.TestCase.assertNotNull;
 import static junit.framework.TestCase.assertNotSame;
 
 import attributes.enzyme_structure.ECNumber;
-import client.DefaultUser;
+import DefaultUser;
 import client.User;
 import org.junit.Before;
 import org.junit.Test;

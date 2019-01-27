@@ -7,7 +7,7 @@ import attributes.enzyme_structure.AASequence;
 import attributes.enzyme_structure.MolecularWeight;
 import attributes.functional_parameters.Km;
 import attributes.organism_related_information.Organism;
-import client.DefaultUser;
+import DefaultUser;
 import entities.Enzyme;
 import entities.Literature;
 import entities.Protein;

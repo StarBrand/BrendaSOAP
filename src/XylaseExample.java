@@ -9,7 +9,6 @@ import attributes.functional_parameters.SpecificActivity;
 import attributes.functional_parameters.TemperatureOptimum;
 import attributes.functional_parameters.TemperatureRange;
 import attributes.functional_parameters.TurnoverNumber;
-import client.DefaultUser;
 import entities.Entity;
 import entities.Enzyme;
 import entities.Protein;

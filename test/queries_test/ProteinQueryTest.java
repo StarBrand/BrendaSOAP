@@ -4,7 +4,7 @@ import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
 import attributes.enzyme_structure.ECNumber;
-import client.DefaultUser;
+import DefaultUser;
 import entities.Enzyme;
 import entities.Protein;
 import java.util.List;

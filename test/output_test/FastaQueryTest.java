@@ -5,7 +5,7 @@ import static junit.framework.TestCase.assertFalse;
 
 import attributes.enzyme_structure.AASequence;
 import attributes.organism_related_information.Organism;
-import client.DefaultUser;
+import DefaultUser;
 import entities.Enzyme;
 import entities.Literature;
 import entities.Protein;

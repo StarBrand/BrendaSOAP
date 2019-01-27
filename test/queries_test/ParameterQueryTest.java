@@ -11,7 +11,7 @@ import attributes.functional_parameters.Kcat;
 import attributes.functional_parameters.RangeValue;
 import attributes.functional_parameters.TemperatureRange;
 import attributes.organism_related_information.Organism;
-import client.DefaultUser;
+import DefaultUser;
 import entities.Enzyme;
 import entities.Literature;
 import entities.NullMolecule;
