@@ -1,11 +1,11 @@
-package client;
+import client.User;
 
 /**
  * DefaultUser class for internal queries
  *
  * @author Juan Saez Hidalgo
  */
-public class DefaultUser extends User{
+public class DefaultUser extends User {
 
   /**
    * Constructor has the default user
