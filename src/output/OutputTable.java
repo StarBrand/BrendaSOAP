@@ -38,6 +38,7 @@ public class OutputTable {
     columns.add("EC Number");
     columns.add("Systematic Name");
     columns.add("Recommended Name");
+    columns.add("UniProt");
     columns.add("Organism");
     columns.add("Organism Commentary");
     columns.add("Organism Literature (Pubmed ID)");
@@ -95,10 +96,11 @@ public class OutputTable {
       row.put(columns.get(0), protein.getEnzyme().getEC().toString());
       row.put(columns.get(1), protein.getEnzyme().getSystematic_name());
       row.put(columns.get(2), protein.getEnzyme().getRecommended_name());
+      row.put(columns.get(3), protein.getUniprot());
       HashMap<String, String> organism = protein.getOrganism().rowsToTable();
-      row.put(columns.get(3), organism.get(columns.get(3)));
       row.put(columns.get(4), organism.get(columns.get(4)));
       row.put(columns.get(5), organism.get(columns.get(5)));
+      row.put(columns.get(6), organism.get(columns.get(6)));
       for (Attribute attribute : protein.getAttribute()) {
         try {
           HashMap<String, String> new_rows = attribute.rowsToTable();
@@ -152,6 +154,13 @@ public class OutputTable {
       bf.newLine();
     }
     bf.close();
+  }
+
+  public void deleteLiteratureColumn(){
+    for(HashMap<String, String> row:rows){
+      row.remove(columns.get(6));
+    }
+    columns.remove(6);
   }
 
   public List<HashMap<String, String>> getRows() {

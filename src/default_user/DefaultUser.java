@@ -1,7 +1,9 @@
+package default_user;
+
 import client.User;
 
 /**
- * DefaultUser class for internal queries
+ * default_user.DefaultUser class for internal queries
  *
  * @author Juan Saez Hidalgo
  */
@@ -11,7 +13,7 @@ public class DefaultUser extends User {
    * Constructor has the default user
    */
   public DefaultUser() {
-    super("juan.saez.hidalgo@gmail.com", "BrendaUser32");
+    super("jdoe@example.edu", "password123");
   }
 
 }

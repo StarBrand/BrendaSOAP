@@ -8,7 +8,7 @@ import attributes.functional_parameters.Km;
 import attributes.functional_parameters.PHRange;
 import attributes.functional_parameters.SpecificActivity;
 import attributes.organism_related_information.Organism;
-import DefaultUser;
+import default_user.DefaultUser;
 import entities.Enzyme;
 import entities.Literature;
 import java.io.IOException;
@@ -65,7 +65,7 @@ public class OutputTableTest {
     List<String> columns = outputTable.getColumns();
     List<HashMap<String, String>> rows = outputTable.getRows();
 
-    assertEquals(6 + 1*3, columns.size());
+    assertEquals(7 + 1*3, columns.size());
     assertEquals(1, rows.size());
 
     assertEquals(2, rows.get(0).get("pH Range value").split(";").length);
@@ -79,7 +79,7 @@ public class OutputTableTest {
     List<String> columns = outputTable.getColumns();
     List<HashMap<String, String>> rows = outputTable.getRows();
 
-    assertEquals(6 + /* Km */ 4 + /* pH */ 3, columns.size());
+    assertEquals(7 + /* Km */ 4 + /* pH */ 3, columns.size());
     assertEquals(2, rows.size());
 
     assertEquals(2, rows.get(0).get("pH Range value").split(";").length);
@@ -96,7 +96,7 @@ public class OutputTableTest {
     List<String> columns = outputTable.getColumns();
     List<HashMap<String, String>> rows = outputTable.getRows();
 
-    assertEquals(6 + /* Km */ 4 + /* pH Range */ 3, columns.size());
+    assertEquals(7 + /* Km */ 4 + /* pH Range */ 3, columns.size());
     assertEquals(2, rows.size());
 
     assertEquals(1, rows.get(0).get("Km value").split(";").length);
@@ -114,7 +114,7 @@ public class OutputTableTest {
     List<String> columns = outputTable.getColumns();
     List<HashMap<String, String>> rows = outputTable.getRows();
 
-    assertEquals(6 + /* Km */ 4 + /* pH Range */ 3 + /* Spec. Ac. */ 3, columns.size());
+    assertEquals(7 + /* Km */ 4 + /* pH Range */ 3 + /* Spec. Ac. */ 3, columns.size());
     assertEquals(2, rows.size());
 
     assertEquals(2, rows.get(0).get("pH Range value").split(";").length);
@@ -134,7 +134,7 @@ public class OutputTableTest {
     List<String> columns = outputTable.getColumns();
     List<HashMap<String, String>> rows = outputTable.getRows();
 
-    assertEquals(6 + /* Km */ 4 + /* pH Range */ 3 + /*Spec. Act.*/ 3, columns.size());
+    assertEquals(7 + /* Km */ 4 + /* pH Range */ 3 + /*Spec. Act.*/ 3, columns.size());
     assertEquals(2, rows.size());
 
     assertEquals(2, rows.get(0).get("pH Range value").split(";").length);
@@ -156,6 +156,29 @@ public class OutputTableTest {
     outputTable.addProtein(protein1, protein2, protein3);
     outputTable.generateRows();
     outputTable.out();
+  }
+
+  @Test
+  public void deleteLiteratureColumnTest(){
+    outputTable.addProtein(protein1, protein2);
+    outputTable.generateRows();
+
+    List<String> columns = outputTable.getColumns();
+    List<HashMap<String, String>> rows = outputTable.getRows();
+
+    assertEquals(7, columns.size());
+    assertEquals(2, rows.size());
+    assertEquals(7, rows.get(0).size());
+
+    outputTable.deleteLiteratureColumn();
+
+    columns = outputTable.getColumns();
+    rows = outputTable.getRows();
+
+    assertEquals(6, columns.size());
+    assertEquals(2, rows.size());
+    assertEquals(6, rows.get(0).size());
+
   }
 
 }

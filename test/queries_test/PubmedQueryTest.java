@@ -2,7 +2,7 @@ package queries_test;
 
 import static junit.framework.TestCase.assertEquals;
 
-import DefaultUser;
+import default_user.DefaultUser;
 import entities.Literature;
 import java.util.List;
 import org.junit.Before;

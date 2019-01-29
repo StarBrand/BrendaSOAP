@@ -6,7 +6,7 @@ import attributes.Attribute;
 import attributes.functional_parameters.Km;
 import attributes.functional_parameters.PHRange;
 import attributes.organism_related_information.Organism;
-import DefaultUser;
+import default_user.DefaultUser;
 import entities.Enzyme;
 import entities.Literature;
 import entities.Protein;

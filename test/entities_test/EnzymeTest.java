@@ -8,7 +8,7 @@ import attributes.Attribute;
 import attributes.enzyme_structure.ECNumber;
 import attributes.functional_parameters.Km;
 import attributes.functional_parameters.PHRange;
-import DefaultUser;
+import default_user.DefaultUser;
 import entities.Enzyme;
 import entities.Literature;
 import org.junit.Before;

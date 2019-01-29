@@ -6,7 +6,7 @@ import attributes.enzyme_structure.MolecularWeight;
 import attributes.functional_parameters.TemperatureRange;
 import attributes.functional_parameters.TurnoverNumber;
 import attributes.organism_related_information.Organism;
-import DefaultUser;
+import default_user.DefaultUser;
 import entities.Entity;
 import entities.Enzyme;
 import entities.Literature;

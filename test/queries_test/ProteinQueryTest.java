@@ -4,7 +4,7 @@ import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
 import attributes.enzyme_structure.ECNumber;
-import DefaultUser;
+import default_user.DefaultUser;
 import entities.Enzyme;
 import entities.Protein;
 import java.util.List;
@@ -46,10 +46,11 @@ public class ProteinQueryTest {
     results = proteinQuery.getResult();
 
     assertTrue(results.size() > (1 + numberOfResult) );
-    assertTrue(results.get(numberOfResult+5) instanceof Protein);
+    assertTrue(results.get(numberOfResult+1) instanceof Protein);
+    numberOfResult = results.size();
     assertEquals(
         new ECNumber(1,1,1,2),
-        ((Protein) results.get(numberOfResult+5)).getEnzyme().getEC()
+        ((Protein) results.get(numberOfResult-1)).getEnzyme().getEC()
     );
   }
 

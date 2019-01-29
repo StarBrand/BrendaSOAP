@@ -7,7 +7,7 @@ import static junit.framework.TestCase.assertNull;
 
 
 import attributes.APACitation;
-import DefaultUser;
+import default_user.DefaultUser;
 import entities.Literature;
 import org.junit.Before;
 import org.junit.Test;
