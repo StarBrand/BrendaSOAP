@@ -1,3 +1,5 @@
+package main;
+
 import attributes.enzyme_structure.MolecularWeight;
 import attributes.functional_parameters.IC50Value;
 import attributes.functional_parameters.KIValue;
@@ -132,8 +134,6 @@ public class BrendaSOAP {
     outputTable = new OutputTable();
     query.setEntities(enzyme);
     proteins = (List<Entity>) query.getResult();
-    System.out.print(proteins.size());
-    System.out.println(" proteinas encontradas");
     for (Entity protein:proteins) {
       outputTable.addProtein((Protein) protein);
     }
@@ -193,31 +193,22 @@ public class BrendaSOAP {
       query.addAttributes(new TurnoverNumber());
       outputTable.defineColumns(new TurnoverNumber());
     }
-    System.out.print(query.numberOfAttributes());
-    System.out.println(" atributos a buscar");
     if(up) {
       Filter filter = new SequenceFilter();
       for (Entity protein : proteins) {
         filter.addEntities(protein);
       }
       proteins = filter.getFiltered();
-      System.out.print(proteins.size());
-      System.out.println(" proteinas filtradas");
     }
     for(Entity protein:proteins) {
       query.setEntities(protein);
     }
-    System.out.println("Proteinas añadidas");
     proteins = (List<Entity>) query.getResult();
-    System.out.print(proteins.size());
-    System.out.println(" proteinas con atributos");
     fillLiterature = new FillLiterature(user, false);
     for(Entity protein:proteins) {
       fillLiterature.addProteins((Protein) protein);
     }
     List<Protein> proteins = fillLiterature.fill();
-    System.out.print(proteins.size());
-    System.out.println(" proteinas con literatura");
     for (Protein protein:proteins) {
       outputTable.addProtein(protein);
     }
