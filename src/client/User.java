@@ -3,7 +3,7 @@ package client;
 /**
  * User class
  * The object that saves the user
- * and password of the user of BrendaSOAP
+ * and password of the user of main.BrendaSOAP
  *
  * @author Juan Saez Hidalgo
  */

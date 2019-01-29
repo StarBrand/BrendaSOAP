@@ -28,7 +28,7 @@ public interface Entity{
   void addAttributes(Attribute... attribute);
 
   /**
-   * Return the parameters for a BrendaSOAP query
+   * Return the parameters for a main.BrendaSOAP query
    *
    * @return the parameters ready for a query
    */

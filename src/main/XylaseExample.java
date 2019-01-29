@@ -1,3 +1,5 @@
+package main;
+
 import attributes.enzyme_structure.MolecularWeight;
 import attributes.functional_parameters.IC50Value;
 import attributes.functional_parameters.Kcat;
