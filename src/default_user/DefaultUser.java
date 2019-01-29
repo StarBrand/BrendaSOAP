@@ -11,7 +11,7 @@ public class DefaultUser extends User {
    * Constructor has the default user
    */
   public DefaultUser() {
-    super("jdoe@example.edu", "password123");
+    super("juan.saez.hidalgo@gmail.com", "BrendaUser32");
   }
 
 }
