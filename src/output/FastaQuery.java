@@ -70,28 +70,39 @@ public class FastaQuery implements Query {
     String result;
     client.makeCall();
     this.result = new ArrayList<AASequence>();
+    List<Entity> new_proteins = new ArrayList<Entity>();
     for (Entity protein:proteins){
-      AASequence aaSequence = new AASequence();
       if(((Protein) protein).getUniprot().equals("")){
+        AASequence aaSequence = new AASequence();
         result = "";
       }
       else {
-        result = client.getResult(
-            ((Protein) protein).getEnzyme().getParameter() +
-                "#firstAccessionCode*" +
-                ((Protein) protein).getUniprot()
-            , aaSequence.getMethod());
-      }
-      if (result.equals("")){
-        this.result.add(aaSequence);
-      }
-      else{
-        aaSequence.setAttribute(
-            parserAnswer.getResult(result).get(0)
-        );
-        this.result.add(aaSequence);
+        String[] uniprots = ((Protein) protein).getUniprot().split(" AND ");
+        for (String uniprot : uniprots) {
+          Protein aProtein = new Protein(
+              ((Protein) protein).getEnzyme(),
+              ((Protein) protein).getOrganism(),
+              uniprot
+          );
+          new_proteins.add(aProtein);
+          AASequence aaSequence = new AASequence();
+          result = client.getResult(
+              ((Protein) protein).getEnzyme().getParameter() +
+                  "#firstAccessionCode*" +
+                  uniprot
+              , aaSequence.getMethod());
+          if (result.equals("")) {
+            this.result.add(aaSequence);
+          } else {
+            aaSequence.setAttribute(
+                parserAnswer.getResult(result).get(0)
+            );
+            this.result.add(aaSequence);
+          }
+        }
       }
     }
+    this.proteins = new_proteins;
     return this.result;
   }
 

@@ -3,7 +3,6 @@ package attributes.functional_parameters;
 import attributes.NumericalAttribute;
 import entities.Literature;
 import java.util.HashMap;
-import org.apache.commons.math3.analysis.function.Sin;
 
 /**
  * RangeValue abstract class defined as the superclass

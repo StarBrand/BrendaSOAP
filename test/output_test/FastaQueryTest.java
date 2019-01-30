@@ -20,6 +20,7 @@ public class FastaQueryTest {
   private Query fastaQuery;
   private Protein protein1;
   private Protein protein2;
+  private Protein protein3;
   private Protein noSequenceProtein;
   private AASequence aaSequence;
 
@@ -42,6 +43,15 @@ public class FastaQueryTest {
             ""
         ),
         "P40394"
+    );
+    protein3 = new Protein(
+    new Enzyme("6.6.1.2", new DefaultUser()),
+        new Organism(
+            "Pseudomonas denitrificans (nomen rejiciendum)",
+            "",
+            new Literature(1429466)
+        ),
+        "P29933 AND P29934 AND Q9HZQ3 AND P29929"
     );
     noSequenceProtein = new Protein(
         new Enzyme("3.2.1.8", new DefaultUser()),
@@ -68,17 +78,34 @@ public class FastaQueryTest {
   public void noSequenceProteinTest() throws Exception{
     fastaQuery.setEntities(noSequenceProtein);
     List<AASequence> result = (List<AASequence>) fastaQuery.getResult();
-    assertEquals(1, result.size());
-
-    assertEquals("", result.get(0).getSequence());
-    assertEquals(0, result.get(0).getNumberOfAminoacids());
+    assertEquals(0, result.size());
   }
 
   @Test
   public void threeProteinTest() throws Exception {
     fastaQuery.setEntities(protein1, protein2, noSequenceProtein);
     List<AASequence> result = (List<AASequence>) fastaQuery.getResult();
-    assertEquals(3, result.size());
+    assertEquals(2, result.size());
+
+    assertFalse(result.get(1).getSequence().equals(""));
+    assertFalse(result.get(1).getNumberOfAminoacids() == 0);
+  }
+
+  @Test
+  public void multipleSequencePerProteinTest() throws Exception {
+    fastaQuery.setEntities(protein3);
+    List<AASequence> result = (List<AASequence>) fastaQuery.getResult();
+    assertEquals(4, result.size());
+
+    assertFalse(result.get(1).getSequence().equals(""));
+    assertFalse(result.get(1).getNumberOfAminoacids() == 0);
+  }
+
+  @Test
+  public void multipleSequencePerProtein2Test() throws Exception {
+    fastaQuery.setEntities(protein1, protein3);
+    List<AASequence> result = (List<AASequence>) fastaQuery.getResult();
+    assertEquals(5, result.size());
 
     assertFalse(result.get(1).getSequence().equals(""));
     assertFalse(result.get(1).getNumberOfAminoacids() == 0);
@@ -86,7 +113,7 @@ public class FastaQueryTest {
 
   @Test
   public void generateFileTest() throws Exception {
-    fastaQuery.setEntities(protein1, protein2, noSequenceProtein);
+    fastaQuery.setEntities(protein1, protein2, protein3, noSequenceProtein);
     fastaQuery.getResult();
     ((FastaQuery) fastaQuery).generateFile();
   }

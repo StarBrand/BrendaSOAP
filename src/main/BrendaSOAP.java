@@ -19,6 +19,7 @@ import entities.Protein;
 import filters.Filter;
 import filters.SequenceFilter;
 import java.util.List;
+import output.FastaQuery;
 import output.OutputTable;
 import queries.FillLiterature;
 import queries.ParameterQuery;
@@ -214,5 +215,20 @@ public class BrendaSOAP {
     }
     outputTable.generateRows();
     outputTable.out();
+  }
+
+  public void getFastaSequence() throws Exception {
+    query = new FastaQuery(user);
+    List<Entity> proteins_to_fasta;
+    Filter filter = new SequenceFilter();
+    for(Entity protein:proteins){
+      filter.addEntities(protein);
+    }
+    proteins_to_fasta = filter.getFiltered();
+    for(Entity protein:proteins_to_fasta){
+      query.setEntities(protein);
+    }
+    query.getResult();
+    ((FastaQuery) query).generateFile();
   }
 }
