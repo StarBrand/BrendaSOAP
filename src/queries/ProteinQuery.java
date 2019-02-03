@@ -70,18 +70,10 @@ public class ProteinQuery implements Query {
       Organism organism = new Organism();
       result = client.getResult(ec.getParameter(), organism.getMethod());
       List<HashMap<String, String>> results = parserAnswer.getResult(result);
-      for(HashMap<String, String> ans:results){
+      for (HashMap<String, String> ans : results) {
         Organism organism_found = new Organism();
         organism_found.setAttribute(ans);
         Protein protein = new Protein(enzyme, organism_found, ans.get("sequenceCode"));
-        for (String brenda_reference:ans.get("literature").split(", ")){
-          try {
-            reference = new Literature(Integer.valueOf(brenda_reference));
-            protein.getOrganism().addReference(reference);
-          } catch (Exception e) {
-
-          }
-        }
         proteins.add(protein);
       }
     }
