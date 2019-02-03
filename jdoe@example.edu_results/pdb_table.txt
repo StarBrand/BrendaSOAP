@@ -1,0 +1,5 @@
+EC_Number	Organism	PDB	link
+3.2.1.8	Acidomyces acidophilus	3m4f	https://www.rcsb.org/structure/3m4f
+1.1.1.1	Mus musculus	1e3e	https://www.rcsb.org/structure/1e3e
+1.1.1.1	Mus musculus	1e3i	https://www.rcsb.org/structure/1e3i
+1.1.1.1	Mus musculus	1e3l	https://www.rcsb.org/structure/1e3l

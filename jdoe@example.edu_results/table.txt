@@ -1,0 +1,4 @@
+EC_Number	Systematic_name	Recommended_name	UniProt	Organism	Commentary	Literature(PubmedID)	Ref
+1.1.1.1	alcohol:NAD+ oxidoreductase	alcohol dehydrogenase		Acinetobacter calcoaceticus		0	0
+3.2.1.8	4-beta-D-xylan xylanohydrolase	endo-1,4-beta-xylanase	A0A0F6MV31	Arthrobacter sp.	isolated from the feces of Grus nigricollis	0	1
+4.1.1.1	2-oxo-acid carboxy-lyase (aldehyde-forming)	pyruvate decarboxylase	V6RPS5	Fusarium graminearum	gene FG09834.1	0	2

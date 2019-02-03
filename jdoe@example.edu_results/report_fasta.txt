@@ -1,0 +1,7 @@
+UniProt	Enzyme	Organism	Source	Found_using_Brenda
+Q7Z1V6	endo-1,4-beta-xylanase	Ampullaria crossean	TrEMBL	TRUE
+P40394	alcohol dehydrogenase	Homo sapiens	Swiss-Prot	TRUE
+P29933	cobaltochelatase	Pseudomonas denitrificans (nomen rejiciendum)	Swiss-Prot	TRUE
+P29934	cobaltochelatase	Pseudomonas denitrificans (nomen rejiciendum)	Swiss-Prot	TRUE
+Q9HZQ3	cobaltochelatase	Pseudomonas denitrificans (nomen rejiciendum)	Swiss-Prot	TRUE
+P29929	cobaltochelatase	Pseudomonas denitrificans (nomen rejiciendum)	Swiss-Prot	TRUE
