@@ -1,0 +1,95 @@
+Commentary	Ref	Literature(PubmedID)	value
+recombinant EGXA with xylan as substrate	5	18989576	391.8
+truncated variant XynAGN16Lpd, substrate beechwood xylan, pH 6.5, 37°C	6	25331377	1266.0
+pH 5.0, 50°C	10	26847222	38200.0
+mutant T64S, presence of dithiothreitol, pH 3.8, 45°C	11	26686608	687.0
+	13	0	378.0
+pH 5.0. 50°C	14	23670313	22250.0
+pH 5.0. 50°C	15	23670313	22250.0
+after 427.83fold purification, using birchwood xylan in 100 mM sodium acetate buffer pH 5.0 as the substrate	21	0	37.22
+substrate birchwood xylan, pH 9.0, 80°C	22	25553569	375.0
+substrate birchwood xylan, pH 9.0, 80°C	23	25553569	375.0
+X-I after 77.4fold purification, at 60°C and pH 6.0	26	16915648	720.0
+	28	0	1780.0
+purified native enzyme	30	19911836	1436.0
+wild-type	33	17445930	5890.0
+wild-type	34	17445930	5890.0
+wild-type	35	17445930	5890.0
+wild-type	36	17445930	5890.0
+purified recombinant Xyl10C	45	19655217	18830.0
+purified recombinant Xyl10C	46	19655217	18830.0
+	50	11065373	-999.0
+xylanase C	52	0	31.3
+purified mutant enzyme	53	0	2500.0
+substrate beechwood xylan, pH 6.0, 50°C	57	18027102	21.2
+purified enterokinase-digested endoxylanase	60	19356131	125.0
+purified enterokinase-digested endoxylanase	61	19356131	125.0
+	65	7765974	-999.0
+purified recombinant enzyme, substrate birchwood xylan	66	19884762	8.9
+substrate specificity, pH-dependent activity with different substrates, overview	67	11222610	-999.0
+pH 6, 50°C	68	26002499	900.0
+pH 6, 50°C	69	26002499	900.0
+pH 6, 50°C	70	26002499	900.0
+pH 5.5, 55°C	73	0	37.0
+	77	24232655	7.5
+substrate oat spelt xylan, pH 6.5, 50°C	81	25058752	1478.0
+substrate birchwood xylan, pH 6.5, 65°C	84	25951846	1920.0
+substrate birchwood xylan, pH 6.5, 65°C	85	25951846	1920.0
+substrate birchwood xylan, pH 6.5, 65°C	86	25951846	1920.0
+substrate oat spelt xylan, pH 9.0, 60°C	90	24861346	97.0
+toward oat spelt xylan	94	18415096	1983.0
+toward oat spelt xylan	95	18415096	1983.0
+toward oat spelt xylan	96	18415096	1983.0
+purified recombinant XynA	99	19759868	706.1
+purified recombinant enzyme, pH 7.0, 60°C	100	0	2392.0
+substrate soluble birchwood xylan, pH 6.0, temperature not specified in the publication	102	27871388	1487.0
+substrate soluble birchwood xylan, pH 6.0, temperature not specified in the publication	103	27871388	1487.0
+substrate soluble birchwood xylan, pH 6.0, temperature not specified in the publication	104	27871388	1487.0
+substrate birchwood xylan, pH 6.5, 65°C	108	25112314	454.0
+substrate birchwood xylan, pH 6.5, 65°C	109	25112314	454.0
+after 14.2fold purification	113	17257262	360.7
+after 14.2fold purification	114	17257262	360.7
+substrate beechwood xylan, pH 4.0, 50°C	117	24818699	150.0
+purified recombinant enzyme	119	19626289	7988.0
+purified recombinant XYN10G5, substrate soluble wheat arabinoxylan, pH 4.0, 70°C	120	21120468	350.6
+purified mutant XynZ-C	128	19861138	390.0
+purified mutant XynZ-C	129	19861138	390.0
+purified mutant XynZ-C	130	19861138	390.0
+purified mutant XynZ-C	131	19861138	390.0
+purified mutant XynZ-C	132	19861138	390.0
+purified mutant XynZ-C	133	19861138	390.0
+substrate beechwood xylan, pH 5.0, 40°C	140	23410928	5768.0
+purified recombinant enzyme	141	19554324	196.9
+pH 6.0, 50°C	144	27146990	28940.0
+6.7fold purified enzyme	146	18388456	304.2
+purified recombinant wild-type SoxB	148	20361933	801.0
+purified Xyl1, substrate birchwood xylan, at 50°C	149	10689075	5700.0
+purified Xyl1, substrate birchwood xylan, at 50°C	150	10689075	5700.0
+purified enzyme	151	19002659	3272.0
+7.1fold purified enzyme	152	18521591	453.7
+purified recombinant enzyme, substrate oat-spelt xylan	155	19412576	57.9
+purified enzyme, substrate is xylan from birchwood	156	0	70.3
+after 10.4fold purification, using oat spelt xylan as a substrate, at pH 7.0, at 80°C	160	15064978	11.4
+mutant S35C/N44H/Y61M/T62C/N63L/D65P/N66G/T101P/S102N, pH 5.0, 50°C	162	27410423	4659.0
+mutant S35C/N44H/Y61M/T62C/N63L/D65P/N66G/T101P/S102N, pH 5.0, 50°C	163	27410423	4659.0
+purified recombinant enzyme, substrate high viscosity arabinoxylan, pH 5.0, 70°C	165	21466666	115.9
+purified recombinant enzyme, substrate high viscosity arabinoxylan, pH 5.0, 70°C	166	21466666	115.9
+purified recombinant enzyme, substrate high viscosity arabinoxylan, pH 5.0, 70°C	167	21466666	115.9
+purified recombinant enzyme, substrate high viscosity arabinoxylan, pH 5.0, 70°C	168	21466666	115.9
+mutant H209N, pH 5.0, 65°C	170	27554938	1849.0
+mutant 2TfxA98	171	18292971	1108.0
+mutant 2TfxA98	172	18292971	1108.0
+mutant M7, pH 6.0, 50°C	173	0	17778.0
+mutant M7, pH 6.0, 50°C	174	0	17778.0
+	175	10467122	3209.0
+substrate beechwood xylan, purified recombinant enzyme	180	0	1099.0
+	181	0	6630.0
+37°C, pH 5.0, activity in crude-cell-free fungal extracts collected from fungal cultures on Miscanthus cell walls after 1 week	182	25784958	2873.0
+37°C, pH 5.0, activity in crude-cell-free fungal extracts collected from fungal cultures on Miscanthus cell walls after 1 week	183	25784958	2873.0
+37°C, pH 5.0, activity in crude-cell-free fungal extracts collected from fungal cultures on Miscanthus cell walls after 1 week	184	25784958	2873.0
+37°C, pH 5.0, activity in crude-cell-free fungal extracts collected from fungal cultures on Miscanthus cell walls after 1 week	185	25784958	2873.0
+	187	16663064	-999.0
+pH 6.0, 50°C	188	26358761	664.7
+barley glucan as substrate, pH 7.0, 65°C	189	21455595	938.0
+barley glucan as substrate, pH 7.0, 65°C	190	21455595	938.0
+barley glucan as substrate, pH 7.0, 65°C	191	21455595	938.0

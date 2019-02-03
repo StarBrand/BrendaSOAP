@@ -1,0 +1,75 @@
+Commentary	Ref	Literature(PubmedID)	value
+XynA4 shows over 40% of maximal activity within this range	1	19916085	3.8-9.4
+XynA4 shows over 40% of maximal activity within this range	2	19916085	3.8-9.4
+29% of maximum activity	6	25331377	5.5
+about 47 and 41% activity is observed at pH 8 and 9, respectively	10	100112400	3.0-9.0
+pH 4.8: about 70% of maximal activity, pH 8.4: about 60% of maximal activity	13	0	4.8-8.4
+	14	23670313	5.0
+	15	23670313	5.0
+recombinant enzyme, rapid decrease in activity above pH 6.4, profile, overview	19	19412581	2.4-7.4
+	21	0	5.0-8.0
+more than 75% of maximum activity within	22	22806794	10.0-12.0
+more than 75% of maximum activity within	23	22806794	10.0-12.0
+	26	18065237	5.0-8.0
+over 80% of maximal activity within this range	30	100536469	6.5-8.5
+more than 50% activity retained, enzyme activity decreases sharply below pH 5.5 and above pH 9.0, negligible amount of activity at pH below 5.0 and above 10.5	33	19332293	5.5-8.5
+more than 50% activity retained, enzyme activity decreases sharply below pH 5.5 and above pH 9.0, negligible amount of activity at pH below 5.0 and above 10.5	34	19332293	5.5-8.5
+more than 50% activity retained, enzyme activity decreases sharply below pH 5.5 and above pH 9.0, negligible amount of activity at pH below 5.0 and above 10.5	35	19332293	5.5-8.5
+more than 50% activity retained, enzyme activity decreases sharply below pH 5.5 and above pH 9.0, negligible amount of activity at pH below 5.0 and above 10.5	36	19332293	5.5-8.5
+first peak at pH 3.0 with 63% of maximal activity, and second peak with maximal activity at pH 4.5-5.0, profile, overview	45	19655217	2.0-7.0
+first peak at pH 3.0 with 63% of maximal activity, and second peak with maximal activity at pH 4.5-5.0, profile, overview	46	19655217	2.0-7.0
+40% activity at pH 8.0, no activity at pH 4.0 and pH 9.0	50	11065373	6.0-8.0
+the mutant enzyme shows higher activity at pH 9.0 than the wild-type enzyme	53	0	6.5-9.0
+	55	24908422	8.0
+more than 80% of maximum activity	57	18027102	4.5-7.0
+pH 5.0: about 80% of maximal activity, pH 8.0: about 65% of maximal activity	65	7765974	5.0-8.0
+enzyme assay range, over 50% of maximal activity at pH 5.0 and pH 7.5	66	19884762	3.0-11.0
+	67	11222610	5.0-8.0
+about 60% of maximum activity	71	15629130	9.0
+about 60% of maximum activity	72	15629130	9.0
+more than 70% of maximum activity within this range	73	0	4.5-6.5
+activity range	78	19809242	6.0-12.0
+more than 90% of maximum activity	83	26387816	5.0-8.0
+50% of maximum activity	84	25951846	9.0
+50% of maximum activity	85	25951846	9.0
+50% of maximum activity	86	25951846	9.0
+more than 80% of maximum activity	92	27240670	6.5-10.0
+	94	18415096	5.0-6.0
+	95	18415096	5.0-6.0
+	96	18415096	5.0-6.0
+60% of maximal activity at pH 6.0 and pH 8.0, pH profile, recombinant enzyme, overview	97	19838860	2.0-12.0
+activity range, correlation with temperature, overview	100	0	4.0-11.0
+70% of maximal activity at pH 6.5, 85% at pH 7.5	108	100039262	6.5-7.5
+70% of maximal activity at pH 6.5, 85% at pH 7.5	109	100039262	6.5-7.5
+	112	23157299	4.0-8.0
+retains more than 80% of the original activity	113	18499053	3.0-10.0
+retains more than 80% of the original activity	114	18499053	3.0-10.0
+activity range, profile, overview	138	21979072	5.0-10.0
+70% of maximum activity	140	23410928	7.0
+40% of maximum activity	144	27146990	4.0
+over 80% of the peak activity	146	18388456	6.5-8.5
+pH 5.0: about 45% of maximal activity, pH 7.0: about 65% of maximal activity	147	3827815	5.0-7.0
+86% of maximal activity at pH 4.0, 97% at pH 8.0, 30% activity at pH 10.0-12.0	149	14594403	4.0-12.0
+86% of maximal activity at pH 4.0, 97% at pH 8.0, 30% activity at pH 10.0-12.0	150	14594403	4.0-12.0
+over 60% of maximal activity within this range, recombinant enzyme	155	19412576	5.5-7.5
+activity range, over 85% of its maximum activity at a pH range of pH 5.0 to pH 6.5	156	0	4.5-10.5
+native enzyme, activity range, profile, overview	158	0	3.0-9.0
+pH 3.5: about 55% of maximal activity, pH 5.0: about 65% of maximal activity	160	18568289	3.5-5.0
+displays over 50% activity in the pH range of 4.5 to 6.5	165	17216454	4.5-6.5
+displays over 50% activity in the pH range of 4.5 to 6.5	166	17216454	4.5-6.5
+displays over 50% activity in the pH range of 4.5 to 6.5	167	17216454	4.5-6.5
+displays over 50% activity in the pH range of 4.5 to 6.5	168	17216454	4.5-6.5
+12% of maximal activity at pH 3.5 and at pH 7.5	170	0	3.5-7.5
+more than 60% of maximum activity, recombinant protein, both with and without His-tag	171	25887328	6.0-9.0
+more than 60% of maximum activity, recombinant protein, both with and without His-tag	172	25887328	6.0-9.0
+more than 90% of maximum activity	173	10849173	5.5-9.5
+	174	100478004	3.0-9.0
+more than 90% of maximum activity	175	10849173	5.5-9.5
+approximately 90% of the maximal (relative) activity is gained in the pH range 4.8-6.4 at 50°C in citrate/phosphate buffer	182	17988729	4.8-6.4
+approximately 90% of the maximal (relative) activity is gained in the pH range 4.8-6.4 at 50°C in citrate/phosphate buffer	183	17988729	4.8-6.4
+approximately 90% of the maximal (relative) activity is gained in the pH range 4.8-6.4 at 50°C in citrate/phosphate buffer	184	17988729	4.8-6.4
+approximately 90% of the maximal (relative) activity is gained in the pH range 4.8-6.4 at 50°C in citrate/phosphate buffer	185	17988729	4.8-6.4
+less than 50% of maximal activity only below pH 3.5 and above pH 7.0	187	16663064	3.5-7.0
+40% of maximum activity	189	23117673	10.0
+40% of maximum activity	190	23117673	10.0
+40% of maximum activity	191	23117673	10.0

@@ -1,0 +1,52 @@
+Commentary	Ref	Literature(PubmedID)	value
+calculated	9	15715941	1.7
+calculated	10	26847222	6.3
+isoelectric focusing	14	16091777	5.6
+isoelectric focusing	15	16091777	5.6
+isoelectric focusing	21	0	8.8
+isoelectric focusing	22	0	4.5
+isoelectric focusing	23	0	4.5
+calculated	30	15057452	9.3
+	33	19332293	9.44
+	34	19332293	9.44
+	35	19332293	9.44
+	36	19332293	9.44
+isoelectric focusing	47	16404950	9.1
+isoelectric focusing	48	16404950	9.1
+isoelectric focusing, wild-type and mutant strain enzyme	53	0	6.0
+mature enzyme, isoelectric focusing	57	18027102	5.16
+calculated	71	15629130	9.2
+calculated	72	15629130	9.2
+to 9.0, isoelectric focusing	73	0	8.2
+isoelectric focusing	77	17383610	6.5
+calculated	79	16461639	8.5
+calculated	80	16461639	8.5
+calculated	81	25058752	4.4
+calculated	90	24861346	4.8
+sequence calculation	99	19759868	5.47
+isoelectric focusing	112	23157299	6.5
+calculated	113	16473771	4.4
+calculated	114	16473771	4.4
+	121	12089151	9.5
+	122	12089151	9.5
+calculated	124	24170174	6.4
+isoform XynC, isoelectric focusing	140	0	3.6
+	142	18645964	6.3
+Xyl1, isoelectric focusing	149	10689075	5.5
+Xyl1, isoelectric focusing	150	10689075	5.5
+sequence calculation	156	0	6.74
+isozyme III	162	0	6.0
+isozyme III	163	0	6.0
+isoelectric focusing	165	17216454	8.6
+isoelectric focusing	166	17216454	8.6
+isoelectric focusing	167	17216454	8.6
+isoelectric focusing	168	17216454	8.6
+	170	0	7.1
+mutant enzyme; wild-type enzyme	173	100478004	6.0
+mutant enzyme; wild-type enzyme	174	100478004	6.0
+mutant enzyme; wild-type enzyme	175	100478004	6.0
+isoelectric focusing	182	16139382	9.0
+isoelectric focusing	183	16139382	9.0
+isoelectric focusing	184	16139382	9.0
+isoelectric focusing	185	16139382	9.0
+calculated	188	26358761	5.0

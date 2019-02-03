@@ -1,0 +1,17 @@
+Commentary	Substrate	Ref	Literature(PubmedID)	value
+pH 6.0, 60°C	xylohexaose	1	26628911	0.02
+pH 6.0, 60°C	xylohexaose	2	26628911	0.02
+kcat/Km value is 2625 ml per mg and s, pH 5.0, 50°C	oat spelt xylan	14	23670313	-999.0
+kcat/Km value is 2625 ml per mg and s, pH 5.0, 50°C	oat spelt xylan	15	23670313	-999.0
+recombinant wild-type enzyme, pH 7.2, 22°C	2,5-dinitrophenyl-beta-D-xylobioside	21	20163191	14.0
+kcat/Km value for wild-type 40.6 ml/mg/s, for chimera carrying a carbohydrate-binding module 66.4 ml/mg/s, respectively, pH 6.0, 50°C	beechwood xylan	33	0	-999.0
+kcat/Km value for wild-type 40.6 ml/mg/s, for chimera carrying a carbohydrate-binding module 66.4 ml/mg/s, respectively, pH 6.0, 50°C	beechwood xylan	34	26923808	-999.0
+kcat/Km value for wild-type 40.6 ml/mg/s, for chimera carrying a carbohydrate-binding module 66.4 ml/mg/s, respectively, pH 6.0, 50°C	beechwood xylan	35	0	-999.0
+kcat/Km for chimeric enzyme CorA-XynA at pH 6.5, 65°C: 12 ml/mg	1,4-beta-D-xylan	36	22006920	-999.0
+pH 8.0, 40°C	4-O-methyl-D-glucurono-D-xylan	74	27602054	6.27
+kcat/Km vlaue 12.3 ml per s and mg, pH 6.0, temperature not specified in the publication	soluble birchwood xylan	102	27871388	-999.0
+kcat/Km vlaue 12.3 ml per s and mg, pH 6.0, temperature not specified in the publication	soluble birchwood xylan	103	27871388	-999.0
+kcat/Km vlaue 12.3 ml per s and mg, pH 6.0, temperature not specified in the publication	soluble birchwood xylan	104	27871388	-999.0
+kcat/Km value is 289 ml per mg and s, pH 6.0, 80°C	beechwood xylan	124	24170174	-999.0
+kcat/Km value of wild-type 53279 ml/mg/s, of mutant M7 73048 ml/mg/s, respectively, pH 6.0, 50°C	oat spelt xylan	173	0	-999.0
+kcat/Km value of wild-type 53279 ml/mg/s, of mutant M7 73048 ml/mg/s, respectively, pH 6.0, 50°C	oat spelt xylan	174	0	-999.0

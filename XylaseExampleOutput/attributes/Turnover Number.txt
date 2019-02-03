@@ -1,0 +1,43 @@
+Commentary	Substrate	Ref	Literature(PubmedID)	value
+Km value is 6.6 mg/ml, pH 5.0, 50°C	oat spelt xylan	14	23670313	17250.0
+Km value is 6.6 mg/ml, pH 5.0, 50°C	oat spelt xylan	15	23670313	17250.0
+recombinant wild-type enzyme, pH 5.0, 50°C, oat spelt xylan	beta-1,4-xylan	19	19412581	6551.0
+recombinant wild-type enzyme, pH 7.2, 22°C	2,5-dinitrophenyl-beta-D-xylobioside	21	20163191	34.0
+wild-type	birchwood xylan	33	17445930	140.1
+wild-type	birchwood xylan	34	17445930	140.1
+wild-type	birchwood xylan	35	17445930	140.1
+wild-type	birchwood xylan	36	17445930	140.1
+pH 8.0, 40°C	4-O-methyl-D-glucurono-D-xylan	74	27602054	0.27
+in 48.5 mM citric acid and 103 mM disodium hydrogen phosphate, pH 5, at 40°C	birchwood xylan	77	17383610	72.07
+pH 8.5, 55°C, birchwood xylan	beta-1,4-xylan	78	19809242	185.1
+pH 6.5, 50°C	oat spelt xylan	81	9654097	4.58
+pH 5.5, 45°C	beechwood xylan	83	26387816	47.3
+pH 7.0, 55°C, recombinant enzyme, oat spelt xylan	beta-1,4-xylan	97	19838860	18.12
+pH 6.0, temperature not specified in the publication	soluble birchwood xylan	102	27871388	129.0
+pH 6.0, temperature not specified in the publication	soluble birchwood xylan	103	27871388	129.0
+pH 6.0, temperature not specified in the publication	soluble birchwood xylan	104	27871388	129.0
+recombinant enzyme, pH 4.5, 37°C	beta-1,4-xylan	119	19626289	5416.0
+pH 6.5, 25°C	xylan	121	12089151	1247.0
+pH 6.5, 25°C	xylan	122	12089151	1247.0
+pH 6.0, 80°C	beechwood xylan	124	24170174	520.0
+pH 6.5, 45°C	beta-1,4-xylan	141	19554324	603.8
+	oat spelt xylan	146	18388456	170.8
+wild-type	p-nitrophenyl-beta-D-xylobioside	148	19279191	42.17
+	oat spelt xylan	151	19002659	3475.0
+pH 6.5, 60°C	oat-spelt xylan	155	19412576	49.2
+pH 4.2, 45°C	xylan	165	15450181	5405.0
+apparent value for the recombinant enzyme	birchwood xylan	166	17216454	997.0
+apparent value for the recombinant enzyme	birchwood xylan	167	17216454	997.0
+apparent value for the recombinant enzyme	birchwood xylan	168	17216454	997.0
+pH 5.0, 50°C	4-nitrophenyl beta-D-cellobioside	170	0	5000.0
+mutant 2TfxA98	xylan	171	18292971	225.0
+mutant 2TfxA98	xylan	172	18292971	225.0
+mutant M7, pH 6.0, 50°C	oat spelt xylan	173	0	7159.0
+mutant M7, pH 6.0, 50°C	oat spelt xylan	174	0	7159.0
+mutant M7, pH 6.0, 50°C	oat spelt xylan	175	0	7159.0
+from birchwood, pH 6.1, 50°C	xylan	180	0	106.5
+in 10 mM ammonium acetate buffer at pH 5.0 and 20°C	xylohexaose	182	17475200	68.0
+in 10 mM ammonium acetate buffer at pH 5.0 and 20°C	xylohexaose	183	17475200	68.0
+in 10 mM ammonium acetate buffer at pH 5.0 and 20°C	xylohexaose	184	17475200	68.0
+oat spelt xylan, pH 6.0, 60°C, recombinant Xyn2	beta-1,4-xylan	185	20064285	512.4
+pH 6.0, 50°C	birchwood xylan	188	26358761	125.9

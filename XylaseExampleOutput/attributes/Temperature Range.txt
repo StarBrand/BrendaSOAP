@@ -1,0 +1,67 @@
+Commentary	Ref	Literature(PubmedID)	value
+	0	19640703	25.0-70.0
+XynA4 shows over 50% of maximal activity within this range	1	19916085	40.0-65.0
+XynA4 shows over 50% of maximal activity within this range	2	19916085	40.0-65.0
+	10	100112400	30.0-70.0
+activity at 50°C is about 20% higher compared to activity at 70°C	14	23241981	50.0-70.0
+activity at 50°C is about 20% higher compared to activity at 70°C	15	23241981	50.0-70.0
+50% of maximal activity at 20°C, 20% at 70°C	19	19412581	20.0-70.0
+	21	0	40.0-80.0
+80% of maximum activity	22	22806794	80.0
+80% of maximum activity	23	22806794	80.0
+	26	18612683	40.0-50.0
+transxylosylation and hydrolysis activities are optimal at temperatures of 60°C and 40°C, respectively	33	18776691	40.0-60.0
+transxylosylation and hydrolysis activities are optimal at temperatures of 60°C and 40°C, respectively	34	18776691	40.0-60.0
+transxylosylation and hydrolysis activities are optimal at temperatures of 60°C and 40°C, respectively	35	18776691	40.0-60.0
+transxylosylation and hydrolysis activities are optimal at temperatures of 60°C and 40°C, respectively	36	18776691	40.0-60.0
+65% residual activity	42	22487213	70.0
+activity range, 80% of maximal activity at 75-90°C, 20% at 100°C, and 10% at 40°C, profile, overview	45	19655217	35.0-100.0
+activity range, 80% of maximal activity at 75-90°C, 20% at 100°C, and 10% at 40°C, profile, overview	46	19655217	35.0-100.0
+recombinant catalytic domain	50	11065373	40.0-85.0
+rapid decline in activity above 45°C	51	100550709	-999.0
+	53	18379842	30.0-70.0
+	60	19356131	30.0-50.0
+	61	19356131	30.0-50.0
+60°C: about 50% of maximal activity, 90°C: about 20% of maximal activity	65	7765974	60.0-90.0
+enzyme assay range, 50% of maximal activity at 45°C and 60°C	66	19884762	10.0-90.0
+	67	11222610	25.0-60.0
+more than 70% of maximum activity within this range	73	0	45.0-55.0
+activity range	78	19809242	30.0-70.0
+more than 60% of maximum activity	83	26387816	30.0-50.0
+activity range, profile, overview	97	19838860	20.0-70.0
+activity range, correlation with pH, overview	100	0	40.0-80.0
+activity range	108	20493247	20.0-80.0
+activity range	109	20493247	20.0-80.0
+more than 80% of maximum activity	112	23157299	65.0-75.0
+60% of maximal activity at 5°C	121	12089151	5.0-35.0
+60% of maximal activity at 5°C	122	12089151	5.0-35.0
+more than 95% of maximum activity	128	27841749	40.0-70.0
+more than 95% of maximum activity	129	27841749	40.0-70.0
+more than 95% of maximum activity	130	27841749	40.0-70.0
+more than 95% of maximum activity	131	27841749	40.0-70.0
+more than 95% of maximum activity	132	27841749	40.0-70.0
+more than 95% of maximum activity	133	27841749	40.0-70.0
+activity range, profile, overview	138	21979072	40.0-80.0
+the enzyme shows over 65% of its maximum activity at 20-28°C and about 40% at 10°C	141	19554324	10.0-65.0
+purified heavier protein band (42.8 kDa), more than 50% of maximum activity	142	18645964	20.0-80.0
+98% of maximum activity	144	27146990	50.0
+50°C: about 60% of maximal activity, 70°C: about 75% of maximal activity	147	3827815	50.0-70.0
+about 50% of maximal activity at 50°C and 75°C	149	14594403	30.0-75.0
+about 50% of maximal activity at 50°C and 75°C	150	14594403	30.0-75.0
+activity range	156	0	35.0-75.0
+native enzyme, activity range, profile, overview	158	0	30.0-70.0
+80°C: about 40% of maximal activity, 95°C: about 40% of maximal activity	160	18568289	80.0-95.0
+70°C: about 70% of maximal activity, 85°C: about 10% of maximal activity	170	0	70.0-85.0
+more than 60% of maximum activity, recombinant protein, both with and without His-tag	171	25887328	60.0-80.0
+more than 60% of maximum activity, recombinant protein, both with and without His-tag	172	25887328	60.0-80.0
+40% of maximum activity	173	0	100.0
+40% of maximum activity	174	10849173	100.0
+40% of maximum activity	175	10849173	100.0
+activity range of mutant hybrid enzyme, profile, overview	180	19426845	30.0-90.0
+activity at 50°C is slightly higher than activity at 70°C	182	23241981	50.0-70.0
+activity at 50°C is slightly higher than activity at 70°C	183	23241981	50.0-70.0
+activity at 50°C is slightly higher than activity at 70°C	184	23241981	50.0-70.0
+activity at 50°C is slightly higher than activity at 70°C	185	23241981	50.0-70.0
+activity range	189	21455595	35.0-75.0
+activity range	190	21455595	35.0-75.0
+activity range	191	21455595	35.0-75.0

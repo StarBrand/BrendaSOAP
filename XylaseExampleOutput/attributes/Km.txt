@@ -1,0 +1,83 @@
+Commentary	Substrate	Ref	Literature(PubmedID)	value
+Michaelis-Menten kinetics, wild-type and mutant enzymes, overview, wild-type enzyme Km for beechwood xylan is 14.8 mg/ml	more	0	19640703	-999.0
+truncated variant XynAGN16L, Km value 2.6 mg/ml, truncated variant 1.2 mg/ml, respcetively, pH 6.5, 37°C	birchwood xylan	6	25331377	-999.0
+Km value 11.7 mg/ml, pH 5.0, 50°C	birchwood xylan	10	26847222	-999.0
+mutant T64S, Km value 10 mg/ml, pH 3.8, 45°C	beechwood xylan	11	26686608	-999.0
+	more	13	0	-999.0
+Km value is 18.27 mg/ml, pH 5.0, 50°C	xylan	14	24888408	-999.0
+Km value is 18.27 mg/ml, pH 5.0, 50°C	xylan	15	24888408	-999.0
+Michaelis-Menten kinetics	more	19	19412581	-999.0
+kinetics of wild-type and mutant enzymes	more	21	20074594	-999.0
+Km value is 4.2 mg/ml, pH 11, 70°C	oat spelt xylan	22	22806794	-999.0
+Km value is 4.2 mg/ml, pH 11, 70°C	oat spelt xylan	23	22806794	-999.0
+	more	30	10689076	-999.0
+	more	33	16346375	-999.0
+	more	34	16346375	-999.0
+	more	35	16346375	-999.0
+	more	36	16346375	-999.0
+Km value is 9 mg/ml, pH 5, 55°C	beechwood xylan	42	22487213	-999.0
+	more	50	11065373	-999.0
+	more	52	0	-999.0
+KM for substrate Remazol brilliant blue-carboxymethylcellulose: 0.16 mg/ml, KM for substrate xylose: 0.72 mg/ml	more	53	18379842	-999.0
+Km value is 2.64 mg/ml, pH 8.0, 55°C	oat spelt xylan	55	24908422	-999.0
+	more	65	0	-999.0
+Km for birchwood xylan is 3.45 mg/ml	more	66	19884762	-999.0
+pH 8.0, 40°C	4-O-methyl-D-glucurono-D-xylan	74	27602054	40.0
+Km value 0.9 mg/ml, pH 7, 65°C	birchwood xylan	76	0	-999.0
+	more	77	24232655	-999.0
+Km for beta-1,4-xylan from birchwood is 5.4 mg/ml	more	78	19809242	-999.0
+Km value 1.5 mg/ml, pH 6.5, 50°C	oat spelt xylan	81	25058752	-999.0
+Km value 9.49 mg/ml, pH 5.5, 45°C	beechwood xylan	83	26387816	-999.0
+Km value 1.05 mg/ml, pH 6.5, 65°C; Km value 10.5 mg/ml, pH 6.5, 80°C; Km value 3.0 mg/ml, pH 6.5, 65°C	birchwood xylan	84	25951846	-999.0
+Km value 1.05 mg/ml, pH 6.5, 65°C; Km value 10.5 mg/ml, pH 6.5, 80°C; Km value 3.0 mg/ml, pH 6.5, 65°C	birchwood xylan	85	25951846	-999.0
+Km value 1.05 mg/ml, pH 6.5, 65°C; Km value 10.5 mg/ml, pH 6.5, 80°C; Km value 3.0 mg/ml, pH 6.5, 65°C	birchwood xylan	86	25951846	-999.0
+in 12 mM sodium citrate, 50 mM sodium phosphate buffer (pH 6.5)	4-nitrophenyl-beta-D-xylobioside	94	18078955	15.0
+in 12 mM sodium citrate, 50 mM sodium phosphate buffer (pH 6.5)	4-nitrophenyl-beta-D-xylobioside	95	18078955	15.0
+in 12 mM sodium citrate, 50 mM sodium phosphate buffer (pH 6.5)	4-nitrophenyl-beta-D-xylobioside	96	18078955	15.0
+kinetics	more	97	19838860	-999.0
+Michaelis-Menten kinetics, Km values of XynA for birchwood xylan, beechwood xylan, and oat-spelt xylan are 4.4 mg/ml, 3.6 mg/ml, and 9.7 mg/ml, respectively	more	99	19759868	-999.0
+Km value 10.4 mg/ml, pH 6.0, temperature not specified in the publication	soluble birchwood xylan	102	27871388	-999.0
+Km value 10.4 mg/ml, pH 6.0, temperature not specified in the publication	soluble birchwood xylan	103	27871388	-999.0
+Km value 10.4 mg/ml, pH 6.0, temperature not specified in the publication	soluble birchwood xylan	104	27871388	-999.0
+Km value is 12.2 mg/ml, pH 6.5, 65°C	wheat arabinoxylan	108	25112314	-999.0
+Km value is 12.2 mg/ml, pH 6.5, 65°C	wheat arabinoxylan	109	25112314	-999.0
+Km value is 0.52 mg/ml, pH 5.0, 50°C	birch wood xylan	112	23157299	-999.0
+Km value is 41.3 mg/ml, pGH 4.0, 50°C	oat spelt xylan	117	24818699	-999.0
+kinetics	more	119	19626289	-999.0
+	more	121	12089151	-999.0
+	more	122	12089151	-999.0
+Km value is 1.8 mg/ml, pH 6.0, 80°C	beechwood xylan	124	24170174	-999.0
+Km values for mutants XynC-BC and XynC-C determined on soluble xylan are 3.1 mg/ml and 3.6 mg/ml, respectively; Km values for mutants XynZ-BDC and XynZ-C, determined on soluble xylan, are 33.3 mg/ml and 15.4 mg/ml, respectively	more	128	19861138	-999.0
+Km values for mutants XynC-BC and XynC-C determined on soluble xylan are 3.1 mg/ml and 3.6 mg/ml, respectively; Km values for mutants XynZ-BDC and XynZ-C, determined on soluble xylan, are 33.3 mg/ml and 15.4 mg/ml, respectively	more	129	19861138	-999.0
+Km values for mutants XynC-BC and XynC-C determined on soluble xylan are 3.1 mg/ml and 3.6 mg/ml, respectively; Km values for mutants XynZ-BDC and XynZ-C, determined on soluble xylan, are 33.3 mg/ml and 15.4 mg/ml, respectively	more	130	19861138	-999.0
+Km values for mutants XynC-BC and XynC-C determined on soluble xylan are 3.1 mg/ml and 3.6 mg/ml, respectively; Km values for mutants XynZ-BDC and XynZ-C, determined on soluble xylan, are 33.3 mg/ml and 15.4 mg/ml, respectively	more	131	19861138	-999.0
+Km values for mutants XynC-BC and XynC-C determined on soluble xylan are 3.1 mg/ml and 3.6 mg/ml, respectively; Km values for mutants XynZ-BDC and XynZ-C, determined on soluble xylan, are 33.3 mg/ml and 15.4 mg/ml, respectively	more	132	19861138	-999.0
+Km values for mutants XynC-BC and XynC-C determined on soluble xylan are 3.1 mg/ml and 3.6 mg/ml, respectively; Km values for mutants XynZ-BDC and XynZ-C, determined on soluble xylan, are 33.3 mg/ml and 15.4 mg/ml, respectively	more	133	19861138	-999.0
+	more	140	0	-999.0
+Km for the recombinant enzyme is 17.9 mg/ml	more	141	19554324	-999.0
+Km value 0.24 mg/ml, pH 6.0, 50°C	beechwood xylan	144	27146990	-999.0
+	more	147	3827815	-999.0
+wild-type	p-nitrophenyl-beta-D-xylobioside	148	19279191	2.37
+Km value is 5.6 mg/ml, pGH 6.0, 40°C	wheat arabinoxylan	149	24197520	-999.0
+Km value is 5.6 mg/ml, pGH 6.0, 40°C	wheat arabinoxylan	150	24197520	-999.0
+Michaelis-Menten kinetics	more	156	0	-999.0
+	more	162	0	-999.0
+	more	163	0	-999.0
+kinetics, overview	more	165	21466666	-999.0
+kinetics, overview	more	166	21466666	-999.0
+kinetics, overview	more	167	21466666	-999.0
+kinetics, overview	more	168	21466666	-999.0
+pH 5.0, 50°C	4-nitrophenyl beta-D-xylopyranoside	170	0	297.0
+0.91 mg/ml	xylan	173	2306111	-999.0
+Km value of wild-type 0.112 mg/ml, of mutant M7 0.098 mg/ml, respectively, pH 6.0, 50°C	oat spelt xylan	174	0	-999.0
+Km value of wild-type 0.112 mg/ml, of mutant M7 0.098 mg/ml, respectively, pH 6.0, 50°C	oat spelt xylan	175	0	-999.0
+	more	180	0	-999.0
+	more	181	0	-999.0
+in 10 mM ammonium acetate buffer at pH 5.0 and 20°C	xylopentaose	182	17475200	0.136
+in 10 mM ammonium acetate buffer at pH 5.0 and 20°C	xylopentaose	183	17475200	0.136
+Km for beta-1,4-xylan from birchwood is 0.15 mg/ml	more	184	19556747	-999.0
+Km for beta-1,4-xylan from birchwood is 0.15 mg/ml	more	185	19556747	-999.0
+Km value 4.39 mg/ml, pH 6.0, 50°C	birchwood xylan	188	26358761	-999.0
+0.58 g/l at 65°C, pH 7.0	xylan	189	21455595	-999.0
+Michaelis-Menten kinetics	more	190	21455595	-999.0
+0.58 g/l at 65°C, pH 7.0	xylan	191	21455595	-999.0

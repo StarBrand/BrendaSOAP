@@ -1,0 +1,118 @@
+Commentary	Ref	Literature(PubmedID)	value
+mutant D60N/E141A	0	19640703	4.7
+	1	19916085	7.0
+	2	19916085	7.0
+recombinant EGXA with xylan as substrate	5	18989576	6.0
+	6	25331377	6.5
+	9	15715941	5.0
+	10	26847222	5.0
+mutant D48N/T64S	11	26686608	5.0
+	13	0	6.0
+	14	17445930	7.0
+	15	17445930	7.0
+recombinant enzyme	19	19412581	5.0
+assay at	21	20163191	7.2
+	22	22806794	11.0
+	23	22806794	11.0
+X-II	26	16915648	8.0-10.0
+recombinant enzyme	28	21369910	6.6
+and also pH 8.5 and 6.5	30	0	10.5
+wild-type DELTAXBD	32	19352020	8.5
+thermostabel xylanase variant XynAG3 and chimeric enzyme CorA-XynAG3	33	22006920	7.5
+thermostabel xylanase variant XynAG3 and chimeric enzyme CorA-XynAG3	34	22006920	7.5
+thermostabel xylanase variant XynAG3 and chimeric enzyme CorA-XynAG3	35	22006920	7.5
+thermostabel xylanase variant XynAG3 and chimeric enzyme CorA-XynAG3	36	22006920	7.5
+acetate buffer	42	22487213	5.5
+recombinant Xyl10C	45	19655217	4.5-5.0
+recombinant Xyl10C	46	19655217	4.5-5.0
+recombinant catalytic domain at 70°C, and recombinant N-terminal + catalytic domains at 90°C	50	11065373	6.0
+	51	100550709	5.0-7.0
+xylanase B	52	0	6.0
+highest activity at pH 9 in Tris-HCl buffer, whereas in citrate-phosphate buffer at pH 7 the best activity is 90% of that observed in Tris-HCl; highest xylanase activity in Tris-HCl buffer	53	18379842	9.0
+	57	18027102	6.0
+	60	19356131	7.8
+	61	19356131	7.8
+xylanase A	65	7765283	7.0
+	66	19884762	5.5
+	67	11222610	6.0
+	68	26002499	6.0
+	69	26002499	6.0
+	70	26002499	6.0
+XylA	71	17513587	8.0
+XylA	72	17513587	8.0
+assay at	73	21237221	7.0
+substrate 4-O-methyl-D-glucurono-D-xylan	74	27602054	7.0-8.0
+	76	0	6.0-9.0
+	77	24232655	5.5
+	78	19809242	8.5
+	83	26387816	5.5
+; 	84	25951846	6.5
+; 	85	25951846	6.5
+; 	86	25951846	6.5
+	90	24861346	9.0
+	92	27240670	8.0
+	94	18415096	6.0
+	95	18415096	6.0
+	96	18415096	6.0
+recombinant enzyme	97	19838860	7.0
+recombinant His-tagged enzyme	99	19759868	7.0
+	100	0	7.0
+recombinant enzyme	102	21071839	7.5
+recombinant enzyme	103	21071839	7.5
+recombinant enzyme	104	21071839	7.5
+optimum 2	108	20493247	9.5
+optimum 2	109	20493247	9.5
+	112	23157299	6.0
+	113	17257262	8.5
+	114	17257262	8.5
+	117	24818699	4.0
+recombinant enzyme	119	19626289	4.5
+	120	21120468	4.0
+at 25°C	121	12089151	5.3-8.0
+at 25°C	122	12089151	5.3-8.0
+	124	24170174	6.0
+	128	0	6.0
+	129	0	6.0
+	130	0	6.0
+	131	0	6.0
+	132	0	6.0
+	133	0	6.0
+	138	21979072	6.5
+	140	0	5.5
+	141	19554324	6.5
+purified heavier protein band (42.8 kDa)	142	18645964	7.5
+	144	27146990	6.0
+at 50°C	146	18388456	7.8
+	147	3827815	6.0
+assay at	148	20361933	6.0
+	149	14594403	6.0
+	150	14594403	6.0
+	151	19002659	6.5
+	152	18521591	6.5
+recombinant enzyme	155	19412576	6.5
+recombinant enzyme	156	0	6.0
+native enzyme	158	0	5.0
+at 80°C	160	15064978	7.0
+	162	24211645	5.0
+	163	24211645	5.0
+	165	17216454	5.5
+	166	17216454	5.5
+	167	17216454	5.5
+	168	17216454	5.5
+mutant N257D	170	27554938	5.5
+recombinant protein, both with and without His-tag	171	25887328	8.0
+recombinant protein, both with and without His-tag	172	25887328	8.0
+mutant M7	173	0	8.1
+mutant M7	174	0	8.1
+wild-type enzyme	175	100478004	7.0
+assay at	180	0	6.1
+	181	0	5.0-6.0
+Xyn2	182	20064285	6.0
+Xyn2	183	20064285	6.0
+Xyn2	184	20064285	6.0
+Xyn2	185	20064285	6.0
+	187	16663064	5.0
+recombinant form of full-length Xyn11, pH optimum of 8.0 using oat-spelled xylan and 7.2 when 4-nitrophenyl-beta-D-xylotrioside is the substrate	188	18515360	7.2-8.0
+	189	23117673	7.0
+	190	23117673	7.0
+	191	23117673	7.0
