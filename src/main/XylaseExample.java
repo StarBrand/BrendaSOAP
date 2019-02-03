@@ -20,6 +20,7 @@ import filters.SequenceFilter;
 import java.util.List;
 import output.FastaQuery;
 import output.OutputTable;
+import output.PdbQuery;
 import queries.FillLiterature;
 import queries.ParameterQuery;
 import queries.ProteinQuery;
@@ -39,16 +40,34 @@ public class XylaseExample {
     query.setEntities(enzyme);
     System.out.print("Searching for proteins...");
     List<Protein> proteins = (List<Protein>) query.getResult();
+
     System.out.print(" It has been found ");
     System.out.print(proteins.size());
     System.out.println(" proteins");
-
 
     long endTime = System.currentTimeMillis();
     long totalTime = endTime - startTime;
     long flagTime = System.currentTimeMillis();
     System.out.print("It took: ");
     System.out.println(showTime(totalTime));
+
+    PdbQuery pdbQuery = new PdbQuery(new DefaultUser());
+    for(Entity protein:proteins){
+      pdbQuery.setEntities(protein);
+    }
+
+    System.out.print("Searching for PDBs...");
+    pdbQuery.getResult();
+    System.out.print(" Generating file...");
+    pdbQuery.generateFile();
+    System.out.println(" File has been generated!! ");
+
+    endTime = System.currentTimeMillis();
+    totalTime = endTime - startTime;
+    flagTime = System.currentTimeMillis();
+    System.out.print("It took: ");
+    System.out.println(showTime(totalTime));
+
     Filter filter;
     filter = new SequenceFilter();
     for(Protein protein:proteins){
@@ -71,9 +90,9 @@ public class XylaseExample {
     }
     System.out.print("Searching for sequences...");
     fastaQuery.getResult();
-    System.out.print("Generating file...");
+    System.out.print(" Generating file...");
     fastaQuery.generateFile();
-    System.out.print(" File has been generated!! ");
+    System.out.println(" File has been generated!! ");
 
     endTime = System.currentTimeMillis();
     totalTime = endTime - flagTime;
@@ -108,7 +127,7 @@ public class XylaseExample {
     System.out.print("It took: ");
     System.out.println(showTime(totalTime));
 
-    FillLiterature fillLiterature = new FillLiterature(new DefaultUser(), false);
+    FillLiterature fillLiterature = new FillLiterature(new DefaultUser(),false);
     for(Protein protein:proteins) {
       fillLiterature.addProteins(protein);
     }
@@ -123,7 +142,7 @@ public class XylaseExample {
 
     System.out.println("Showing results...");
 
-    OutputTable table = new OutputTable();
+    OutputTable table = new OutputTable(new DefaultUser());
     table.setProteins(proteins);
     table.defineColumns(
         new MolecularWeight(),
@@ -139,7 +158,8 @@ public class XylaseExample {
         new TurnoverNumber()
     );
     table.generateRows();
-    table.out();
+    table.proteins_out();
+    table.attributes_out();
 
     /// Until here
 

@@ -18,9 +18,11 @@ import entities.Enzyme;
 import entities.Protein;
 import filters.Filter;
 import filters.SequenceFilter;
+import java.util.ArrayList;
 import java.util.List;
 import output.FastaQuery;
 import output.OutputTable;
+import output.PdbQuery;
 import queries.FillLiterature;
 import queries.ParameterQuery;
 import queries.ProteinQuery;
@@ -132,7 +134,7 @@ public class BrendaSOAP {
   public void getProtein() throws Exception {
     Enzyme enzyme = new Enzyme(enzymeECnumber, user);
     query = new ProteinQuery(user);
-    outputTable = new OutputTable();
+    outputTable = new OutputTable(user);
     query.setEntities(enzyme);
     proteins = (List<Entity>) query.getResult();
     for (Entity protein:proteins) {
@@ -140,12 +142,12 @@ public class BrendaSOAP {
     }
     outputTable.generateRows();
     outputTable.deleteLiteratureColumn();
-    outputTable.out();
+    outputTable.proteins_out();
   }
 
-  public void getParameters() throws Exception {
+  public void getParameters(int[] selected, boolean all_of_them) throws Exception {
     query = new ParameterQuery(user);
-    outputTable = new OutputTable();
+    outputTable = new OutputTable(user);
     if(mw){
       query.addAttributes(new MolecularWeight());
       outputTable.defineColumns(new MolecularWeight());
@@ -194,6 +196,13 @@ public class BrendaSOAP {
       query.addAttributes(new TurnoverNumber());
       outputTable.defineColumns(new TurnoverNumber());
     }
+    if(!all_of_them){
+      List<Entity> selected_proteins = new ArrayList<Entity>();
+      for(int i:selected){
+        selected_proteins.add(proteins.get(i));
+      }
+      proteins = selected_proteins;
+    }
     if(up) {
       Filter filter = new SequenceFilter();
       for (Entity protein : proteins) {
@@ -214,7 +223,8 @@ public class BrendaSOAP {
       outputTable.addProtein(protein);
     }
     outputTable.generateRows();
-    outputTable.out();
+    outputTable.proteins_out();
+    outputTable.attributes_out();
   }
 
   public void getFastaSequence() throws Exception {
@@ -230,5 +240,14 @@ public class BrendaSOAP {
     }
     query.getResult();
     ((FastaQuery) query).generateFile();
+  }
+
+  public void getPDB() throws Exception {
+    query = new PdbQuery(user);
+    for(Entity protein:proteins){
+      query.setEntities(protein);
+    }
+    query.getResult();
+    ((PdbQuery) query).generateFile();
   }
 }

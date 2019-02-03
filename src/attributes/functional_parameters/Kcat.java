@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class Kcat extends SingleValue implements MoleculeDependentAttribute {
 
-  private String attributeName = "Kcat/Km";
+  private String attributeName = "Kcat_Km";
   private Molecule substrate = new NullMolecule();
 
 
@@ -99,9 +99,10 @@ public class Kcat extends SingleValue implements MoleculeDependentAttribute {
     return cloned;
   }
 
+  @Override
   public HashMap<String, String> rowsToTable() {
-    HashMap<String, String> out = super.rowsToTable(attributeName);
-    out.put(attributeName + " Substrate", substrate.getName());
+    HashMap<String, String> out = super.rowsToTable();
+    out.put("Substrate", substrate.getName());
     return out;
   }
 

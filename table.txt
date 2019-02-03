@@ -1,4 +1,0 @@
-EC Number	Systematic Name	Recommended Name	UniProt	Organism	Organism Commentary	Organism Literature (Pubmed ID)	pH Range Commentary	pH Range Literature (Pubmed ID)	pH Range value	Km Commentary	Km value	Km Substrate	Km Literature (Pubmed ID)	Specific Activity value	Specific Activity Commentary	Specific Activity Literature (Pubmed ID)
-1.1.1.1	alcohol:NAD+ oxidoreductase	alcohol dehydrogenase		Acinetobacter calcoaceticus		0; 	; 	; 	5.0-8.0; 6.0-7.0		10.0	ethanol		0.01		
-3.2.1.8	4-beta-D-xylan xylanohydrolase	endo-1,4-beta-xylanase	A0A0F6MV31	Arthrobacter sp.	isolated from the feces of Grus nigricollis	0; 	; 	; 	5.0-8.0; 6.0-7.0		10.0	ethanol		0.01		
-4.1.1.1	2-oxo-acid carboxy-lyase (aldehyde-forming)	pyruvate decarboxylase	V6RPS5	Fusarium graminearum	gene FG09834.1	0; 			6.0-7.0		10.0	ethanol		null	null	null

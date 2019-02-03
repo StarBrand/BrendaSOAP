@@ -73,7 +73,7 @@ public class FillLiteratureTest {
         "4 * 26961, calculated from sequence",
         new Literature(684583)
     );
-    aaSequence = new AASequence("");
+    aaSequence = new AASequence("", "");
     protein2.addAttributes(km, molecularWeight, aaSequence);
   }
 

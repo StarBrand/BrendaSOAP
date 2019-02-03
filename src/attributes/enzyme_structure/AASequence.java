@@ -15,6 +15,7 @@ public class AASequence extends AbstractAttribute {
 
   private String attributeName = "AA Sequence";
   private String sequence = "";
+  private String source = "";
   private int numberOfAminoacids = 0;
 
   /**
@@ -31,8 +32,9 @@ public class AASequence extends AbstractAttribute {
    *
    * @param sequence The aa sequence
    */
-  public AASequence(String sequence){
+  public AASequence(String sequence, String source){
     this.sequence = sequence;
+    this.source = source;
     this.numberOfAminoacids = sequence.length();
   }
 
@@ -46,6 +48,15 @@ public class AASequence extends AbstractAttribute {
     this.numberOfAminoacids = sequence.length();
   }
 
+  /**
+   * Sets the source
+   *
+   * @param source the source
+   */
+  public void setSource(String source) {
+    this.source = source;
+  }
+
   public String getAttributeName() {
     return attributeName;
   }
@@ -57,6 +68,15 @@ public class AASequence extends AbstractAttribute {
    */
   public String getSequence() {
     return sequence;
+  }
+
+  /**
+   * Gets the source of the secuence
+   *
+   * @return the source
+   */
+  public String getSource() {
+    return source;
   }
 
   /**
@@ -74,7 +94,7 @@ public class AASequence extends AbstractAttribute {
   }
 
   public String getParameter() {
-    return "sequence*" + sequence + "#noOfAminoAcids*" + numberOfAminoacids;
+    return "sequence*" + sequence + "#noOfAminoAcids*" + numberOfAminoacids + "#source*" + source;
   }
 
   public List<String> getColumns() {
@@ -84,6 +104,7 @@ public class AASequence extends AbstractAttribute {
 
   public void setAttribute(HashMap<String, String> resultOfQuery) {
     setSequence(resultOfQuery.get("sequence"));
+    setSource(resultOfQuery.get("source"));
   }
 
   @Override
@@ -98,8 +119,9 @@ public class AASequence extends AbstractAttribute {
   }
 
   public HashMap<String, String> rowsToTable() {
-    HashMap<String, String> out = super.rowsToTable(attributeName);
+    HashMap<String, String> out = new HashMap<String, String>();
     out.put("Number of Aminoacids", String.valueOf(numberOfAminoacids));
+    out.put("Source", source);
     return out;
   }
 }

@@ -76,11 +76,6 @@ public class TemperatureOptimum extends SingleValue{
     return cloned;
   }
 
-  public HashMap<String, String> rowsToTable() {
-    HashMap<String, String> out = super.rowsToTable(attributeName);
-    return out;
-  }
-
   public String getAttributeName() {
     return attributeName;
   }

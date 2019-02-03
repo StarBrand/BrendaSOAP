@@ -116,15 +116,18 @@ public abstract class NumericalAttribute extends AbstractAttribute{
 
   @Override
   public void setAttribute(HashMap<String, String> resultOfQuery) {
+    double value;
     try {
-      setMin_Value(Double.valueOf(resultOfQuery.get(this.getColumns().get(0))));
+      value = Double.valueOf(resultOfQuery.get(this.getColumns().get(0)));
+      setMin_Value(value);
     } catch (Exception e){
-
+      setMin_Value(Double.NaN);
     }
     try {
-      setMax_value(Double.valueOf(resultOfQuery.get(this.getColumns().get(1))));
+      value = Double.valueOf(resultOfQuery.get(this.getColumns().get(1)));
+      setMax_value(value);
     } catch (Exception e){
-
+      setMax_value(Double.NaN);
     }
     super.setAttribute(resultOfQuery);
   }
@@ -144,19 +147,18 @@ public abstract class NumericalAttribute extends AbstractAttribute{
    * rowsToTable for NumericalAttribute for default
    * to be used for the subclasses
    *
-   * @param name The name of the Attribute
    * @return The row of the table
    */
-  protected HashMap<String, String> rowsToTable(String name) {
-    HashMap<String, String> out = super.rowsToTable(name);
+  public HashMap<String, String> rowsToTable() {
+    HashMap<String, String> out = super.rowsToTable();
     if (Double.isNaN(max_value) && !Double.isNaN(min_value)){
-      out.put(name + " value", String.valueOf(min_value));
+      out.put("value", String.valueOf(min_value));
     }
     else if(Double.isNaN(min_value)){
       return null;
     }
     else{
-      out.put(name + " value", String.valueOf(min_value) + "-" + String.valueOf(max_value));
+      out.put("value", String.valueOf(min_value) + "-" + String.valueOf(max_value));
     }
     return out;
   }

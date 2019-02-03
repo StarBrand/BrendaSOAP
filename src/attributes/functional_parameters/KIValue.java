@@ -100,9 +100,10 @@ public class KIValue extends SingleValue implements MoleculeDependentAttribute {
     return cloned;
   }
 
+  @Override
   public HashMap<String, String> rowsToTable() {
-    HashMap<String, String> out = super.rowsToTable(attributeName);
-    out.put(attributeName + " Inhibitor", inhibitor.getName());
+    HashMap<String, String> out = super.rowsToTable();
+    out.put("Inhibitor", inhibitor.getName());
     return out;
   }
 

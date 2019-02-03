@@ -32,7 +32,7 @@ public class OutputTableTest {
 
   @Before
   public void SetUp() throws Exception {
-    outputTable = new OutputTable();
+    outputTable = new OutputTable(new DefaultUser());
     protein1 = new Protein(
         new Enzyme(1,1,1,1,new DefaultUser()),
         new Organism("Acinetobacter calcoaceticus", "", new Literature(659674)),
@@ -62,13 +62,17 @@ public class OutputTableTest {
     outputTable.defineColumns(attribute1);
     outputTable.addProtein(protein1);
     outputTable.generateRows();
-    List<String> columns = outputTable.getColumns();
-    List<HashMap<String, String>> rows = outputTable.getRows();
+    List<String> protein_columns = outputTable.getProtein_columns();
+    List<HashMap<String, String>> protein_rows = outputTable.getProtein_rows();
 
-    assertEquals(7 + 1*3, columns.size());
-    assertEquals(1, rows.size());
+    HashMap<String, List<String>> attributes_columns = outputTable.getAttributes_columns();
+    HashMap<String, List<HashMap<String, String>>> attributes_rows = outputTable.getAttributes_rows();
 
-    assertEquals(2, rows.get(0).get("pH Range value").split(";").length);
+    assertEquals(8, protein_columns.size());
+    assertEquals(1, protein_rows.size());
+
+    assertEquals(4, attributes_columns.get(attribute1.getAttributeName()).size());
+    assertEquals(2, attributes_rows.get(attribute1.getAttributeName()).size());
   }
 
   @Test
@@ -76,16 +80,21 @@ public class OutputTableTest {
     outputTable.defineColumns(attribute1, attribute2);
     outputTable.addProtein(protein1, protein2);
     outputTable.generateRows();
-    List<String> columns = outputTable.getColumns();
-    List<HashMap<String, String>> rows = outputTable.getRows();
 
-    assertEquals(7 + /* Km */ 4 + /* pH */ 3, columns.size());
-    assertEquals(2, rows.size());
+    List<String> protein_columns = outputTable.getProtein_columns();
+    List<HashMap<String, String>> protein_rows = outputTable.getProtein_rows();
 
-    assertEquals(2, rows.get(0).get("pH Range value").split(";").length);
-    assertEquals(2, rows.get(1).get("pH Range value").split(";").length);
-    assertEquals(1, rows.get(0).get("Km value").split(";").length);
-    assertEquals(1, rows.get(1).get("Km value").split(";").length);
+    HashMap<String, List<String>> attributes_columns = outputTable.getAttributes_columns();
+    HashMap<String, List<HashMap<String, String>>> attributes_rows = outputTable.getAttributes_rows();
+
+    assertEquals(8, protein_columns.size());
+    assertEquals(2, protein_rows.size());
+
+    assertEquals(4, attributes_columns.get(attribute1.getAttributeName()).size());
+    assertEquals(4, attributes_rows.get(attribute1.getAttributeName()).size());
+
+    assertEquals(5, attributes_columns.get(attribute2.getAttributeName()).size());
+    assertEquals(2, attributes_rows.get(attribute2.getAttributeName()).size());
   }
 
   @Test
@@ -93,17 +102,21 @@ public class OutputTableTest {
     outputTable.defineColumns(attribute1, attribute2, attribute3);
     outputTable.addProtein(protein1, protein2);
     outputTable.generateRows();
-    List<String> columns = outputTable.getColumns();
-    List<HashMap<String, String>> rows = outputTable.getRows();
 
-    assertEquals(7 + /* Km */ 4 + /* pH Range */ 3, columns.size());
-    assertEquals(2, rows.size());
+    List<String> protein_columns = outputTable.getProtein_columns();
+    List<HashMap<String, String>> protein_rows = outputTable.getProtein_rows();
 
-    assertEquals(1, rows.get(0).get("Km value").split(";").length);
-    assertEquals(1, rows.get(1).get("Km value").split(";").length);
-    assertEquals(2, rows.get(0).get("pH Range value").split(";").length);
-    assertEquals(2, rows.get(1).get("pH Range value").split(";").length);
+    HashMap<String, List<String>> attributes_columns = outputTable.getAttributes_columns();
+    HashMap<String, List<HashMap<String, String>>> attributes_rows = outputTable.getAttributes_rows();
 
+    assertEquals(8, protein_columns.size());
+    assertEquals(2, protein_rows.size());
+
+    assertEquals(4, attributes_columns.get(attribute1.getAttributeName()).size());
+    assertEquals(4, attributes_rows.get(attribute1.getAttributeName()).size());
+
+    assertEquals(5, attributes_columns.get(attribute2.getAttributeName()).size());
+    assertEquals(2, attributes_rows.get(attribute2.getAttributeName()).size());
   }
 
   @Test
@@ -111,18 +124,24 @@ public class OutputTableTest {
     outputTable.defineColumns(attribute1, attribute2, attribute3, attribute4);
     outputTable.addProtein(protein1, protein2);
     outputTable.generateRows();
-    List<String> columns = outputTable.getColumns();
-    List<HashMap<String, String>> rows = outputTable.getRows();
 
-    assertEquals(7 + /* Km */ 4 + /* pH Range */ 3 + /* Spec. Ac. */ 3, columns.size());
-    assertEquals(2, rows.size());
+    List<String> protein_columns = outputTable.getProtein_columns();
+    List<HashMap<String, String>> protein_rows = outputTable.getProtein_rows();
 
-    assertEquals(2, rows.get(0).get("pH Range value").split(";").length);
-    assertEquals(2, rows.get(1).get("pH Range value").split(";").length);
-    assertEquals(1, rows.get(0).get("Km value").split(";").length);
-    assertEquals(1, rows.get(1).get("Km value").split(";").length);
-    assertEquals(1, rows.get(0).get("Specific Activity value").split(";").length);
-    assertEquals(1, rows.get(1).get("Specific Activity value").split(";").length);
+    HashMap<String, List<String>> attributes_columns = outputTable.getAttributes_columns();
+    HashMap<String, List<HashMap<String, String>>> attributes_rows = outputTable.getAttributes_rows();
+
+    assertEquals(8, protein_columns.size());
+    assertEquals(2, protein_rows.size());
+
+    assertEquals(4, attributes_columns.get(attribute1.getAttributeName()).size());
+    assertEquals(4, attributes_rows.get(attribute1.getAttributeName()).size());
+
+    assertEquals(5, attributes_columns.get(attribute2.getAttributeName()).size());
+    assertEquals(2, attributes_rows.get(attribute2.getAttributeName()).size());
+
+    assertEquals(4, attributes_columns.get(attribute4.getAttributeName()).size());
+    assertEquals(2, attributes_rows.get(attribute4.getAttributeName()).size());
   }
 
   @Test
@@ -131,22 +150,24 @@ public class OutputTableTest {
     outputTable.defineColumns(attribute1, attribute2, attribute3, attribute4);
     outputTable.addProtein(protein1, protein3);
     outputTable.generateRows();
-    List<String> columns = outputTable.getColumns();
-    List<HashMap<String, String>> rows = outputTable.getRows();
 
-    assertEquals(7 + /* Km */ 4 + /* pH Range */ 3 + /*Spec. Act.*/ 3, columns.size());
-    assertEquals(2, rows.size());
+    List<String> protein_columns = outputTable.getProtein_columns();
+    List<HashMap<String, String>> protein_rows = outputTable.getProtein_rows();
 
-    assertEquals(2, rows.get(0).get("pH Range value").split(";").length);
-    assertEquals(1, rows.get(1).get("pH Range value").split(";").length);
-    assertEquals(1, rows.get(0).get("Km value").split(";").length);
-    assertEquals(1, rows.get(1).get("Km value").split(";").length);
-    assertEquals(1, rows.get(0).get("Specific Activity value").split(";").length);
-    try {
-      assertEquals(0, rows.get(1).get("Specific Activity value").split(";").length);
-    } catch (NullPointerException e){
-      assertTrue(true);
-    }
+    HashMap<String, List<String>> attributes_columns = outputTable.getAttributes_columns();
+    HashMap<String, List<HashMap<String, String>>> attributes_rows = outputTable.getAttributes_rows();
+
+    assertEquals(8, protein_columns.size());
+    assertEquals(2, protein_rows.size());
+
+    assertEquals(4, attributes_columns.get(attribute1.getAttributeName()).size());
+    assertEquals(3, attributes_rows.get(attribute1.getAttributeName()).size());
+
+    assertEquals(5, attributes_columns.get(attribute2.getAttributeName()).size());
+    assertEquals(2, attributes_rows.get(attribute2.getAttributeName()).size());
+
+    assertEquals(4, attributes_columns.get(attribute4.getAttributeName()).size());
+    assertEquals(1, attributes_rows.get(attribute4.getAttributeName()).size());
   }
 
   @Test
@@ -155,7 +176,8 @@ public class OutputTableTest {
     outputTable.defineColumns(attribute1, attribute2, attribute3, attribute4);
     outputTable.addProtein(protein1, protein2, protein3);
     outputTable.generateRows();
-    outputTable.out();
+    outputTable.proteins_out();
+    outputTable.attributes_out();
   }
 
   @Test
@@ -163,22 +185,22 @@ public class OutputTableTest {
     outputTable.addProtein(protein1, protein2);
     outputTable.generateRows();
 
-    List<String> columns = outputTable.getColumns();
-    List<HashMap<String, String>> rows = outputTable.getRows();
+    List<String> protein_columns = outputTable.getProtein_columns();
+    List<HashMap<String, String>> protein_rows = outputTable.getProtein_rows();
 
-    assertEquals(7, columns.size());
-    assertEquals(2, rows.size());
-    assertEquals(7, rows.get(0).size());
+    HashMap<String, List<String>> attributes_columns = outputTable.getAttributes_columns();
+    HashMap<String, List<HashMap<String, String>>> attributes_rows = outputTable.getAttributes_rows();
+
+    assertEquals(8, protein_columns.size());
+    assertEquals(2, protein_rows.size());
 
     outputTable.deleteLiteratureColumn();
 
-    columns = outputTable.getColumns();
-    rows = outputTable.getRows();
+    protein_columns = outputTable.getProtein_columns();
+    protein_rows = outputTable.getProtein_rows();
 
-    assertEquals(6, columns.size());
-    assertEquals(2, rows.size());
-    assertEquals(6, rows.get(0).size());
-
+    assertEquals(7, protein_columns.size());
+    assertEquals(2, protein_rows.size());
   }
 
 }

@@ -29,7 +29,7 @@ public class User {
    *
    * @return mail
    */
-  String getMail(){
+  public String getMail(){
     return mail;
   }
 

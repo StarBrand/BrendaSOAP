@@ -3,8 +3,6 @@
     <output-path>$PROJECT_DIR$/out/artifacts/BrendaSOAP_jar</output-path>
     <root id="archive" name="BrendaSOAP.jar">
       <element id="module-output" name="BrendaSOAP" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../axis-1_4/lib/axis-ant.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../axis-1_4/lib/axis.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../axis-1_4/lib/commons-discovery-0.2.jar" path-in-jar="/" />
@@ -13,15 +11,6 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/../axis-1_4/lib/log4j-1.2.8.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../axis-1_4/lib/saaj.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../axis-1_4/lib/wsdl4j-1.5.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/biojava/biojava-core/5.1.1/biojava-core-5.1.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/biojava/thirdparty/forester/1.038/forester-1.038.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/guava/guava/24.0-jre/guava-24.0-jre.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/biojava/biojava-genome/5.1.1/biojava-genome-5.1.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/biojava/biojava-alignment/5.1.1/biojava-alignment-5.1.1.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

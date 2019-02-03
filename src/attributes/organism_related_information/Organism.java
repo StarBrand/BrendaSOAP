@@ -144,7 +144,7 @@ public class Organism extends AbstractAttribute {
   }
 
   public HashMap<String, String> rowsToTable() {
-    HashMap<String, String> out = super.rowsToTable(attributeName);
+    HashMap<String, String> out = super.rowsToTable();
     out.put(attributeName, name);
     return out;
   }
