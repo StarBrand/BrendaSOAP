@@ -91,7 +91,10 @@ public abstract class AbstractAttribute implements Attribute{
    * @param resultOfQuery A string with the result of a SOAP Query NOT EMPTY
    */
   public void setAttribute(HashMap<String, String> resultOfQuery) {
-    setCommentary(resultOfQuery.get( this.getColumns().get(this.getColumns().size() - 2)) );
+    String new_commentary = resultOfQuery.get( this.getColumns().get(this.getColumns().size() - 2));
+    new_commentary = new_commentary.replace("&Acirc;&deg;", "°");
+    new_commentary = new_commentary.replace("&deg;", "°");
+    setCommentary(new_commentary);
     setReference(resultOfQuery.get( this.getColumns().get(this.getColumns().size() - 1)) );
   }
 
@@ -110,18 +113,17 @@ public abstract class AbstractAttribute implements Attribute{
    * rowsToTable for NumericalAttribute for default
    * to be used for the subclasses
    *
-   * @param name The name of the Attribute
    * @return The row of the table
    */
-  protected HashMap<String, String> rowsToTable(String name) {
+  public HashMap<String, String> rowsToTable() {
     HashMap<String, String> out = new HashMap<String, String>();
     String reference = "";
     for(Literature literature:references){
       reference += String.valueOf(literature.getPubmedID()) + "; ";
     }
-    reference.substring(0, max(reference.length() - 2, 0));
-    out.put(name + " Literature (Pubmed ID)", reference);
-    out.put(name + " Commentary", commentary);
+    reference = reference.substring(0, max(reference.length() - 2, 0));
+    out.put("Literature(PubmedID)", reference);
+    out.put("Commentary", commentary);
     return out;
   }
 }
