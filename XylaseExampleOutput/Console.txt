@@ -1,14 +1,14 @@
 Searching for proteins... It has been found 1947 proteins
-It took: 0 hr, 0 m, 14 s, 405 ms
+It took: 0 hr, 0 m, 11 s, 406 ms
 Searching for PDBs... Generating file... File has been generated!! 
-It took: 0 hr, 25 m, 21 s, 269 ms
-Filtering proteins... Filtered Proteins: 195
-It took: 0 hr, 0 m, 0 s, 154 ms
+It took: 0 hr, 0 m, 14 s, 94 ms
+Filtering proteins to FASTA search... Filtered Proteins: 195
+It took: 0 hr, 0 m, 0 s, 0 ms
 Searching for sequences... Generating file... File has been generated!! 
-It took: 0 hr, 4 m, 53 s, 357 ms
+It took: 0 hr, 0 m, 17 s, 852 ms
 Searching for attributes... Attributes have been found!!
-It took: 0 hr, 52 m, 32 s, 204 ms
+It took: 0 hr, 0 m, 28 s, 77 ms
 Filling reference...... Reference has completed
-It took: 0 hr, 24 m, 26 s, 552 ms
+It took: 0 hr, 0 m, 8 s, 187 ms
 Showing results...
-Finally, it took: 1 hr, 47 m, 14 s, 266 ms
+Finally, it took: 0 hr, 1 m, 8 s, 976 ms

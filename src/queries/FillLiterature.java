@@ -2,14 +2,17 @@ package queries;
 
 import attributes.Attribute;
 import client.User;
+import entities.Enzyme;
 import entities.Literature;
 import entities.Protein;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
- * FillLiterature class, automatically fill the Literature
- * {@Link entities.Literature} class from his Brenda reference
+ * FillLiterature class, automatically fill the PubMed
+ * parameter of Literature {@Link entities.Literature}
+ * class from his Brenda reference
  * code in a list of {@Link entities.Protein}
  *
  * @author Juan Saez Hidalgo
@@ -19,7 +22,8 @@ import java.util.List;
 public class FillLiterature {
 
   private User user;
-  private boolean complete = true;
+  private EnzymeQuery enzymeQuery;
+  private ParserAnswer parserAnswer;
   private List<Protein> proteins;
 
   /**
@@ -27,12 +31,10 @@ public class FillLiterature {
    *
    * @param user Brenda User
    */
-  public FillLiterature(User user, boolean... complete){
+  public FillLiterature(User user){
     this.user = user;
+    this.parserAnswer = new ParserAnswer();
     proteins = new ArrayList<Protein>();
-    for (boolean c:complete){
-      this.complete = c;
-    }
   }
 
   /**
@@ -71,37 +73,52 @@ public class FillLiterature {
    * @return A list of Protein with Literature parameters completely filled
    */
   public List<Protein> fill() throws Exception {
-    List<Protein> out = new ArrayList<Protein>();
-    for(Protein p:proteins){
-      for (Literature reference:p.getOrganism().getReferences()){
-        if (this.complete) {
-          reference.fill(p.getEnzyme().getEC().toString(), this.user);
-        }
-        else{
-          reference.pubmedFiller(p.getEnzyme().getEC().toString(), this.user);
+    enzymeQuery = new EnzymeQuery(user, proteins);
+    enzymeQuery.getEnzymes();
+    HashMap<Enzyme, String> queries = enzymeQuery.getQueries("getReference");
+    HashMap<Integer, Integer> dic = buildDictionary(queries);
+    for(Protein protein:proteins){
+      String query = queries.get(protein.getEnzyme());
+      setPubMed(protein.getOrganism().getReferences(), dic);
+      for(Attribute attribute:protein.getAttribute()){
+        setPubMed(attribute.getReferences(), dic);
+      }
+    }
+    return proteins;
+  }
+
+  private HashMap<Integer, Integer> buildDictionary(HashMap<Enzyme, String> queries){
+    HashMap<Integer, Integer> out = new HashMap<Integer, Integer>();
+    for(String query:queries.values()){
+      if(!query.equals("")) {
+        List<HashMap<String, String>> results = parserAnswer.getResult(query);
+        for(HashMap<String, String> result:results){
+          int brenda, pubmed;
+          try{
+            brenda = Integer.valueOf(result.get("reference"));
+          }catch (Exception e){
+             brenda = 0;
+          }
+          try{
+            pubmed = Integer.valueOf(result.get("pubmedId"));
+          }catch (Exception e){
+            pubmed = 0;
+          }
+          out.put(brenda, pubmed);
         }
       }
-      Protein new_protein = new Protein(
-          p.getEnzyme(),
-          p.getOrganism(),
-          p.getUniprot()
-      );
-      for (int i=0; i < p.getAttribute().size(); i++){
-        Attribute new_attribute = p.getAttribute().get(i);
-        for (int j=0; j < p.getAttribute().get(i).getReferences().size(); j++){
-          if (this.complete) {
-            new_attribute.getReferences().get(j)
-                .fill(p.getEnzyme().getEC().toString(), this.user);
-          }
-          else{
-            new_attribute.getReferences().get(j)
-                .pubmedFiller(p.getEnzyme().getEC().toString(), this.user);
-          }
-        }
-        new_protein.addAttributes(new_attribute);
-      }
-      out.add(new_protein);
     }
     return out;
   }
+
+  private void setPubMed(List<Literature> references, HashMap<Integer, Integer> dic){
+    for(Literature reference:references){
+      try {
+        reference.setPubmed(dic.get(reference.getBrenda()));
+      } catch (NullPointerException e){
+        reference.setPubmed(0);
+      }
+    }
+  }
+
 }

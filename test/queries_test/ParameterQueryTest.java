@@ -67,25 +67,11 @@ public class ParameterQueryTest {
     assertEquals(3, parameterQuery.numberOfAttributes());
 
     protein1 = (Protein) parameterQuery.getResult().get(0);
-    assertEquals(3, protein1.getAttribute().size());
+    assertEquals(1, protein1.getAttribute().size());
+
     List<Attribute> attributes = getAttributes(protein1);
 
-    kcat = (MoleculeDependentAttribute) attributes.get(0);
-    kiValue = (MoleculeDependentAttribute) attributes.get(1);
-    temperatureRange = (RangeValue) attributes.get(2);
-
-
-    // kcat not found
-    assertEquals("", kcat.getCommentary());
-    assertTrue(kcat.getMolecule() instanceof NullMolecule);
-    assertTrue( Double.isNaN( ((Kcat) kcat).getValue() ) );
-    assertEquals(0,kcat.getReferences().size());
-
-    //kiValue not found
-    assertEquals("",kiValue.getCommentary());
-    assertTrue(kiValue.getMolecule() instanceof NullMolecule);
-    assertTrue( Double.isNaN( ((KIValue) kiValue).getValue() ) );
-    assertEquals(0,kiValue.getReferences().size());
+    temperatureRange = (RangeValue) attributes.get(0);
 
     //Temperature Range found
     assertFalse( temperatureRange.getCommentary().equals("") );
@@ -101,25 +87,17 @@ public class ParameterQueryTest {
     assertEquals(3, parameterQuery.numberOfAttributes());
 
     protein2 = (Protein) parameterQuery.getResult().get(1);
-    assertEquals(3, protein2.getAttribute().size());
+    assertEquals(2, protein2.getAttribute().size());
     List<Attribute> attributes = getAttributes(protein2);
 
     kcat = (MoleculeDependentAttribute) attributes.get(0);
-    kiValue = (MoleculeDependentAttribute) attributes.get(1);
-    temperatureRange = (RangeValue) attributes.get(2);
-
+    temperatureRange = (RangeValue) attributes.get(1);
 
     // kcat found
     assertFalse(kcat.getCommentary().equals(""));
     assertTrue(kcat.getMolecule().isSubstrate());
     assertFalse( Double.isNaN( ((Kcat) kcat).getValue() ) );
     assertTrue(kcat.getReferences().size() > 0);
-
-    //kiValue not found
-    assertEquals("",kiValue.getCommentary());
-    assertTrue(kiValue.getMolecule() instanceof NullMolecule);
-    assertTrue( Double.isNaN( ((KIValue) kiValue).getValue() ) );
-    assertEquals(0,kiValue.getReferences().size());
 
     //Temperature Range found, but no comment
     assertEquals("", temperatureRange.getCommentary());
@@ -159,12 +137,6 @@ public class ParameterQueryTest {
         proteins.get(0).getAttribute().get(0).getParameter().equals
             (
                 proteins.get(1).getAttribute().get(0).getParameter()
-            )
-    );
-    assertFalse(
-        proteins.get(0).getAttribute().get(2).getParameter().equals
-            (
-                proteins.get(1).getAttribute().get(2).getParameter()
             )
     );
   }

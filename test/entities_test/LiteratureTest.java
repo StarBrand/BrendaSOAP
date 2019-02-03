@@ -31,7 +31,7 @@ public class LiteratureTest {
     literature4 = new Literature(285564);
     literature5 = new Literature(285564, 2053480);
     literature3.fill("1.1.1.1", new DefaultUser());
-    literature4.pubmedFiller("1.1.1.1", new DefaultUser());
+    literature4.setPubmed(2053480);
   }
 
   @Test

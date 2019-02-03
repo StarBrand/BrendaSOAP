@@ -214,7 +214,7 @@ public class BrendaSOAP {
       query.setEntities(protein);
     }
     proteins = (List<Entity>) query.getResult();
-    fillLiterature = new FillLiterature(user, false);
+    fillLiterature = new FillLiterature(user);
     for(Entity protein:proteins) {
       fillLiterature.addProteins((Protein) protein);
     }

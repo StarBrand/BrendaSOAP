@@ -1,52 +1,487 @@
 Commentary	Ref	Literature(PubmedID)	value
-calculated	9	15715941	1.7
-calculated	10	26847222	6.3
-isoelectric focusing	14	16091777	5.6
-isoelectric focusing	15	16091777	5.6
-isoelectric focusing	21	0	8.8
-isoelectric focusing	22	0	4.5
-isoelectric focusing	23	0	4.5
-calculated	30	15057452	9.3
-	33	19332293	9.44
-	34	19332293	9.44
-	35	19332293	9.44
-	36	19332293	9.44
-isoelectric focusing	47	16404950	9.1
-isoelectric focusing	48	16404950	9.1
-isoelectric focusing, wild-type and mutant strain enzyme	53	0	6.0
-mature enzyme, isoelectric focusing	57	18027102	5.16
-calculated	71	15629130	9.2
-calculated	72	15629130	9.2
-to 9.0, isoelectric focusing	73	0	8.2
-isoelectric focusing	77	17383610	6.5
-calculated	79	16461639	8.5
-calculated	80	16461639	8.5
-calculated	81	25058752	4.4
-calculated	90	24861346	4.8
-sequence calculation	99	19759868	5.47
-isoelectric focusing	112	23157299	6.5
-calculated	113	16473771	4.4
-calculated	114	16473771	4.4
-	121	12089151	9.5
-	122	12089151	9.5
-calculated	124	24170174	6.4
-isoform XynC, isoelectric focusing	140	0	3.6
-	142	18645964	6.3
-Xyl1, isoelectric focusing	149	10689075	5.5
-Xyl1, isoelectric focusing	150	10689075	5.5
-sequence calculation	156	0	6.74
-isozyme III	162	0	6.0
-isozyme III	163	0	6.0
-isoelectric focusing	165	17216454	8.6
-isoelectric focusing	166	17216454	8.6
-isoelectric focusing	167	17216454	8.6
-isoelectric focusing	168	17216454	8.6
-	170	0	7.1
-mutant enzyme; wild-type enzyme	173	100478004	6.0
-mutant enzyme; wild-type enzyme	174	100478004	6.0
-mutant enzyme; wild-type enzyme	175	100478004	6.0
-isoelectric focusing	182	16139382	9.0
-isoelectric focusing	183	16139382	9.0
-isoelectric focusing	184	16139382	9.0
-isoelectric focusing	185	16139382	9.0
-calculated	188	26358761	5.0
+calculated	126	15715941	1.7
+calculated	127	15715941	1.7
+calculated	136	26847222	6.3
+calculated	137	26847222	6.3
+calculated	138	26847222	6.3
+calculated	139	26847222	6.3
+calculated	140	26847222	6.3
+calculated	141	26847222	6.3
+isoelectric focusing	171	16091777	5.6
+isoelectric focusing	172	16091777	5.6
+isoelectric focusing	173	16091777	5.6
+isoelectric focusing	174	16091777	5.6
+isoelectric focusing	175	16091777	5.6
+isoelectric focusing	176	16091777	5.6
+isoelectric focusing	177	16091777	5.6
+isoelectric focusing	178	16091777	5.6
+isoelectric focusing	179	16091777	5.6
+isoelectric focusing	180	16091777	5.6
+isoelectric focusing	181	16091777	5.6
+isoelectric focusing	256	0	8.8
+isoelectric focusing	257	0	8.8
+isoelectric focusing	258	0	8.8
+isoelectric focusing	259	0	8.8
+isoelectric focusing	260	0	8.8
+isoelectric focusing	261	0	8.8
+isoelectric focusing	262	0	8.8
+isoelectric focusing	273	0	4.5
+isoelectric focusing	274	0	4.5
+isoelectric focusing	275	0	4.5
+isoelectric focusing	276	0	4.5
+isoelectric focusing	277	0	4.5
+isoelectric focusing	278	0	4.5
+isoelectric focusing	279	0	4.5
+isoelectric focusing	280	0	4.5
+above, isoelectric focusing	318	10830514	4.6-4.7
+calculated	318	15057452	9.3
+above, isoelectric focusing	319	10830514	4.6-4.7
+calculated	319	15057452	9.3
+above, isoelectric focusing	320	10830514	4.6-4.7
+calculated	320	15057452	9.3
+above, isoelectric focusing	321	10830514	4.6-4.7
+calculated	321	15057452	9.3
+above, isoelectric focusing	322	10830514	4.6-4.7
+calculated	322	15057452	9.3
+above, isoelectric focusing	323	10830514	4.6-4.7
+calculated	323	15057452	9.3
+above, isoelectric focusing	324	10830514	4.6-4.7
+calculated	324	15057452	9.3
+above, isoelectric focusing	325	10830514	4.6-4.7
+calculated	325	15057452	9.3
+above, isoelectric focusing	326	10830514	4.6-4.7
+calculated	326	15057452	9.3
+above, isoelectric focusing	327	10830514	4.6-4.7
+calculated	327	15057452	9.3
+above, isoelectric focusing	328	10830514	4.6-4.7
+calculated	328	15057452	9.3
+above, isoelectric focusing	329	10830514	4.6-4.7
+calculated	329	15057452	9.3
+alkaline isozyme XylI	344	0	4.6-4.7
+neutral isozyme XylII	344	0	7.5
+IEF-PAGE	344	18776691	7.5
+	344	20075612	9.27
+	344	19332293	9.44
+alkaline isozyme XylI	345	0	4.6-4.7
+neutral isozyme XylII	345	0	7.5
+IEF-PAGE	345	18776691	7.5
+	345	20075612	9.27
+	345	19332293	9.44
+alkaline isozyme XylI	346	0	4.6-4.7
+neutral isozyme XylII	346	0	7.5
+IEF-PAGE	346	18776691	7.5
+	346	20075612	9.27
+	346	19332293	9.44
+alkaline isozyme XylI	347	0	4.6-4.7
+neutral isozyme XylII	347	0	7.5
+IEF-PAGE	347	18776691	7.5
+	347	20075612	9.27
+	347	19332293	9.44
+alkaline isozyme XylI	348	0	4.6-4.7
+neutral isozyme XylII	348	0	7.5
+IEF-PAGE	348	18776691	7.5
+	348	20075612	9.27
+	348	19332293	9.44
+alkaline isozyme XylI	349	0	4.6-4.7
+neutral isozyme XylII	349	0	7.5
+IEF-PAGE	349	18776691	7.5
+	349	20075612	9.27
+	349	19332293	9.44
+alkaline isozyme XylI	350	0	4.6-4.7
+neutral isozyme XylII	350	0	7.5
+IEF-PAGE	350	18776691	7.5
+	350	20075612	9.27
+	350	19332293	9.44
+alkaline isozyme XylI	351	0	4.6-4.7
+neutral isozyme XylII	351	0	7.5
+IEF-PAGE	351	18776691	7.5
+	351	20075612	9.27
+	351	19332293	9.44
+alkaline isozyme XylI	352	0	4.6-4.7
+neutral isozyme XylII	352	0	7.5
+IEF-PAGE	352	18776691	7.5
+	352	20075612	9.27
+	352	19332293	9.44
+alkaline isozyme XylI	353	0	4.6-4.7
+neutral isozyme XylII	353	0	7.5
+IEF-PAGE	353	18776691	7.5
+	353	20075612	9.27
+	353	19332293	9.44
+alkaline isozyme XylI	354	0	4.6-4.7
+neutral isozyme XylII	354	0	7.5
+IEF-PAGE	354	18776691	7.5
+	354	20075612	9.27
+	354	19332293	9.44
+alkaline isozyme XylI	355	0	4.6-4.7
+neutral isozyme XylII	355	0	7.5
+IEF-PAGE	355	18776691	7.5
+	355	20075612	9.27
+	355	19332293	9.44
+alkaline isozyme XylI	356	0	4.6-4.7
+neutral isozyme XylII	356	0	7.5
+IEF-PAGE	356	18776691	7.5
+	356	20075612	9.27
+	356	19332293	9.44
+isoelectric focusing	434	16404950	9.1
+isoelectric focusing	435	16404950	9.1
+isoelectric focusing	436	16404950	9.1
+isoelectric focusing	437	16404950	9.1
+isoelectric focusing; isoelectric focusing in 5% polyacrylamide gel, pH 3.5-10 Ampholine, 200 V, 50 min, bands visualized with Coomassie brilliant blue G250 or silver staining, standard proteins of pI 3.5-9.3	495	18379842	4.3
+isoelectric focusing, wild-type and mutant strain enzyme	495	0	6.0
+isoelectric focusing; isoelectric focusing in 5% polyacrylamide gel, pH 3.5-10 Ampholine, 200 V, 50 min, bands visualized with Coomassie brilliant blue G250 or silver staining, standard proteins of pI 3.5-9.3	496	18379842	4.3
+isoelectric focusing, wild-type and mutant strain enzyme	496	0	6.0
+isoelectric focusing; isoelectric focusing in 5% polyacrylamide gel, pH 3.5-10 Ampholine, 200 V, 50 min, bands visualized with Coomassie brilliant blue G250 or silver staining, standard proteins of pI 3.5-9.3	497	18379842	4.3
+isoelectric focusing, wild-type and mutant strain enzyme	497	0	6.0
+isoelectric focusing; isoelectric focusing in 5% polyacrylamide gel, pH 3.5-10 Ampholine, 200 V, 50 min, bands visualized with Coomassie brilliant blue G250 or silver staining, standard proteins of pI 3.5-9.3	498	18379842	4.3
+isoelectric focusing, wild-type and mutant strain enzyme	498	0	6.0
+isoelectric focusing; isoelectric focusing in 5% polyacrylamide gel, pH 3.5-10 Ampholine, 200 V, 50 min, bands visualized with Coomassie brilliant blue G250 or silver staining, standard proteins of pI 3.5-9.3	499	18379842	4.3
+isoelectric focusing, wild-type and mutant strain enzyme	499	0	6.0
+mature enzyme, isoelectric focusing	513	18027102	5.16
+mature enzyme, isoelectric focusing	514	18027102	5.16
+calculated	737	15629130	6.2
+calculated	737	15629130	9.2
+calculated	738	15629130	6.2
+calculated	738	15629130	9.2
+calculated	739	15629130	6.2
+calculated	739	15629130	9.2
+calculated	740	15629130	6.2
+calculated	740	15629130	9.2
+calculated	741	15629130	6.2
+calculated	741	15629130	9.2
+calculated	742	15629130	6.2
+calculated	742	15629130	9.2
+calculated	743	15629130	6.2
+calculated	743	15629130	9.2
+to 9.0, isoelectric focusing	744	0	8.2
+to 9.0, isoelectric focusing	745	0	8.2
+to 9.0, isoelectric focusing	746	0	8.2
+to 9.0, isoelectric focusing	747	0	8.2
+to 9.0, isoelectric focusing	748	0	8.2
+to 9.0, isoelectric focusing	749	0	8.2
+to 9.0, isoelectric focusing	750	0	8.2
+isoelectric focusing	840	17383610	6.5
+isoelectric focusing	841	17383610	6.5
+isoelectric focusing	842	17383610	6.5
+isoelectric focusing	843	17383610	6.5
+isoelectric focusing	844	17383610	6.5
+isoelectric focusing	845	17383610	6.5
+isoelectric focusing	846	17383610	6.5
+isoelectric focusing	847	17383610	6.5
+xylanase 2, isoelectric focusing	854	0	7.7
+xylanase 1, isoelectric focusing	854	0	9.0
+xylanase 2, isoelectric focusing	855	0	7.7
+xylanase 1, isoelectric focusing	855	0	9.0
+xylanase 2, isoelectric focusing	856	0	7.7
+xylanase 1, isoelectric focusing	856	0	9.0
+xylanase 2, isoelectric focusing	857	0	7.7
+xylanase 1, isoelectric focusing	857	0	9.0
+Xyl1-3, isoelectric focusing; Xyl16-3, isoelectric focusing	906	0	6.0
+Xyl6-6, isoelectric focusing	906	0	7.0
+Xylam, isoelectric focusing	906	0	7.1
+Xyl1-3, isoelectric focusing; Xyl16-3, isoelectric focusing	907	0	6.0
+Xyl6-6, isoelectric focusing	907	0	7.0
+Xylam, isoelectric focusing	907	0	7.1
+Xyl1-3, isoelectric focusing; Xyl16-3, isoelectric focusing	908	0	6.0
+Xyl6-6, isoelectric focusing	908	0	7.0
+Xylam, isoelectric focusing	908	0	7.1
+Xyl1-3, isoelectric focusing; Xyl16-3, isoelectric focusing	909	0	6.0
+Xyl6-6, isoelectric focusing	909	0	7.0
+Xylam, isoelectric focusing	909	0	7.1
+calculated	920	16461639	8.5
+calculated	921	16461639	8.5
+calculated	922	16461639	8.5
+calculated	923	16461639	8.5
+calculated	925	25058752	4.4
+calculated	926	25058752	4.4
+isozyme IIa, isoelectric focusing; isozyme IIb, isoelectric focusing	940	10923787	4.2
+isozyme Ia, isoelectric focusing; isozyme Ib, isoelectric focusing; isozyme Ic, isoelectric focusing	940	10923787	6.0
+isozyme IIa, isoelectric focusing; isozyme IIb, isoelectric focusing	941	10923787	4.2
+isozyme Ia, isoelectric focusing; isozyme Ib, isoelectric focusing; isozyme Ic, isoelectric focusing	941	10923787	6.0
+predicted from amino acid sequence	952	16673939	7.69
+predicted from amino acid sequence	953	16673939	7.69
+calculated	962	24861346	4.8
+isoelectric focusing	989	0	8.6
+sequence calculation	1071	19759868	5.47
+isoelectric focusing	1122	15142626	4.8
+isoelectric focusing	1123	15142626	4.8
+isoelectric focusing	1132	23157299	6.5
+isoelectric focusing	1133	23157299	6.5
+isoelectric focusing	1134	23157299	6.5
+isoelectric focusing	1135	23157299	6.5
+isoelectric focusing	1136	23157299	6.5
+isoelectric focusing	1137	23157299	6.5
+isoelectric focusing	1138	23157299	6.5
+or below, isoelectric focusing	1141	16473771	3.5
+isoelectric focusing	1141	17257262	3.6
+calculated	1141	16473771	4.4
+or below, isoelectric focusing	1142	16473771	3.5
+isoelectric focusing	1142	17257262	3.6
+calculated	1142	16473771	4.4
+or below, isoelectric focusing	1143	16473771	3.5
+isoelectric focusing	1143	17257262	3.6
+calculated	1143	16473771	4.4
+or below, isoelectric focusing	1144	16473771	3.5
+isoelectric focusing	1144	17257262	3.6
+calculated	1144	16473771	4.4
+or below, isoelectric focusing	1145	16473771	3.5
+isoelectric focusing	1145	17257262	3.6
+calculated	1145	16473771	4.4
+or below, isoelectric focusing	1146	16473771	3.5
+isoelectric focusing	1146	17257262	3.6
+calculated	1146	16473771	4.4
+isoelectric focusing	1153	17216454	4.2
+recombinant His6-tagged wild-type enzyme, isoelectric focusing	1153	19118652	6.8
+	1153	18384043	8.6
+isoelectric focusing	1154	17216454	4.2
+recombinant His6-tagged wild-type enzyme, isoelectric focusing	1154	19118652	6.8
+	1154	18384043	8.6
+isoelectric focusing	1155	17216454	4.2
+recombinant His6-tagged wild-type enzyme, isoelectric focusing	1155	19118652	6.8
+	1155	18384043	8.6
+isoform xynC, calculated	1182	15278289	5.5
+isoform xynA, calculated	1182	15278289	5.8
+isoform xynB, calculated	1182	15278289	6.0
+isoform xynC, calculated	1183	15278289	5.5
+isoform xynA, calculated	1183	15278289	5.8
+isoform xynB, calculated	1183	15278289	6.0
+isoform xynC, calculated	1184	15278289	5.5
+isoform xynA, calculated	1184	15278289	5.8
+isoform xynB, calculated	1184	15278289	6.0
+isoform xynC, calculated	1185	15278289	5.5
+isoform xynA, calculated	1185	15278289	5.8
+isoform xynB, calculated	1185	15278289	6.0
+isozyme XA-2, chromatofocusing	1191	11720306	4.2
+isozyme XA-1, chromatofocusing	1191	11720306	7.1
+isozyme XA-2, chromatofocusing	1192	11720306	4.2
+isozyme XA-1, chromatofocusing	1192	11720306	7.1
+isozyme XA-2, chromatofocusing	1193	11720306	4.2
+isozyme XA-1, chromatofocusing	1193	11720306	7.1
+	1255	12089151	9.5
+	1256	12089151	9.5
+	1257	12089151	9.5
+	1258	12089151	9.5
+purified isozymes with 2 pI values, isoelectric focusing	1261	0	4.9
+purified isozyme with 2 pI values, isoelectric focusing	1261	0	6.0
+purified isozymes with 2 pI values, isoelectric focusing	1262	0	4.9
+purified isozyme with 2 pI values, isoelectric focusing	1262	0	6.0
+calculated	1274	24170174	6.4
+calculated	1275	24170174	6.4
+xylanase III, isoelectric focusing	1295	0	4.2
+xylanase II, isoelectric focusing	1295	0	5.3
+xylanase III, isoelectric focusing	1296	0	4.2
+xylanase II, isoelectric focusing	1296	0	5.3
+xylanase III, isoelectric focusing	1297	0	4.2
+xylanase II, isoelectric focusing	1297	0	5.3
+xylanase III, isoelectric focusing	1298	0	4.2
+xylanase II, isoelectric focusing	1298	0	5.3
+isoform XynB, isoelectric focusing	1381	0	2.8
+isoform XynC, isoelectric focusing	1381	0	3.6
+isoform XynB, isoelectric focusing	1382	0	2.8
+isoform XynC, isoelectric focusing	1382	0	3.6
+isoform XynB, isoelectric focusing	1383	0	2.8
+isoform XynC, isoelectric focusing	1383	0	3.6
+isoform XynB, isoelectric focusing	1384	0	2.8
+isoform XynC, isoelectric focusing	1384	0	3.6
+isoform XynB, isoelectric focusing	1385	0	2.8
+isoform XynC, isoelectric focusing	1385	0	3.6
+isoform XynB, isoelectric focusing	1386	0	2.8
+isoform XynC, isoelectric focusing	1386	0	3.6
+isoform XynB, isoelectric focusing	1387	0	2.8
+isoform XynC, isoelectric focusing	1387	0	3.6
+isoform XynB, isoelectric focusing	1388	0	2.8
+isoform XynC, isoelectric focusing	1388	0	3.6
+	1451	18645964	6.3
+	1452	18645964	6.3
+	1453	18645964	6.3
+isoelectric focusing	1463	17408951	8.5
+isoelectric focusing	1464	17408951	8.5
+Xyl2, isoelectric focusing; Xyl3, isoelectric focusing	1513	10689075	4.9
+Xyl1, isoelectric focusing	1513	10689075	5.5
+Xyl2, isoelectric focusing; Xyl3, isoelectric focusing	1514	10689075	4.9
+Xyl1, isoelectric focusing	1514	10689075	5.5
+Xyl2, isoelectric focusing; Xyl3, isoelectric focusing	1515	10689075	4.9
+Xyl1, isoelectric focusing	1515	10689075	5.5
+Xyl2, isoelectric focusing; Xyl3, isoelectric focusing	1516	10689075	4.9
+Xyl1, isoelectric focusing	1516	10689075	5.5
+Xyl2, isoelectric focusing; Xyl3, isoelectric focusing	1517	10689075	4.9
+Xyl1, isoelectric focusing	1517	10689075	5.5
+Xyl2, isoelectric focusing; Xyl3, isoelectric focusing	1518	10689075	4.9
+Xyl1, isoelectric focusing	1518	10689075	5.5
+Xyl2, isoelectric focusing; Xyl3, isoelectric focusing	1519	10689075	4.9
+Xyl1, isoelectric focusing	1519	10689075	5.5
+Xyl2, isoelectric focusing; Xyl3, isoelectric focusing	1520	10689075	4.9
+Xyl1, isoelectric focusing	1520	10689075	5.5
+Xyl2, isoelectric focusing; Xyl3, isoelectric focusing	1521	10689075	4.9
+Xyl1, isoelectric focusing	1521	10689075	5.5
+sequence calculation	1542	0	6.74
+isozyme I; isozyme II	1584	0	4.9
+isozyme III	1584	0	6.0
+isozyme I; isozyme II	1585	0	4.9
+isozyme III	1585	0	6.0
+isozyme I; isozyme II	1586	0	4.9
+isozyme III	1586	0	6.0
+isozyme I; isozyme II	1587	0	4.9
+isozyme III	1587	0	6.0
+isozyme I; isozyme II	1588	0	4.9
+isozyme III	1588	0	6.0
+isoelectric focusing	1590	21466666	5.9
+isoelectric focusing	1590	17216454	8.6
+isoelectric focusing	1591	21466666	5.9
+isoelectric focusing	1591	17216454	8.6
+isoelectric focusing	1592	21466666	5.9
+isoelectric focusing	1592	17216454	8.6
+isoelectric focusing	1593	21466666	5.9
+isoelectric focusing	1593	17216454	8.6
+isoelectric focusing	1594	21466666	5.9
+isoelectric focusing	1594	17216454	8.6
+isoelectric focusing	1595	21466666	5.9
+isoelectric focusing	1595	17216454	8.6
+isoelectric focusing	1596	21466666	5.9
+isoelectric focusing	1596	17216454	8.6
+isoelectric focusing	1597	21466666	5.9
+isoelectric focusing	1597	17216454	8.6
+	1636	0	7.1
+	1637	0	7.1
+	1638	0	7.1
+	1639	0	7.1
+	1640	0	7.1
+	1641	0	7.1
+	1642	0	7.1
+isoelectric focusing	1648	0	7.2
+isoelectric focusing	1675	11263969	4.2
+isoelectric focusing	1681	9648252	3.7
+	1681	18387299	3.8
+isoelectric focusing	1681	10467122	3.8
+isoelectric focusing	1681	23793944	3.9
+mutant enzyme; wild-type enzyme	1681	100478004	6.0
+isoelectric focusing	1682	9648252	3.7
+	1682	18387299	3.8
+isoelectric focusing	1682	10467122	3.8
+isoelectric focusing	1682	23793944	3.9
+mutant enzyme; wild-type enzyme	1682	100478004	6.0
+isoelectric focusing	1683	9648252	3.7
+	1683	18387299	3.8
+isoelectric focusing	1683	10467122	3.8
+isoelectric focusing	1683	23793944	3.9
+mutant enzyme; wild-type enzyme	1683	100478004	6.0
+isoelectric focusing	1684	9648252	3.7
+	1684	18387299	3.8
+isoelectric focusing	1684	10467122	3.8
+isoelectric focusing	1684	23793944	3.9
+mutant enzyme; wild-type enzyme	1684	100478004	6.0
+isoelectric focusing	1685	9648252	3.7
+	1685	18387299	3.8
+isoelectric focusing	1685	10467122	3.8
+isoelectric focusing	1685	23793944	3.9
+mutant enzyme; wild-type enzyme	1685	100478004	6.0
+isoelectric focusing	1686	9648252	3.7
+	1686	18387299	3.8
+isoelectric focusing	1686	10467122	3.8
+isoelectric focusing	1686	23793944	3.9
+mutant enzyme; wild-type enzyme	1686	100478004	6.0
+isoelectric focusing	1687	9648252	3.7
+	1687	18387299	3.8
+isoelectric focusing	1687	10467122	3.8
+isoelectric focusing	1687	23793944	3.9
+mutant enzyme; wild-type enzyme	1687	100478004	6.0
+isoelectric focusing	1688	9648252	3.7
+	1688	18387299	3.8
+isoelectric focusing	1688	10467122	3.8
+isoelectric focusing	1688	23793944	3.9
+mutant enzyme; wild-type enzyme	1688	100478004	6.0
+isoelectric focusing	1689	9648252	3.7
+	1689	18387299	3.8
+isoelectric focusing	1689	10467122	3.8
+isoelectric focusing	1689	23793944	3.9
+mutant enzyme; wild-type enzyme	1689	100478004	6.0
+isoelectric focusing	1690	9648252	3.7
+	1690	18387299	3.8
+isoelectric focusing	1690	10467122	3.8
+isoelectric focusing	1690	23793944	3.9
+mutant enzyme; wild-type enzyme	1690	100478004	6.0
+isoelectric focusing	1691	9648252	3.7
+	1691	18387299	3.8
+isoelectric focusing	1691	10467122	3.8
+isoelectric focusing	1691	23793944	3.9
+mutant enzyme; wild-type enzyme	1691	100478004	6.0
+isoelectric focusing	1692	9648252	3.7
+	1692	18387299	3.8
+isoelectric focusing	1692	10467122	3.8
+isoelectric focusing	1692	23793944	3.9
+mutant enzyme; wild-type enzyme	1692	100478004	6.0
+isoelectric focusing	1693	9648252	3.7
+	1693	18387299	3.8
+isoelectric focusing	1693	10467122	3.8
+isoelectric focusing	1693	23793944	3.9
+mutant enzyme; wild-type enzyme	1693	100478004	6.0
+isoelectric focusing	1694	9648252	3.7
+	1694	18387299	3.8
+isoelectric focusing	1694	10467122	3.8
+isoelectric focusing	1694	23793944	3.9
+mutant enzyme; wild-type enzyme	1694	100478004	6.0
+isoelectric focusing	1695	9648252	3.7
+	1695	18387299	3.8
+isoelectric focusing	1695	10467122	3.8
+isoelectric focusing	1695	23793944	3.9
+mutant enzyme; wild-type enzyme	1695	100478004	6.0
+isoelectric focusing	1712	12932372	7.1
+isoelectric focusing	1713	12932372	7.1
+isoelectric focusing	1793	0	6.4
+isoelectric focusing	1794	0	6.4
+isoelectric focusing	1828	19556747	7.5
+isoelectric focusing	1828	17475200	9.0
+isoelectric focusing	1828	17988729	9.0
+isoelectric focusing	1828	16139382	9.0
+isoelectric focusing	1829	19556747	7.5
+isoelectric focusing	1829	17475200	9.0
+isoelectric focusing	1829	17988729	9.0
+isoelectric focusing	1829	16139382	9.0
+isoelectric focusing	1830	19556747	7.5
+isoelectric focusing	1830	17475200	9.0
+isoelectric focusing	1830	17988729	9.0
+isoelectric focusing	1830	16139382	9.0
+isoelectric focusing	1831	19556747	7.5
+isoelectric focusing	1831	17475200	9.0
+isoelectric focusing	1831	17988729	9.0
+isoelectric focusing	1831	16139382	9.0
+isoelectric focusing	1832	19556747	7.5
+isoelectric focusing	1832	17475200	9.0
+isoelectric focusing	1832	17988729	9.0
+isoelectric focusing	1832	16139382	9.0
+isoelectric focusing	1833	19556747	7.5
+isoelectric focusing	1833	17475200	9.0
+isoelectric focusing	1833	17988729	9.0
+isoelectric focusing	1833	16139382	9.0
+isoelectric focusing	1834	19556747	7.5
+isoelectric focusing	1834	17475200	9.0
+isoelectric focusing	1834	17988729	9.0
+isoelectric focusing	1834	16139382	9.0
+isoelectric focusing	1835	19556747	7.5
+isoelectric focusing	1835	17475200	9.0
+isoelectric focusing	1835	17988729	9.0
+isoelectric focusing	1835	16139382	9.0
+isoelectric focusing	1836	19556747	7.5
+isoelectric focusing	1836	17475200	9.0
+isoelectric focusing	1836	17988729	9.0
+isoelectric focusing	1836	16139382	9.0
+isoelectric focusing	1837	19556747	7.5
+isoelectric focusing	1837	17475200	9.0
+isoelectric focusing	1837	17988729	9.0
+isoelectric focusing	1837	16139382	9.0
+isoelectric focusing	1838	19556747	7.5
+isoelectric focusing	1838	17475200	9.0
+isoelectric focusing	1838	17988729	9.0
+isoelectric focusing	1838	16139382	9.0
+isoelectric focusing	1839	19556747	7.5
+isoelectric focusing	1839	17475200	9.0
+isoelectric focusing	1839	17988729	9.0
+isoelectric focusing	1839	16139382	9.0
+isoelectric focusing	1840	19556747	7.5
+isoelectric focusing	1840	17475200	9.0
+isoelectric focusing	1840	17988729	9.0
+isoelectric focusing	1840	16139382	9.0
+calculated	1897	26358761	5.0
+calculated	1898	26358761	5.0
+calculated	1899	26358761	5.0
+calculated	1900	26358761	5.0
+calculated	1901	26358761	5.0

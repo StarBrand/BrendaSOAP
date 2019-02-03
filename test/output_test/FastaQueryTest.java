@@ -22,7 +22,6 @@ public class FastaQueryTest {
   private Protein protein2;
   private Protein protein3;
   private Protein noSequenceProtein;
-  private AASequence aaSequence;
 
   @Before
   public void SetUp() throws Exception {

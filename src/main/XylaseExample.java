@@ -2,6 +2,7 @@ package main;
 
 import attributes.enzyme_structure.MolecularWeight;
 import attributes.functional_parameters.IC50Value;
+import attributes.functional_parameters.KIValue;
 import attributes.functional_parameters.Kcat;
 import attributes.functional_parameters.Km;
 import attributes.functional_parameters.PHOptimum;
@@ -73,7 +74,7 @@ public class XylaseExample {
     for(Protein protein:proteins){
       filter.addEntities(protein);
     }
-    System.out.print("Filtering proteins...");
+    System.out.print("Filtering proteins to FASTA search...");
     List<Entity> proteins_filtered = filter.getFiltered();
     System.out.print(" Filtered Proteins: ");
     System.out.println(proteins_filtered.size());
@@ -101,7 +102,7 @@ public class XylaseExample {
     System.out.println(showTime(totalTime));
 
     query = new ParameterQuery(new DefaultUser());
-    for(Entity entity:proteins_filtered){
+    for(Entity entity:proteins){
       query.setEntities(entity);
     }
     query.addAttributes(
@@ -109,6 +110,7 @@ public class XylaseExample {
         new IC50Value(),
         new Kcat(),
         new Km(),
+        new KIValue(),
         new PHOptimum(),
         new PHRange(),
         new PIValue(),
@@ -127,7 +129,7 @@ public class XylaseExample {
     System.out.print("It took: ");
     System.out.println(showTime(totalTime));
 
-    FillLiterature fillLiterature = new FillLiterature(new DefaultUser(),false);
+    FillLiterature fillLiterature = new FillLiterature(new DefaultUser());
     for(Protein protein:proteins) {
       fillLiterature.addProteins(protein);
     }
@@ -149,6 +151,7 @@ public class XylaseExample {
         new IC50Value(),
         new Kcat(),
         new Km(),
+        new KIValue(),
         new PHOptimum(),
         new PHRange(),
         new PIValue(),

@@ -6,7 +6,6 @@ import client.User;
 import java.util.ArrayList;
 import java.util.List;
 import queries.APAQuery;
-import queries.PubmedQuery;
 import queries.Query;
 
 /**
@@ -80,17 +79,12 @@ public class Literature implements Entity {
   }
 
   /**
-   * Fill the Pubmed ID code with a {@Link queries.PubmedQuery}
+   * Sets the PubMed ID code
    *
-   * @param enzyme    the name of the enzyme in EC Number
-   * @param user      the Brenda user
-   * @throws Exception the SOAP query exception
+   * @param pubmed The PubMed ID
    */
-  public void pubmedFiller(String enzyme, User user) throws Exception{
-    query = new PubmedQuery(user, enzyme, this.brenda);
-    List<Object> result = (List<Object>) query.getResult();
-    pubmed = (Integer) result.get(0);
-    apa.clear();
+  public void setPubmed(int pubmed) {
+    this.pubmed = pubmed;
   }
 
   /**

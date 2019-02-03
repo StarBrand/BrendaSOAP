@@ -4,6 +4,7 @@ import attributes.Attribute;
 import client.SoapClient;
 import client.User;
 import entities.Entity;
+import entities.Enzyme;
 import entities.Protein;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -65,30 +66,44 @@ public class ParameterQuery implements Query{
     List<Protein> out = new ArrayList<Protein>();
     String result;
     List<HashMap<String, String>> results;
+    HashMap<Enzyme, List<Protein>> enzyme = group(proteins);
     client.makeCall();
-    for(Protein protein:proteins){
-      Protein new_protein = new Protein(
-          protein.getEnzyme(),
-          protein.getOrganism(),
-          protein.getUniprot()
-      );
-      for(Attribute attribute:attributes){
-        Attribute new_attribute = (Attribute) attribute.clone();
-        result = client.getResult(new_protein.getParameter(), new_attribute.getMethod());
-        if (!result.equals("")) {
+    for(Enzyme anEnzyme:enzyme.keySet()) {
+      out.addAll(enzyme.get(anEnzyme));
+      for (Attribute attribute : attributes) {
+        result = client.getResult(anEnzyme.getParameter(), attribute.getMethod());
+        if(!result.equals("")) {
           results = parserAnswer.getResult(result);
-          for (HashMap<String, String> observation : results) {
-            new_attribute.setAttribute(observation);
+          for (HashMap<String, String> observation:results){
+            for (Protein protein : enzyme.get(anEnzyme)) {
+              int i = out.indexOf(protein);
+              Attribute new_attribute = (Attribute) attribute.clone();
+              if(observation.get("organism").equals(protein.getOrganism().getName())) {
+                new_attribute.setAttribute(observation);
+                out.get(i).addAttributes(new_attribute);
+              }
+            }
           }
-          new_protein.addAttributes(new_attribute);
-        }
-        else{
-          new_protein.addAttributes(new_attribute);
         }
       }
-      out.add(new_protein);
     }
     this.proteins = out;
     return proteins;
+  }
+
+  private static HashMap<Enzyme, List<Protein>> group(List<Protein> proteins){
+    HashMap<Enzyme, List<Protein>> out = new HashMap<Enzyme, List<Protein>>();
+    for(Protein protein:proteins){
+      Enzyme itsEnzyme = protein.getEnzyme();
+      if(out.containsKey(itsEnzyme)){
+        out.get(itsEnzyme).add(protein);
+      }
+      else{
+        List<Protein> proteinList = new ArrayList<Protein>();
+        proteinList.add(protein);
+        out.put(itsEnzyme, proteinList);
+      }
+    }
+    return out;
   }
 }

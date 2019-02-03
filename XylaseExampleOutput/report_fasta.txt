@@ -44,7 +44,7 @@ B9ZZN9	endo-1,4-beta-xylanase	Bacillus subtilis R5	TrEMBL	TRUE
 H9ZGD1	endo-1,4-beta-xylanase	bacterium enrichment culture clone Xyl8B8	TrEMBL	TRUE
 O13447	endo-1,4-beta-xylanase	Bipolaris sorokiniana	TrEMBL	TRUE
 Q06562	endo-1,4-beta-xylanase	Bipolaris zeicola	Swiss-Prot	TRUE
-D0QF43	endo-1,4-beta-xylanase	Bispora sp. MEY-1	TrEMBL	TRUE
+D0QF43	endo-1,4-beta-xylanase	Bispora sp. MEY-1		FALSE
 D6MYS9	endo-1,4-beta-xylanase	Bispora sp. MEY-1	TrEMBL	TRUE
 Q2LMP0	endo-1,4-beta-xylanase	Botrytis cinerea	Swiss-Prot	TRUE
 Q2LMP0	endo-1,4-beta-xylanase	Botrytis cinerea	Swiss-Prot	TRUE
