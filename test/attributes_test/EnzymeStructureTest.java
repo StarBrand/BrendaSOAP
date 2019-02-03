@@ -6,6 +6,7 @@ import static junit.framework.TestCase.assertNotSame;
 import attributes.enzyme_structure.AASequence;
 import attributes.enzyme_structure.ECNumber;
 import attributes.enzyme_structure.MolecularWeight;
+import attributes.enzyme_structure.PDB;
 import entities.Literature;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,6 +18,8 @@ public class EnzymeStructureTest {
   private ECNumber ec2;
   private AASequence aaSequence;
   private AASequence nullSequence;
+  private PDB pdb;
+  private PDB nullPdb;
   private MolecularWeight molecularWeight1;
   private MolecularWeight molecularWeight2;
   private MolecularWeight nullMW;
@@ -29,9 +32,12 @@ public class EnzymeStructureTest {
     ec2 = new ECNumber("1.1.1.1");
     //A simple one
     aaSequence = new AASequence(
-        "ALWTA"
+        "ALWTA",
+        "Swiss-Prot"
     );
     nullSequence = new AASequence();
+    pdb = new PDB("1e3i");
+    nullPdb = new PDB();
     molecularWeight1 = new MolecularWeight(
       1000, "unique value",
         new Literature(11111)
@@ -68,9 +74,16 @@ public class EnzymeStructureTest {
 
     // AASequence
     assertEquals("ALWTA", aaSequence.getSequence());
+    assertEquals("Swiss-Prot", aaSequence.getSource());
     assertEquals(5, aaSequence.getNumberOfAminoacids());
     assertEquals("getSequence", aaSequence.getMethod());
-    assertEquals("sequence*ALWTA#noOfAminoAcids*5", aaSequence.getParameter());
+    assertEquals("sequence*ALWTA#noOfAminoAcids*5#source*Swiss-Prot", aaSequence.getParameter());
+
+    // PDB
+    assertEquals("1e3i", pdb.getPdb());
+    assertEquals("https://www.rcsb.org/structure/1e3i", pdb.getLink());
+    assertEquals("getPdb", pdb.getMethod());
+    assertEquals("pdb*1e3i", pdb.getParameter());
 
     // MolecularWeight
     assertEquals("range value", molecularWeight2.getCommentary());
@@ -97,7 +110,13 @@ public class EnzymeStructureTest {
     assertEquals("", nullSequence.getSequence());
     assertEquals(0, nullSequence.getNumberOfAminoacids());
     assertEquals("getSequence", nullSequence.getMethod());
-    assertEquals("sequence*#noOfAminoAcids*0", nullSequence.getParameter());
+    assertEquals("sequence*#noOfAminoAcids*0#source*", nullSequence.getParameter());
+
+    // PDB
+    assertEquals("", nullPdb.getPdb());
+    assertEquals("", nullPdb.getLink());
+    assertEquals("getPdb", nullPdb.getMethod());
+    assertEquals("pdb*", nullPdb.getParameter());
 
     // MolecularWeight
     assertEquals("", nullMW.getCommentary());
@@ -111,13 +130,23 @@ public class EnzymeStructureTest {
   @Test
   public void setAttributeTest(){
     // AASequence
-    results = "sequence*LLLLLL#noAminoAcids*6";
+    results = "sequence*LLLLLL#noAminoAcids*6#source*UniProt";
     nullSequence.setAttribute(
         parserAnswer.getResult(results).get(0)
     );
     assertEquals("LLLLLL", nullSequence.getSequence());
     assertEquals(6, nullSequence.getNumberOfAminoacids());
-    assertEquals("sequence*LLLLLL#noOfAminoAcids*6", nullSequence.getParameter());
+    assertEquals("sequence*LLLLLL#noOfAminoAcids*6#source*UniProt", nullSequence.getParameter());
+
+    // PDB
+    results = "pdb*1e3e";
+    nullPdb.setAttribute(
+        parserAnswer.getResult(results).get(0)
+    );
+    assertEquals("1e3e", nullPdb.getPdb());
+    assertEquals("https://www.rcsb.org/structure/1e3e", nullPdb.getLink());
+    assertEquals("getPdb", nullPdb.getMethod());
+    assertEquals("pdb*1e3e", nullPdb.getParameter());
 
     // MolecularWeight
     results = "molecularWeight*10000#molecularWeightMaximum*#commentary*unique value for test#literature*11111";
