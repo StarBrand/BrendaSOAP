@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import queries.ParserAnswer;
 
@@ -54,9 +55,13 @@ public class FastaQuery extends EnzymeStructureQuery {
     this.result.clear();
     List<Entity> new_proteins = new ArrayList<Entity>();
     for (Entity protein:proteins) {
-      String[] uniprots = ((Protein) protein).getUniprot().split(" AND ");
+      String result = ((Protein) protein).getUniprot();
+      result = result.replace(" and ", " AND ");
+      result = result.replace(" And ", " AND ");
+      String[] uniprots = result.split(" AND ");
       for (String uniprot : uniprots) {
         if(!uniprot.equals("")) {
+          uniprot = uniprot.trim();
           Protein aProtein = new Protein(
               ((Protein) protein).getEnzyme(),
               ((Protein) protein).getOrganism(),

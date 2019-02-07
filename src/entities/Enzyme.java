@@ -75,10 +75,14 @@ public class Enzyme implements Entity{
   private void fill() throws Exception{
     query = new SystematicNameQuery(user);
     query.addAttributes(ec);
-    systematic_name = (String) query.getResult().get(0);
+    String result = (String) query.getResult().get(0);
+    result = result.replace("&gt;", ">");
+    systematic_name = result;
     query = new RecommendedNameQuery(user);
     query.addAttributes(ec);
-    recommended_name = (String) query.getResult().get(0);
+    result = (String) query.getResult().get(0);
+    result = result.replace("&gt;", ">");
+    recommended_name = result;
   }
 
   /**
