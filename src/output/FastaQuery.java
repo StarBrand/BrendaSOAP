@@ -132,7 +132,7 @@ public class FastaQuery extends EnzymeStructureQuery {
         }
         else{
           line2.add("TRUE");
-          line.add("Source: Brenda->"+tempLine);
+          line.add("Source: Brenda=="+tempLine);
         }
         TableWriter.write(line, "|", bw);
         TableWriter.write(line2, "\t", bw2);

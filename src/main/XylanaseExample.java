@@ -27,7 +27,7 @@ import queries.ParameterQuery;
 import queries.ProteinQuery;
 import queries.Query;
 
-public class XylaseExample {
+public class XylanaseExample {
 
   public static void main (String... args) throws Exception{
 

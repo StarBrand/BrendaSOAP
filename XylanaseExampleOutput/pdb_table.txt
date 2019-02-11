@@ -135,6 +135,7 @@ EC_Number	Organism	PDB	link
 3.2.1.8	Cellvibrio mixtus	1uqz	https://www.rcsb.org/structure/1uqz
 3.2.1.8	Cellvibrio mixtus	1ur1	https://www.rcsb.org/structure/1ur1
 3.2.1.8	Cellvibrio mixtus	1ur2	https://www.rcsb.org/structure/1ur2
+3.2.1.8	Cellvibrio mixtus	2cnc	https://www.rcsb.org/structure/2cnc
 3.2.1.8	Chaetomium	1h1a	https://www.rcsb.org/structure/1h1a
 3.2.1.8	Chaetomium	1xnk	https://www.rcsb.org/structure/1xnk
 3.2.1.8	Chaetomium thermophilum	1h1a	https://www.rcsb.org/structure/1h1a
@@ -161,6 +162,8 @@ EC_Number	Organism	PDB	link
 3.2.1.8	Clostridium	1wb5	https://www.rcsb.org/structure/1wb5
 3.2.1.8	Clostridium	1wb6	https://www.rcsb.org/structure/1wb6
 3.2.1.8	Clostridium	1xyz	https://www.rcsb.org/structure/1xyz
+3.2.1.8	Clostridium	2c71	https://www.rcsb.org/structure/2c71
+3.2.1.8	Clostridium	2c79	https://www.rcsb.org/structure/2c79
 3.2.1.8	Clostridium	2ccl	https://www.rcsb.org/structure/2ccl
 3.2.1.8	Clostridium	2w5f	https://www.rcsb.org/structure/2w5f
 3.2.1.8	Clostridium	2wys	https://www.rcsb.org/structure/2wys
