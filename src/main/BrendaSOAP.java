@@ -18,6 +18,7 @@ import entities.Enzyme;
 import entities.Protein;
 import filters.Filter;
 import filters.SequenceFilter;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import output.FastaQuery;
@@ -132,6 +133,14 @@ public class BrendaSOAP {
   }
 
   public void getProtein() throws Exception {
+    try {
+      File folder = new File(user.getMail() + "_results\\attributes");
+      String files[] = folder.list();
+      for(String file:files){
+        File toDelete = new File(folder, file);
+        toDelete.delete();
+      }
+    }catch(Exception e){}
     Enzyme enzyme = new Enzyme(enzymeECnumber, user);
     query = new ProteinQuery(user);
     outputTable = new OutputTable(user);

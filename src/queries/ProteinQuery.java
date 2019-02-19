@@ -69,12 +69,14 @@ public class ProteinQuery implements Query {
       ECNumber ec = enzyme.getEC();
       Organism organism = new Organism();
       result = client.getResult(ec.getParameter(), organism.getMethod());
-      List<HashMap<String, String>> results = parserAnswer.getResult(result);
-      for (HashMap<String, String> ans : results) {
-        Organism organism_found = new Organism();
-        organism_found.setAttribute(ans);
-        Protein protein = new Protein(enzyme, organism_found, ans.get("sequenceCode"));
-        proteins.add(protein);
+      if(!result.equals("")) {
+        List<HashMap<String, String>> results = parserAnswer.getResult(result);
+        for (HashMap<String, String> ans : results) {
+          Organism organism_found = new Organism();
+          organism_found.setAttribute(ans);
+          Protein protein = new Protein(enzyme, organism_found, ans.get("sequenceCode"));
+          proteins.add(protein);
+        }
       }
     }
     return proteins;

@@ -42,4 +42,24 @@ public class User {
     return password;
   }
 
+  /**
+   * Indicate if the user exist
+   *
+   * @return A String indicating the situation of the user
+   */
+  public String verifyAccount() throws Exception {
+    SoapClient client = new SoapClient(this);
+    client.makeCall();
+    String result = client.getResult("ecNumber*1.1.1.1", "getSystematicName");
+    String out;
+    if(result.equals("Password incorrect! Please try again.")){
+      out = "Incorrect password";
+    } else if(result.equals("Unknown user. Please register. www.brenda-enzymes.org/register.php")){
+      out = "Not a Brenda User";
+    } else {
+      out = "You can search your enzyme";
+    }
+    return out;
+  }
+
 }

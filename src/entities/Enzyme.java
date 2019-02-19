@@ -76,7 +76,11 @@ public class Enzyme implements Entity{
     query = new SystematicNameQuery(user);
     query.addAttributes(ec);
     String result = (String) query.getResult().get(0);
-    result = result.replace("&gt;", ">");
+    try {
+      result = result.replace("&gt;", ">");
+    } catch(NullPointerException e) {
+      result = "";
+    }
     systematic_name = result;
     query = new RecommendedNameQuery(user);
     query.addAttributes(ec);
