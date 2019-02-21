@@ -36,7 +36,7 @@ import queries.Query;
  */
 public class BrendaSOAP {
 
-  private String enzymeECnumber;
+  private List<String> enzymeECnumber;
   private User user;
   private Query query;
   private OutputTable outputTable;
@@ -57,7 +57,8 @@ public class BrendaSOAP {
   private boolean up = false;
 
   public BrendaSOAP(String enzyme, User user, int parameters, int filters){
-    this.enzymeECnumber = enzyme;
+    this.enzymeECnumber = new ArrayList<String>();
+    this.enzymeECnumber.add(enzyme);
     this.user = user;
     decoder(parameters, true);
     decoder(filters, false);
@@ -141,10 +142,15 @@ public class BrendaSOAP {
         toDelete.delete();
       }
     }catch(Exception e){}
-    Enzyme enzyme = new Enzyme(enzymeECnumber, user);
+    List<Enzyme> enzymes = new ArrayList<Enzyme>();
+    for(String ec:enzymeECnumber) {
+      enzymes.add(new Enzyme(ec, user));
+    }
     query = new ProteinQuery(user);
     outputTable = new OutputTable(user);
-    query.setEntities(enzyme);
+    for(Enzyme enzyme:enzymes) {
+      query.setEntities(enzyme);
+    }
     proteins = (List<Entity>) query.getResult();
     for (Entity protein:proteins) {
       outputTable.addProtein((Protein) protein);
@@ -258,5 +264,9 @@ public class BrendaSOAP {
     }
     query.getResult();
     ((PdbQuery) query).generateFile();
+  }
+
+  public void addEnzyme(String enzyme){
+    this.enzymeECnumber.add(enzyme);
   }
 }
