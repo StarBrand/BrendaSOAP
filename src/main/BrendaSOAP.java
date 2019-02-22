@@ -134,14 +134,6 @@ public class BrendaSOAP {
   }
 
   public void getProtein() throws Exception {
-    try {
-      File folder = new File(user.getMail() + "_results\\attributes");
-      String files[] = folder.list();
-      for(String file:files){
-        File toDelete = new File(folder, file);
-        toDelete.delete();
-      }
-    }catch(Exception e){}
     List<Enzyme> enzymes = new ArrayList<Enzyme>();
     for(String ec:enzymeECnumber) {
       enzymes.add(new Enzyme(ec, user));
@@ -268,5 +260,27 @@ public class BrendaSOAP {
 
   public void addEnzyme(String enzyme){
     this.enzymeECnumber.add(enzyme);
+  }
+
+  public void erasePreviousOne(){
+    String dir = user.getMail() + "_results\\";
+    File temp;
+    List<String> files_to_delete = new ArrayList<String>();
+    files_to_delete.add(dir + "fasta_output.txt");
+    files_to_delete.add(dir + "report_fasta.txt");
+    files_to_delete.add(dir + "pdb_table.txt");
+    try {
+      File folder = new File(user.getMail() + "_results\\attributes");
+      for(String param:folder.list()){
+        files_to_delete.add(dir + "attributes\\" + param);
+      }
+    }catch(Exception e){}
+    for(String del:files_to_delete) {
+      try {
+        temp = new File(del);
+        temp.delete();
+      } catch (Exception e) {
+      }
+    }
   }
 }
