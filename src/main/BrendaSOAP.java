@@ -262,19 +262,23 @@ public class BrendaSOAP {
     this.enzymeECnumber.add(enzyme);
   }
 
-  public void erasePreviousOne(){
+  public void erasePreviousOne(boolean fasta, boolean pdb, boolean attr){
     String dir = user.getMail() + "_results\\";
     File temp;
     List<String> files_to_delete = new ArrayList<String>();
-    files_to_delete.add(dir + "fasta_output.txt");
-    files_to_delete.add(dir + "report_fasta.txt");
-    files_to_delete.add(dir + "pdb_table.txt");
-    try {
-      File folder = new File(user.getMail() + "_results\\attributes");
-      for(String param:folder.list()){
-        files_to_delete.add(dir + "attributes\\" + param);
-      }
-    }catch(Exception e){}
+    if(fasta) {
+      files_to_delete.add(dir + "fasta_output.txt");
+      files_to_delete.add(dir + "report_fasta.txt");
+    }
+    if(pdb) files_to_delete.add(dir + "pdb_table.txt");
+    if(attr){
+      try {
+        File folder = new File(user.getMail() + "_results\\attributes");
+        for(String param:folder.list()){
+          files_to_delete.add(dir + "attributes\\" + param);
+        }
+      }catch(Exception e){}
+    }
     for(String del:files_to_delete) {
       try {
         temp = new File(del);
