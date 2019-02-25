@@ -158,7 +158,7 @@ public abstract class NumericalAttribute extends AbstractAttribute{
       return null;
     }
     else{
-      out.put("value", String.valueOf(min_value) + "-" + String.valueOf(max_value));
+      out.put("value", String.valueOf(min_value) + " - " + String.valueOf(max_value));
     }
     return out;
   }
