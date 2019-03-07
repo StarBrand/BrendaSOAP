@@ -1,6 +1,7 @@
 package queries;
 
 import attributes.Attribute;
+import client.SoapClient;
 import client.User;
 import entities.Enzyme;
 import entities.Literature;
@@ -66,16 +67,7 @@ public class FillLiterature {
     }
   }
 
-  /**
-   * Fill the {@Link entities.Literature} of every {@Link attributes.Attribute}
-   * of every {@Link entities.Protein} in the list, and return this list
-   *
-   * @return A list of Protein with Literature parameters completely filled
-   */
-  public List<Protein> fill() throws Exception {
-    enzymeQuery = new EnzymeQuery(user, proteins);
-    enzymeQuery.getEnzymes();
-    HashMap<Enzyme, String> queries = enzymeQuery.getQueries("getReference");
+  private List<Protein> abstractFill(HashMap<Enzyme, String> queries) throws Exception {
     HashMap<Integer, Integer> dic = buildDictionary(queries);
     for(Protein protein:proteins){
       String query = queries.get(protein.getEnzyme());
@@ -85,6 +77,43 @@ public class FillLiterature {
       }
     }
     return proteins;
+  }
+
+  /**
+   * Fill the {@Link entities.Literature} of every {@Link attributes.Attribute}
+   * of every {@Link entities.Protein} in the list, and return this list
+   *
+   * @return A list of Protein with Literature parameters completely filled
+   * @throws Exception query exception
+   */
+  public List<Protein> fill() throws Exception {
+    enzymeQuery = new EnzymeQuery(user, proteins);
+    enzymeQuery.getEnzymes();
+    HashMap<Enzyme, String> queries = enzymeQuery.getQueries("getReference");
+    return abstractFill(queries);
+  }
+
+  /**
+   * A second form of fill literature query due to possible storage issue
+   *
+   * @return A list of Protein with Literature parameters completely filled
+   * @throws Exception query exception
+   */
+  public List<Protein> fill2() throws Exception {
+    enzymeQuery = new EnzymeQuery(user, proteins);
+    SoapClient client = new SoapClient(user);
+    List<Enzyme> enzyme = enzymeQuery.getEnzymes();
+    HashMap<Enzyme, String> queries = new HashMap<Enzyme, String>();
+    for(Enzyme e:enzyme){
+      String result = "";
+      for(int year = 1665; year <= 2030; year++){
+        client.makeCall();
+        result += "!" + client.getResult(e.getParameter() + "#year*" + String.valueOf(year),
+            "getReference");
+      }
+      queries.put(e, result);
+    }
+    return abstractFill(queries);
   }
 
   private HashMap<Integer, Integer> buildDictionary(HashMap<Enzyme, String> queries){

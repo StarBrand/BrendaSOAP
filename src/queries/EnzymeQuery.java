@@ -64,8 +64,8 @@ public class EnzymeQuery {
    * @throws Exception The client exception
    */
   public HashMap<Enzyme, String> getQueries(String method) throws Exception {
-    client.makeCall();
     for (Enzyme enzyme:enzymes){
+      client.makeCall();
       queries.put(
           enzyme,
           client.getResult(enzyme.getParameter(), method)

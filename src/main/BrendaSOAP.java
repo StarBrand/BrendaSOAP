@@ -133,26 +133,35 @@ public class BrendaSOAP {
     }
   }
 
-  public void getProtein() throws Exception {
+  public int getProtein(){
     List<Enzyme> enzymes = new ArrayList<Enzyme>();
-    for(String ec:enzymeECnumber) {
-      enzymes.add(new Enzyme(ec, user));
+    try {
+      for (String ec : enzymeECnumber) {
+        enzymes.add(new Enzyme(ec, user));
+      }
+    } catch (Exception e){
+      return -1;
     }
     query = new ProteinQuery(user);
     outputTable = new OutputTable(user);
     for(Enzyme enzyme:enzymes) {
       query.setEntities(enzyme);
     }
-    proteins = (List<Entity>) query.getResult();
-    for (Entity protein:proteins) {
-      outputTable.addProtein((Protein) protein);
+    try {
+      proteins = (List<Entity>) query.getResult();
+      for (Entity protein : proteins) {
+        outputTable.addProtein((Protein) protein);
+      }
+      outputTable.generateRows();
+      outputTable.deleteLiteratureColumn();
+      outputTable.proteins_out();
+      return 0;
+    } catch (Exception e){
+      return -1;
     }
-    outputTable.generateRows();
-    outputTable.deleteLiteratureColumn();
-    outputTable.proteins_out();
   }
 
-  public void getParameters(int[] selected, boolean all_of_them) throws Exception {
+  private int abstractGetParameters(int[] selected, boolean all_of_them){
     query = new ParameterQuery(user);
     outputTable = new OutputTable(user);
     if(mw){
@@ -220,21 +229,49 @@ public class BrendaSOAP {
     for(Entity protein:proteins) {
       query.setEntities(protein);
     }
-    proteins = (List<Entity>) query.getResult();
-    fillLiterature = new FillLiterature(user);
-    for(Entity protein:proteins) {
-      fillLiterature.addProteins((Protein) protein);
+    try {
+      proteins = (List<Entity>) query.getResult();
+      return 0;
+    } catch (Exception e){
+      return -1;
     }
-    List<Protein> proteins = fillLiterature.fill();
-    for (Protein protein:proteins) {
+  }
+
+  private int finalGetParameters(List<Protein> proteins) throws Exception{
+    for (Protein protein : proteins) {
       outputTable.addProtein(protein);
     }
     outputTable.generateRows();
     outputTable.proteins_out();
     outputTable.attributes_out();
+    return 0;
   }
 
-  public void getFastaSequence() throws Exception {
+  public int getParameters(int[] selected, boolean all_of_them){
+    abstractGetParameters(selected, all_of_them);
+    fillLiterature = new FillLiterature(user);
+    for (Entity protein : proteins) {
+      fillLiterature.addProteins((Protein) protein);
+    }
+    try {
+      List<Protein> proteins = fillLiterature.fill();
+      return finalGetParameters(proteins);
+    } catch (Exception e){
+      return -1;
+    }
+  }
+
+  public int getParameters2(int[] selected, boolean all_of_them){
+    try {
+      abstractGetParameters(selected, all_of_them);
+      List<Protein> proteins = fillLiterature.fill2();
+      return finalGetParameters(proteins);
+    } catch (Exception e){
+      return -1;
+    }
+  }
+
+  private FastaQuery abstractGetFastaSequence(){
     query = new FastaQuery(user);
     List<Entity> proteins_to_fasta;
     Filter filter = new SequenceFilter();
@@ -245,17 +282,43 @@ public class BrendaSOAP {
     for(Entity protein:proteins_to_fasta){
       query.setEntities(protein);
     }
-    query.getResult();
-    ((FastaQuery) query).generateFile();
+    return (FastaQuery) query;
   }
 
-  public void getPDB() throws Exception {
+  public int getFastaSequence(){
+    Query query = abstractGetFastaSequence();
+    try {
+      query.getResult();
+      ((FastaQuery) query).generateFile();
+      return 0;
+    } catch (Exception e){
+      return -1;
+    }
+  }
+
+  public int getFastaSequence2(){
+    FastaQuery query = abstractGetFastaSequence();
+    try {
+      query.getResult2();
+      ((FastaQuery) query).generateFile();
+      return 0;
+    } catch (Exception e){
+      return -1;
+    }
+  }
+
+  public int getPDB(){
     query = new PdbQuery(user);
     for(Entity protein:proteins){
       query.setEntities(protein);
     }
-    query.getResult();
-    ((PdbQuery) query).generateFile();
+    try {
+      query.getResult();
+      ((PdbQuery) query).generateFile();
+      return 0;
+    } catch (Exception e){
+      return -1;
+    }
   }
 
   public void addEnzyme(String enzyme){

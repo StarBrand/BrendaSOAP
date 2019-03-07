@@ -1,6 +1,7 @@
 package output;
 
 import attributes.enzyme_structure.AASequence;
+import client.SoapClient;
 import client.User;
 import entities.Entity;
 import entities.Protein;
@@ -51,7 +52,7 @@ public class FastaQuery extends EnzymeStructureQuery {
     }
   }
 
-  public List<?> getResult() throws Exception {
+  private void abstractGetResult(){
     this.result.clear();
     List<Entity> new_proteins = new ArrayList<Entity>();
     for (Entity protein:proteins) {
@@ -72,7 +73,9 @@ public class FastaQuery extends EnzymeStructureQuery {
       }
     }
     proteins = new_proteins;
-    List<String> result = super.getResult(false, true, aaSequence, proteins);
+  }
+
+  private void abstractGenerateResult(List<String> result){
     for(String ans:result){
       AASequence aaSequence = new AASequence();
       if(ans.equals("")) this.result.add(aaSequence);
@@ -83,6 +86,36 @@ public class FastaQuery extends EnzymeStructureQuery {
         this.result.add(aaSequence);
       }
     }
+  }
+
+  public List<?> getResult() throws Exception {
+    this.abstractGetResult();
+    List<String> result = super.getResult(false, true, aaSequence, proteins);
+    this.abstractGenerateResult(result);
+    return this.result;
+  }
+
+  /**
+   * Second operation in case of storage issues
+   *
+   * @return List of sequence
+   * @throws Exception Query exception
+   */
+  public List<?> getResult2() throws Exception {
+    this.abstractGetResult();
+    List<String> result = new ArrayList<String>();
+    SoapClient client = new SoapClient(user);
+    for(Entity protein:proteins){
+      client.makeCall();
+      String ans = client.getResult(
+          ((Protein) protein).getEnzyme().getParameter() + "#firstAccessionCode*" + ((Protein) protein).getUniprot(),
+          "getSequence"
+      );
+      if(!ans.equals("")){
+        result.add(ans);
+      }
+    }
+    this.abstractGenerateResult(result);
     return this.result;
   }
 
