@@ -3,6 +3,7 @@ package attributes;
 import static java.lang.Math.max;
 
 import entities.Literature;
+import entities.LiteratureLink;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -119,7 +120,8 @@ public abstract class AbstractAttribute implements Attribute{
     HashMap<String, String> out = new HashMap<String, String>();
     String reference = "";
     for(Literature literature:references){
-      reference += String.valueOf(literature.getPubmedID()) + "; ";
+      LiteratureLink temp = new LiteratureLink(literature);
+      reference += temp.getUrl() + "; ";
     }
     reference = reference.substring(0, max(reference.length() - 2, 0));
     out.put("Literature(PubmedID)", reference);

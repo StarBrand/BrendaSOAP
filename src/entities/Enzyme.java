@@ -85,7 +85,11 @@ public class Enzyme implements Entity{
     query = new RecommendedNameQuery(user);
     query.addAttributes(ec);
     result = (String) query.getResult().get(0);
-    result = result.replace("&gt;", ">");
+    try {
+      result = result.replace("&gt;", ">");
+    } catch(NullPointerException e) {
+      result = "";
+    }
     recommended_name = result;
   }
 

@@ -135,7 +135,7 @@ public class BrendaSOAP {
 
   public int getProtein(){
     List<Enzyme> enzymes = new ArrayList<Enzyme>();
-    try {
+    try{
       for (String ec : enzymeECnumber) {
         enzymes.add(new Enzyme(ec, user));
       }
@@ -262,8 +262,12 @@ public class BrendaSOAP {
   }
 
   public int getParameters2(int[] selected, boolean all_of_them){
+    abstractGetParameters(selected, all_of_them);
+    fillLiterature = new FillLiterature(user);
+    for (Entity protein : proteins) {
+      fillLiterature.addProteins((Protein) protein);
+    }
     try {
-      abstractGetParameters(selected, all_of_them);
       List<Protein> proteins = fillLiterature.fill2();
       return finalGetParameters(proteins);
     } catch (Exception e){
