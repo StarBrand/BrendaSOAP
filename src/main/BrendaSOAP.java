@@ -133,7 +133,7 @@ public class BrendaSOAP {
     }
   }
 
-  public int getProtein(){
+  public int getProtein(boolean already){
     List<Enzyme> enzymes = new ArrayList<Enzyme>();
     try{
       for (String ec : enzymeECnumber) {
@@ -149,12 +149,14 @@ public class BrendaSOAP {
     }
     try {
       proteins = (List<Entity>) query.getResult();
-      for (Entity protein : proteins) {
-        outputTable.addProtein((Protein) protein);
+      if(!already) {
+        for (Entity protein : proteins) {
+          outputTable.addProtein((Protein) protein);
+        }
+        outputTable.generateRows();
+        outputTable.deleteLiteratureColumn();
+        outputTable.proteins_out();
       }
-      outputTable.generateRows();
-      outputTable.deleteLiteratureColumn();
-      outputTable.proteins_out();
       return 0;
     } catch (Exception e){
       return -1;
