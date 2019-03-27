@@ -54,8 +54,10 @@ public class User {
     String out;
     if(result.equals("Password incorrect! Please try again.")){
       out = "Incorrect password";
-    } else if(result.equals("Unknown user. Please register. www.brenda-enzymes.org/register.php")){
+    } else if(result.equals("Unknown user. Please register. www.brenda-enzymes.org/register.php")) {
       out = "Not a Brenda User";
+    } else if(result.equals("Activation required, please check your emails!")){
+      out = "Not Activated Account";
     } else {
       out = "You can search your enzyme";
     }

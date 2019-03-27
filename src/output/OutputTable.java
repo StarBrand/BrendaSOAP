@@ -31,6 +31,7 @@ public class OutputTable {
   private HashMap<String, List<String>> attributes_columns;
   private List<HashMap<String, String>> protein_rows;
   private HashMap<String, List <HashMap<String, String>>> attributes_rows;
+  private File path;
   private User user;
 
   /**
@@ -52,6 +53,8 @@ public class OutputTable {
     protein_columns.add("Literature(PubmedID)");
     protein_columns.add("Ref");
     this.user = user;
+    this.path = new File("results", this.user.getMail());
+    this.path.mkdirs();
   }
 
   /**
@@ -144,19 +147,18 @@ public class OutputTable {
   }
 
   public void proteins_out() throws IOException{
-    (new File(user.getMail() + "_results")).mkdirs();
-    out(user.getMail() + "_results\\table.txt", protein_columns, protein_rows);
+    out(new File(this.path, "table.txt"), protein_columns, protein_rows);
   }
 
   public void attributes_out() throws IOException {
-    (new File(user.getMail() + "_results\\attributes")).mkdirs();
+    File attributes_path = new File(this.path, "attributes");
+    attributes_path.mkdirs();
     for(String name:attributes_columns.keySet()) {
-      String file_name = user.getMail() + "_results\\attributes\\";
-      out(file_name + name +".txt", attributes_columns.get(name), attributes_rows.get(name));
+      out(new File(attributes_path, name + ".txt"), attributes_columns.get(name), attributes_rows.get(name));
     }
   }
 
-  private void out(String name, List<String> head_line, List<HashMap<String, String>> row_lines)  throws IOException {
+  private void out(File name, List<String> head_line, List<HashMap<String, String>> row_lines)  throws IOException {
     FileWriter file = new FileWriter(name);
     BufferedWriter bw = new BufferedWriter(file);
     List<String> header = new ArrayList<String>();

@@ -1,14 +1,15 @@
+- Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
 Searching for proteins... It has been found 1988 proteins
-It took: 0 hr, 0 m, 18 s, 738 ms
+It took: 0 hr, 0 m, 26 s, 868 ms
 Searching for PDBs... Generating file... File has been generated!! 
-It took: 0 hr, 0 m, 21 s, 124 ms
+It took: 0 hr, 0 m, 29 s, 981 ms
 Filtering proteins to FASTA search... Filtered Proteins: 205
-It took: 0 hr, 0 m, 0 s, 6 ms
+It took: 0 hr, 0 m, 0 s, 119 ms
 Searching for sequences... Generating file... File has been generated!! 
-It took: 0 hr, 3 m, 8 s, 748 ms
+It took: 0 hr, 0 m, 27 s, 134 ms
 Searching for attributes... Attributes have been found!!
-It took: 0 hr, 0 m, 59 s, 333 ms
+It took: 0 hr, 0 m, 39 s, 222 ms
 Filling reference...... Reference has completed
-It took: 0 hr, 0 m, 50 s, 161 ms
+It took: 0 hr, 0 m, 9 s, 449 ms
 Showing results...
-Finally, it took: 0 hr, 5 m, 20 s, 18 ms
+Finally, it took: 0 hr, 1 m, 51 s, 582 ms

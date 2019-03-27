@@ -27,6 +27,7 @@ public class PdbQuery extends EnzymeStructureQuery{
   private List<Entity> proteins;
   private List<Protein> result;
   private ParserAnswer parserAnswer;
+  private File path;
 
   /**
    * Constructor
@@ -39,6 +40,8 @@ public class PdbQuery extends EnzymeStructureQuery{
     proteins = new ArrayList<Entity>();
     result = new ArrayList<Protein>();
     parserAnswer = new ParserAnswer();
+    this.path = new File("results", this.user.getMail());
+    this.path.mkdirs();
   }
 
   /**
@@ -133,8 +136,7 @@ public class PdbQuery extends EnzymeStructureQuery{
    */
   public void generateFile() throws IOException {
     List<String> line = new ArrayList<String>();
-    (new File(user.getMail() + "_results")).mkdirs();
-    FileWriter file = new FileWriter(user.getMail() + "_results\\pdb_table.txt");
+    FileWriter file = new FileWriter(new File(this.path, "pdb_table.txt"));
     BufferedWriter bw = new BufferedWriter(file);
     line.add("EC_Number");
     line.add("Organism");

@@ -26,6 +26,7 @@ public class FastaQuery extends EnzymeStructureQuery {
   private List<Entity> proteins;
   private List<AASequence> result;
   private ParserAnswer parserAnswer;
+  private File path;
 
   /**
    * FastaQuery constructor given a Brenda User
@@ -38,6 +39,8 @@ public class FastaQuery extends EnzymeStructureQuery {
     proteins = new ArrayList<Entity>();
     result = new ArrayList<AASequence>();
     parserAnswer = new ParserAnswer();
+    this.path = new File("results", this.user.getMail());
+    this.path.mkdirs();
   }
 
   /**
@@ -131,9 +134,8 @@ public class FastaQuery extends EnzymeStructureQuery {
     List<String> line2 = new ArrayList<String>();
     String tempLine;
     int lines, rest;
-    (new File(user.getMail() + "_results")).mkdirs();
-    FileWriter file = new FileWriter(user.getMail() + "_results\\fasta_output.txt");
-    FileWriter file2 = new FileWriter(user.getMail() + "_results\\report_fasta.txt");
+    FileWriter file = new FileWriter(new File(this.path, "fasta_output.txt"));
+    FileWriter file2 = new FileWriter(new File(this.path, "report_fasta.txt"));
     BufferedWriter bw = new BufferedWriter(file);
     BufferedWriter bw2 = new BufferedWriter(file2);
     line2.add("UniProt");
