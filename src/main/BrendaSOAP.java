@@ -332,26 +332,25 @@ public class BrendaSOAP {
   }
 
   public void erasePreviousOne(boolean fasta, boolean pdb, boolean attr){
-    String dir = user.getMail() + "_results\\";
-    File temp;
-    List<String> files_to_delete = new ArrayList<String>();
+    File dir = new File("results");
+    dir = new File(dir, user.getMail());
+    List<File> files_to_delete = new ArrayList<File>();
     if(fasta) {
-      files_to_delete.add(dir + "fasta_output.txt");
-      files_to_delete.add(dir + "report_fasta.txt");
+      files_to_delete.add(new File(dir, "fasta_output.txt"));
+      files_to_delete.add(new File(dir, "report_fasta.txt"));
     }
-    if(pdb) files_to_delete.add(dir + "pdb_table.txt");
+    if(pdb) files_to_delete.add(new File(dir, "pdb_table.txt"));
     if(attr){
       try {
-        File folder = new File(user.getMail() + "_results\\attributes");
+        File folder = new File(dir, "attributes");
         for(String param:folder.list()){
-          files_to_delete.add(dir + "attributes\\" + param);
+          files_to_delete.add(new File(folder, param));
         }
       }catch(Exception e){}
     }
-    for(String del:files_to_delete) {
+    for(File del:files_to_delete) {
       try {
-        temp = new File(del);
-        temp.delete();
+        del.delete();
       } catch (Exception e) {
       }
     }
