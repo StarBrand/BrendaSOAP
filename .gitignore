@@ -99,5 +99,3 @@ hs_err_pid*
 .idea/
 web/
 
-# Keep user hidden
-src/default_user/DefaultUser.java
