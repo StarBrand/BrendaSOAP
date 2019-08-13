@@ -19,10 +19,14 @@ import entities.Protein;
 import filters.Filter;
 import filters.SequenceFilter;
 import java.io.File;
+import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import output.FastaQuery;
 import output.OutputTable;
+import output.OutputTaxonomy;
 import output.PdbQuery;
 import queries.FillLiterature;
 import queries.ParameterQuery;
@@ -354,5 +358,29 @@ public class BrendaSOAP {
       } catch (Exception e) {
       }
     }
+  }
+
+  public int getTaxonomy(String db_path){
+    OutputTaxonomy taxonomy = new OutputTaxonomy(user, db_path);
+    HashMap<Integer, String> organism = taxonomy.extractOrganisms();
+    try {
+      taxonomy.fillTaxonomy(organism);
+      taxonomy.out();
+      try {
+        taxonomy.close();
+      } catch (SQLException e){
+        System.err.printf("Warning: %s\n", e.getMessage());
+      }
+      return 0;
+    } catch (SQLException e) {
+      return -1;
+    } catch (IOException e) {
+      return -2;
+    }
+  }
+
+  public static void main (String... args){
+    System.out.println("This class doesn't has a static method." +
+            "Visit https://github.com/StarBrand/BrendaSOAP to see how this jar works");
   }
 }
