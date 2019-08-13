@@ -1,0 +1,4 @@
+Ref	species	genus	family	order	class	phylum	superkingdom
+0	Acinetobacter calcoaceticus	Acinetobacter	Moraxellaceae	Pseudomonadales	Gammaproteobacteria	Proteobacteria	Bacteria
+1	Arthrobacter sp.	Arthrobacter	Micrococcaceae	Micrococcales	Actinobacteria	Actinobacteria	Bacteria
+2	Fusarium graminearum	Fusarium	Nectriaceae	Hypocreales	Sordariomycetes	Ascomycota	Eukaryota

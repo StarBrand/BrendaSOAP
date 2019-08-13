@@ -3,6 +3,7 @@ package attributes_test;
 import static junit.framework.TestCase.assertEquals;
 
 import attributes.organism_related_information.Organism;
+import attributes.organism_related_information.Taxonomy;
 import entities.Literature;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,6 +12,8 @@ import queries.ParserAnswer;
 public class OrganismRelatedInformationTest {
   private Organism organism;
   private Organism nullOrganism;
+  private Taxonomy taxonomy;
+  private Taxonomy nullTaxonomy;
   private String result;
   private ParserAnswer parserAnswer;
 
@@ -19,6 +22,11 @@ public class OrganismRelatedInformationTest {
     organism = new Organism("Homo sapiens",
         "", new Literature(11111));
     nullOrganism = new Organism();
+    taxonomy = new Taxonomy("Homo sapiens", "Homo",
+            "Hominidae", "Primates",
+            "Mammalia", "Chordata",
+            "Animalia");
+    nullTaxonomy = new Taxonomy();
     parserAnswer = new ParserAnswer();
   }
 
@@ -32,6 +40,17 @@ public class OrganismRelatedInformationTest {
     assertEquals(new Literature(11111), organism.getReferences().get(0));
     assertEquals("organism*Homo sapiens", organism.getParameter());
     assertEquals("getOrganism", organism.getMethod());
+    assertEquals("Organism", organism.getAttributeName());
+    assertEquals("Homo sapiens",taxonomy.getSpecies());
+    assertEquals("Homo", taxonomy.getGenus());
+    assertEquals("Hominidae", taxonomy.getFamily());
+    assertEquals("Primates", taxonomy.getOrder());
+    assertEquals("Mammalia", taxonomy.getPhylogenetic_class());
+    assertEquals("Chordata", taxonomy.getPhylum());
+    assertEquals("Animalia", taxonomy.getSuperkingdom());
+    assertEquals("", taxonomy.getMethod());
+    assertEquals("", taxonomy.getParameter());
+    assertEquals("Taxonomy", taxonomy.getAttributeName());
   }
 
   @Test
@@ -44,6 +63,17 @@ public class OrganismRelatedInformationTest {
     assertEquals(0, nullOrganism.getReferences().size());
     assertEquals("organism*", nullOrganism.getParameter());
     assertEquals("getOrganism", nullOrganism.getMethod());
+    assertEquals("Organism", nullOrganism.getAttributeName());
+    assertEquals("", nullTaxonomy.getSpecies());
+    assertEquals("", nullTaxonomy.getGenus());
+    assertEquals("", nullTaxonomy.getFamily());
+    assertEquals("", nullTaxonomy.getOrder());
+    assertEquals("", nullTaxonomy.getPhylogenetic_class());
+    assertEquals("", nullTaxonomy.getPhylum());
+    assertEquals("", nullTaxonomy.getSuperkingdom());
+    assertEquals("", nullTaxonomy.getMethod());
+    assertEquals("", nullTaxonomy.getParameter());
+    assertEquals("Taxonomy", nullTaxonomy.getAttributeName());
   }
 
   @Test
@@ -60,6 +90,15 @@ public class OrganismRelatedInformationTest {
     assertEquals(new Literature(11111), nullOrganism.getReferences().get(0));
     assertEquals("organism*Mus musculus L45", nullOrganism.getParameter());
     assertEquals("getOrganism", nullOrganism.getMethod());
+  }
+
+  @Test
+  public void toRowTest(){
+    assertEquals("NA\tNA\tNA\tNA\tNA\tNA\tNA", nullTaxonomy.toRow());
+    assertEquals(
+            "Homo sapiens\tHomo\tHominidae\tPrimates\tMammalia\tChordata\tAnimalia",
+            taxonomy.toRow()
+    );
   }
 
 }
