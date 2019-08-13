@@ -100,18 +100,28 @@ public class TaxonomyQuery implements Query {
             String rank = "";
             String previous_rank = "";
             String nextName = name;
+            int loop = 0;
             while(!rank.equals(nextRankName)) {
                 statement.setString(1, nextName);
                 ResultSet result = statement.executeQuery();
-                nextName = result.getString("name_txt");
-                rank = result.getString("rank");
+                try {
+                    nextName = result.getString("name_txt");
+                    rank = result.getString("rank");
+                } catch (SQLException e){
+                    nextName = null;
+                    break;
+                }
+                int rep = 0;
                 while (nextName.equals(name) & previous_rank.equals(rank)){
                     result.next();
                     nextName = result.getString("name_txt");
                     rank = result.getString("rank");
+                    rep ++;
+                    if (rep == 10) break;
                 }
                 previous_rank = rank;
-                if (nextName.equals("root")){
+                loop++;
+                if (nextName.equals("root") || rep == 10 || loop == 30){
                     nextName = null;
                     break;
                 }

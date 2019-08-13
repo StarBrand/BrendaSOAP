@@ -253,8 +253,8 @@ public class Taxonomy extends AbstractAttribute {
     }
 
     private static String textOrNA(String text){
-        if (text.length() == 0) return "NA";
-        else return text;
+        if (text != null) return text;
+        else return "NA";
     }
 
 }
