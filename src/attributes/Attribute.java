@@ -90,12 +90,12 @@ public interface Attribute extends Cloneable{
    *
    * @return the name of the attribute
    */
-  public String getAttributeName();
+  String getAttributeName();
 
   /**
    * Make public the Object method clone
    *
    * @return A new instance of Attribute
    */
-  public Object clone();
+  Object clone();
 }

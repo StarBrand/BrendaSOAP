@@ -1,7 +1,6 @@
 package entities;
 
 import attributes.Attribute;
-import java.util.HashMap;
 import java.util.List;
 
 /**

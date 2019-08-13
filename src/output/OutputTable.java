@@ -1,7 +1,5 @@
 package output;
 
-import static java.lang.StrictMath.max;
-
 import attributes.Attribute;
 import client.User;
 import entities.Protein;
@@ -12,7 +10,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import javafx.scene.control.Tab;
 
 /**
  * output.OutputTable class, generates the table in csv format
