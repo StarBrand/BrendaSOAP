@@ -62,10 +62,10 @@ fabric.properties
 ### Intellij Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
-# *.iml
-# modules.xml
-# .idea/misc.xml
-# *.ipr
+*.iml
+modules.xml
+.idea/misc.xml
+*.ipr
 
 # Sonarlint plugin
 .idea/sonarlint
@@ -99,3 +99,8 @@ hs_err_pid*
 .idea/
 web/
 
+# Database
+NCBI.db
+
+# Build module
+src/META-INF/
