@@ -120,6 +120,7 @@ src/META-INF/
 
 # RStudio files
 .Rproj.user/
+*.Rproj
 
 # produced vignettes
 vignettes/*.html
