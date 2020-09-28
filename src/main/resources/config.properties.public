@@ -1,0 +1,8 @@
+user = <redacted>
+password = <redacted>
+db_url = <redacted>
+db_port = 5432
+db_database = <redacted>
+db_schema = <redacted>
+db_user = <redacted>
+db_password = <redacted>
